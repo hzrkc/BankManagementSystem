@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BankaYönetimi));
             this.bankİşlemler_panelMenu = new System.Windows.Forms.Panel();
             this.btn_SistemGüncelleme = new System.Windows.Forms.Button();
             this.btn_Krediİşlemleri = new System.Windows.Forms.Button();
@@ -37,10 +38,12 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_Close = new DevExpress.XtraEditors.SimpleButton();
             this.işlemler_panelChildForm = new System.Windows.Forms.Panel();
             this.backColorPanel = new System.Windows.Forms.Panel();
             this.bankİşlemler_panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.backColorPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +65,7 @@
             // btn_SistemGüncelleme
             // 
             this.btn_SistemGüncelleme.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_SistemGüncelleme.FlatAppearance.BorderSize = 0;
+            this.btn_SistemGüncelleme.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.btn_SistemGüncelleme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.btn_SistemGüncelleme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_SistemGüncelleme.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,7 +81,7 @@
             // btn_Krediİşlemleri
             // 
             this.btn_Krediİşlemleri.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Krediİşlemleri.FlatAppearance.BorderSize = 0;
+            this.btn_Krediİşlemleri.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.btn_Krediİşlemleri.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.btn_Krediİşlemleri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Krediİşlemleri.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -94,7 +97,7 @@
             // btn_YatırımFonuDüzenleme
             // 
             this.btn_YatırımFonuDüzenleme.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_YatırımFonuDüzenleme.FlatAppearance.BorderSize = 0;
+            this.btn_YatırımFonuDüzenleme.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.btn_YatırımFonuDüzenleme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.btn_YatırımFonuDüzenleme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_YatırımFonuDüzenleme.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,7 +113,7 @@
             // btn_PersonelYönetimi
             // 
             this.btn_PersonelYönetimi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_PersonelYönetimi.FlatAppearance.BorderSize = 0;
+            this.btn_PersonelYönetimi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.btn_PersonelYönetimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
             this.btn_PersonelYönetimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_PersonelYönetimi.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,11 +153,25 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btn_Close);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(212, 72);
             this.panel3.TabIndex = 2;
+            // 
+            // btn_Close
+            // 
+            this.btn_Close.Appearance.Font = new System.Drawing.Font("Tahoma", 6F);
+            this.btn_Close.Appearance.Options.UseFont = true;
+            this.btn_Close.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Close.ImageOptions.Image")));
+            this.btn_Close.Location = new System.Drawing.Point(174, 4);
+            this.btn_Close.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.btn_Close.Size = new System.Drawing.Size(34, 29);
+            this.btn_Close.TabIndex = 0;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
             // işlemler_panelChildForm
             // 
@@ -186,6 +203,7 @@
             this.Text = "BankaYönetimi";
             this.bankİşlemler_panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.backColorPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -204,5 +222,6 @@
         private System.Windows.Forms.Button btn_YatırımFonuDüzenleme;
         private System.Windows.Forms.Panel işlemler_panelChildForm;
         private System.Windows.Forms.Panel backColorPanel;
+        private DevExpress.XtraEditors.SimpleButton btn_Close;
     }
 }

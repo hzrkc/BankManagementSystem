@@ -13,6 +13,7 @@ namespace BankManagementSystem.Forms.Account_BankManagerForms
         public BankaYönetimi()
         {
             InitializeComponent();
+            btn_Close.Visible = false;
         }
 
         //Methods
@@ -29,6 +30,7 @@ namespace BankManagementSystem.Forms.Account_BankManagerForms
                     currentButton.BackColor = backColor;
                     currentButton.ForeColor = foreColor;
                     backColorPanel.BackColor = backColor;
+                    btn_Close.Visible = true;
                 }
             }
         }
@@ -41,6 +43,7 @@ namespace BankManagementSystem.Forms.Account_BankManagerForms
                 {
                     previousBtn.BackColor = Color.FromArgb(232, 215, 255);
                     previousBtn.ForeColor = Color.FromArgb(63, 52, 76);
+                    backColorPanel.BackColor = Color.FromArgb(232, 215, 255);
                 }
             }
         }
@@ -81,6 +84,19 @@ namespace BankManagementSystem.Forms.Account_BankManagerForms
         private void btn_SistemGüncelleme_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+        }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            Reset();
+        }
+        private void Reset()
+        {
+            DisableButton();
+            currentButton = null;
+            btn_Close.Visible = false;
         }
     }
 }

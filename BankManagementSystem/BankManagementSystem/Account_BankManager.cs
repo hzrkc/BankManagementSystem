@@ -18,6 +18,7 @@ namespace BankManagementSystem
         public Account_BankManager()
         {
             InitializeComponent();
+            btn_AnaSayfa.Visible = false;
         }
         //Methods
         private void ActivateButton(object btnSender)
@@ -33,6 +34,7 @@ namespace BankManagementSystem
                     currentButton.BackColor = backColor;
                     currentButton.ForeColor = foreColor;
                     BackColorpanel.BackColor = backColor;
+                    btn_AnaSayfa.Visible = true;
                 }
             }
         }
@@ -45,6 +47,7 @@ namespace BankManagementSystem
                 {
                     previousBtn.BackColor = Color.FromArgb(210, 175, 255);
                     previousBtn.ForeColor = Color.FromArgb(63, 52, 76);
+                    BackColorpanel.BackColor = Color.FromArgb(210, 175, 255);
                 }
             }
         }
@@ -79,6 +82,39 @@ namespace BankManagementSystem
         private void btn_Müşteriİşlemleri_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.Account_BankManagerForms.Müşteriİşlemleri(), sender);
+        }
+
+        private void btn_AnaSayfa_Click(object sender, EventArgs e)
+        {
+            if(activeForm !=null)
+                activeForm.Close();
+            Reset();
+        }
+        private void Reset()
+        {
+            DisableButton();
+            currentButton = null;
+            btn_AnaSayfa.Visible = false;
+        }
+
+        private void btn_CloseWindow_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_Maximize_Click(object sender, EventArgs e)
+        {
+            if(WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void btn_Minimize_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+                this.WindowState = FormWindowState.Normal;
+            this.WindowState |= FormWindowState.Minimized;
         }
     }
 }

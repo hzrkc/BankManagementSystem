@@ -30,6 +30,7 @@
         {
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_PersonelYönetimi = new System.Windows.Forms.Button();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -40,7 +41,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.btn_PersonelYönetimi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -80,6 +80,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(291, 235);
             this.panel1.TabIndex = 2;
+            // 
+            // btn_PersonelYönetimi
+            // 
+            this.btn_PersonelYönetimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.btn_PersonelYönetimi.FlatAppearance.BorderSize = 0;
+            this.btn_PersonelYönetimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.btn_PersonelYönetimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_PersonelYönetimi.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PersonelYönetimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.btn_PersonelYönetimi.Location = new System.Drawing.Point(111, 167);
+            this.btn_PersonelYönetimi.Name = "btn_PersonelYönetimi";
+            this.btn_PersonelYönetimi.Size = new System.Drawing.Size(152, 45);
+            this.btn_PersonelYönetimi.TabIndex = 10;
+            this.btn_PersonelYönetimi.Text = "KAYIT";
+            this.btn_PersonelYönetimi.UseVisualStyleBackColor = false;
             // 
             // labelControl4
             // 
@@ -203,7 +218,8 @@
             this.labelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelControl5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelControl5.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.labelControl5.Location = new System.Drawing.Point(94, 27);
+            this.labelControl5.Location = new System.Drawing.Point(94, 26);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(194, 27);
             this.labelControl5.TabIndex = 12;
@@ -218,26 +234,12 @@
             this.labelControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelControl6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelControl6.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.labelControl6.Location = new System.Drawing.Point(560, 27);
+            this.labelControl6.Location = new System.Drawing.Point(578, 26);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(159, 27);
             this.labelControl6.TabIndex = 13;
             this.labelControl6.Text = "Kayıtlı Müşteriler";
-            // 
-            // btn_PersonelYönetimi
-            // 
-            this.btn_PersonelYönetimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.btn_PersonelYönetimi.FlatAppearance.BorderSize = 0;
-            this.btn_PersonelYönetimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.btn_PersonelYönetimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PersonelYönetimi.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_PersonelYönetimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_PersonelYönetimi.Location = new System.Drawing.Point(111, 167);
-            this.btn_PersonelYönetimi.Name = "btn_PersonelYönetimi";
-            this.btn_PersonelYönetimi.Size = new System.Drawing.Size(152, 45);
-            this.btn_PersonelYönetimi.TabIndex = 10;
-            this.btn_PersonelYönetimi.Text = "KAYIT";
-            this.btn_PersonelYönetimi.UseVisualStyleBackColor = false;
             // 
             // Müşteriİşlemleri
             // 
