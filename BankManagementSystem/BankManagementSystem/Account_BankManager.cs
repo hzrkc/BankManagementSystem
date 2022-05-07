@@ -117,5 +117,10 @@ namespace BankManagementSystem
                 this.WindowState = FormWindowState.Normal;
             this.WindowState |= FormWindowState.Minimized;
         }
+
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

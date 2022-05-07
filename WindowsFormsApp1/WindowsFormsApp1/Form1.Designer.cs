@@ -1,6 +1,6 @@
-﻿namespace BankManagementSystem.Forms.İlgilenilenMüşteriler
+﻿namespace WindowsFormsApp1
 {
-    partial class KayıtGüncelleme
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // KayıtGüncelleme
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "KayıtGüncelleme";
-            this.Text = "KayıtGüncelleme";
-            this.ResumeLayout(false);
-
+            this.Text = "Form1";
         }
 
         #endregion
     }
 }
+

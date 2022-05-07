@@ -97,11 +97,95 @@
     <Compile Include="Forms\Account_CusRepresentative\YeniMüşteri.Designer.cs">
       <DependentUpon>YeniMüşteri.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Account_CusRepresentative\İlgilenilenMüşteriler.cs">
+    <Compile Include="Forms\Account_CusRepresentative\İlgilenilenMüşteriler_MüşteriBilgileri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Account_CusRepresentative\İlgilenilenMüşteriler.Designer.cs">
-      <DependentUpon>İlgilenilenMüşteriler.cs</DependentUpon>
+    <Compile Include="Forms\Account_CusRepresentative\İlgilenilenMüşteriler_MüşteriBilgileri.Designer.cs">
+      <DependentUpon>İlgilenilenMüşteriler_MüşteriBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\Account_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\Account_Information.Designer.cs">
+      <DependentUpon>Account_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\AylıkÖzet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\AylıkÖzet.Designer.cs">
+      <DependentUpon>AylıkÖzet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\CreditTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\CreditTransactions.Designer.cs">
+      <DependentUpon>CreditTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\Investing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\Investing.Designer.cs">
+      <DependentUpon>Investing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account_Customer\Transfer.Designer.cs">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account_Information\ParaÇekme_Yatırma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account_Information\ParaÇekme_Yatırma.Designer.cs">
+      <DependentUpon>ParaÇekme_Yatırma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account_Information\YeniHesapOluşturma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account_Information\YeniHesapOluşturma.Designer.cs">
+      <DependentUpon>YeniHesapOluşturma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaYönetimi\Krediİşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaYönetimi\Krediİşlemleri.Designer.cs">
+      <DependentUpon>Krediİşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaYönetimi\PersonelYönetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaYönetimi\PersonelYönetimi.Designer.cs">
+      <DependentUpon>PersonelYönetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaYönetimi\SistemGüncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaYönetimi\SistemGüncelleme.Designer.cs">
+      <DependentUpon>SistemGüncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankaYönetimi\YatırımFonu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankaYönetimi\YatırımFonu.Designer.cs">
+      <DependentUpon>YatırımFonu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bankaİşlemleri\Genel Durum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bankaİşlemleri\Genel Durum.Designer.cs">
+      <DependentUpon>Genel Durum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bankaİşlemleri\Tümİşlemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bankaİşlemleri\Tümİşlemler.Designer.cs">
+      <DependentUpon>Tümİşlemler.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login\Login_BankManager.cs">
       <SubType>Form</SubType>
@@ -121,6 +205,12 @@
     <Compile Include="Forms\Login\Login_Customer.Designer.cs">
       <DependentUpon>Login_Customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\Krediİşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\Krediİşlemleri.Designer.cs">
+      <DependentUpon>Krediİşlemleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +225,9 @@
     <EmbeddedResource Include="Account_CusReprensative.resx">
       <DependentUpon>Account_CusReprensative.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Account_Customer.resx">
+      <DependentUpon>Account_Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Account_BankManagerForms\BankaYönetimi.resx">
       <DependentUpon>BankaYönetimi.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,8 +240,8 @@
     <EmbeddedResource Include="Forms\Account_CusRepresentative\YeniMüşteri.resx">
       <DependentUpon>YeniMüşteri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Account_CusRepresentative\İlgilenilenMüşteriler.resx">
-      <DependentUpon>İlgilenilenMüşteriler.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Account_CusRepresentative\İlgilenilenMüşteriler_MüşteriBilgileri.resx">
+      <DependentUpon>İlgilenilenMüşteriler_MüşteriBilgileri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\Login_BankManager.resx">
       <DependentUpon>Login_BankManager.cs</DependentUpon>

@@ -244,12 +244,13 @@
             this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelControl1.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.labelControl1.Location = new System.Drawing.Point(402, 11);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.labelControl1.Location = new System.Drawing.Point(399, 11);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(154, 23);
             this.labelControl1.TabIndex = 14;
             this.labelControl1.Text = "Banka Müdürü Girişi";
+            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // Account_BankManager
             // 

@@ -92,7 +92,7 @@ namespace BankManagementSystem
 
         private void btn_İlgilenilenMüşteri_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Account_CusRepresentative.İlgilenilenMüşteriler(),sender);
+            OpenChildForm(new Forms.Account_CusRepresentative.İlgilenilenMüşteriler_MüşteriBilgileri(),sender);
         }
 
         private void btn_YeniMüşteri_Click(object sender, EventArgs e)

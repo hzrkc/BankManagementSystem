@@ -66,4 +66,5 @@ C:\Users\zerha\Desktop\BankManagementSystem\BankManagementSystem\BankManagementS
 C:\Users\zerha\Desktop\BankManagementSystem\BankManagementSystem\BankManagementSystem\obj\Debug\BankManagementSystem.Forms.Login.Login_CusRepresentative.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankManagementSystem\BankManagementSystem\obj\Debug\BankManagementSystem.Forms.Login.Login_Customer.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankManagementSystem\BankManagementSystem\obj\Debug\BankManagementSystem.Forms.Account_CusRepresentative.YeniMüşteri.resources
-C:\Users\zerha\Desktop\BankManagementSystem\BankManagementSystem\BankManagementSystem\obj\Debug\BankManagementSystem.Forms.Account_CusRepresentative.İlgilenilenMüşteriler.resources
+C:\Users\zerha\Desktop\BankManagementSystem\BankManagementSystem\BankManagementSystem\obj\Debug\BankManagementSystem.Forms.Account_CusRepresentative.İlgilenilenMüşteriler_MüşteriBilgileri.resources
+C:\Users\zerha\Desktop\BankManagementSystem\BankManagementSystem\BankManagementSystem\obj\Debug\BankManagementSystem.Account_Customer.resources

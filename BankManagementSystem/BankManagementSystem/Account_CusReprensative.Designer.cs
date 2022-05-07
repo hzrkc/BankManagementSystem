@@ -152,7 +152,7 @@
             this.btn_AnaSayfa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AnaSayfa.Name = "btn_AnaSayfa";
             this.btn_AnaSayfa.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.btn_AnaSayfa.Size = new System.Drawing.Size(41, 34);
+            this.btn_AnaSayfa.Size = new System.Drawing.Size(37, 34);
             this.btn_AnaSayfa.TabIndex = 15;
             this.btn_AnaSayfa.Click += new System.EventHandler(this.btn_AnaSayfa_Click);
             // 
