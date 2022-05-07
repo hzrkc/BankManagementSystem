@@ -42,6 +42,7 @@
             this.btn_Minimize = new System.Windows.Forms.Button();
             this.btn_Maximize = new System.Windows.Forms.Button();
             this.btn_CloseWindow = new System.Windows.Forms.Button();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelMenu.SuspendLayout();
             this.BackColorpanel.SuspendLayout();
             this.panel_childform.SuspendLayout();
@@ -234,12 +235,29 @@
             this.btn_CloseWindow.UseVisualStyleBackColor = true;
             this.btn_CloseWindow.Click += new System.EventHandler(this.btn_CloseWindow_Click);
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelControl1.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.labelControl1.Location = new System.Drawing.Point(402, 11);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(154, 23);
+            this.labelControl1.TabIndex = 14;
+            this.labelControl1.Text = "Banka Müdürü Girişi";
+            // 
             // Account_BankManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(960, 540);
+            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BackColorpanel);
@@ -254,6 +272,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -272,6 +291,7 @@
         private System.Windows.Forms.Button btn_CloseWindow;
         private System.Windows.Forms.Button btn_Minimize;
         private System.Windows.Forms.Button btn_Maximize;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }
 

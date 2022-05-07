@@ -10,18 +10,15 @@ using System.Windows.Forms;
 
 namespace BankManagementSystem
 {
-    public partial class Account_CusReprensative : Form
+    public partial class Login : Form
     {
         //Fields
         private Button currentButton;
         private Form activeForm;
-        public Account_CusReprensative()
+        public Login()
         {
             InitializeComponent();
-
-            btn_AnaSayfa.Visible = false;
         }
-        //Methods
         private void ActivateButton(object btnSender)
         {
             if (btnSender != null)
@@ -34,20 +31,20 @@ namespace BankManagementSystem
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = backColor;
                     currentButton.ForeColor = foreColor;
-                    BackColorpanel.BackColor = backColor;
-                    btn_AnaSayfa.Visible = true;
+                    panelLogin.BackColor = backColor;
                 }
             }
         }
+
         private void DisableButton()
         {
-            foreach (Control previousBtn in panelMenu.Controls)
+            foreach (Control previousBtn in panelLoginMenu.Controls)
             {
                 if (previousBtn.GetType() == typeof(Button))
                 {
                     previousBtn.BackColor = Color.FromArgb(210, 175, 255);
                     previousBtn.ForeColor = Color.FromArgb(63, 52, 76);
-                    BackColorpanel.BackColor = Color.FromArgb(210, 175, 255);
+                    panelLogin.BackColor = Color.FromArgb(232, 215, 255);
                 }
             }
         }
@@ -62,8 +59,8 @@ namespace BankManagementSystem
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            this.panel_childform.Controls.Add(childForm);
-            this.panel_childform.Tag = childForm;
+            this.panel_childForm.Controls.Add(childForm);
+            this.panel_childForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
 
@@ -80,7 +77,6 @@ namespace BankManagementSystem
                 this.WindowState = FormWindowState.Maximized;
             else
                 this.WindowState = FormWindowState.Normal;
-
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e)
@@ -90,27 +86,19 @@ namespace BankManagementSystem
             this.WindowState |= FormWindowState.Minimized;
         }
 
-        private void btn_İlgilenilenMüşteri_Click(object sender, EventArgs e)
+        private void btn_LoginCustomer_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Account_CusRepresentative.İlgilenilenMüşteriler(),sender);
+            OpenChildForm(new Forms.Login.Login_Customer(), sender);
         }
 
-        private void btn_YeniMüşteri_Click(object sender, EventArgs e)
+        private void btn_CusRepresentative_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Account_CusRepresentative.YeniMüşteri(), sender);
+            OpenChildForm(new Forms.Login.Login_CusRepresentative(), sender);
         }
 
-        private void btn_AnaSayfa_Click(object sender, EventArgs e)
+        private void btn_BankManager_Click(object sender, EventArgs e)
         {
-            if (activeForm != null)
-                activeForm.Close();
-            Reset();
-        }
-        private void Reset()
-        {
-            DisableButton();
-            currentButton = null;
-            btn_AnaSayfa.Visible = false;
+            OpenChildForm(new Forms.Login.Login_BankManager(), sender);
         }
     }
 }

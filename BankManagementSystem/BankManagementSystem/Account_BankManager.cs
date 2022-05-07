@@ -12,7 +12,8 @@ namespace BankManagementSystem
 {
 
     public partial class Account_BankManager : Form
-    {   //Fields
+    {   
+        //Fields
         private Button currentButton;
         private Form activeForm;
         public Account_BankManager()
