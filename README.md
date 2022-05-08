@@ -1,2 +1,4 @@
 # BankManagementSystem
- C# Form application
+ C# Form application with PostgreSQL
+
+
