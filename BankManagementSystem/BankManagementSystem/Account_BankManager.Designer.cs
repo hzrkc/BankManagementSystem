@@ -35,15 +35,14 @@
             this.btn_BankYönetimi = new System.Windows.Forms.Button();
             this.BackColorpanel = new System.Windows.Forms.Panel();
             this.panel_childform = new System.Windows.Forms.Panel();
+            this.KullanıcıAdSoyad = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_AnaSayfa = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Minimize = new System.Windows.Forms.Button();
-            this.btn_Maximize = new System.Windows.Forms.Button();
             this.btn_CloseWindow = new System.Windows.Forms.Button();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.KullanıcıAdSoyad = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.panelMenu.SuspendLayout();
             this.BackColorpanel.SuspendLayout();
             this.panel_childform.SuspendLayout();
@@ -136,6 +135,38 @@
             this.panel_childform.Size = new System.Drawing.Size(936, 411);
             this.panel_childform.TabIndex = 0;
             // 
+            // KullanıcıAdSoyad
+            // 
+            this.KullanıcıAdSoyad.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KullanıcıAdSoyad.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.KullanıcıAdSoyad.Appearance.Options.UseFont = true;
+            this.KullanıcıAdSoyad.Appearance.Options.UseForeColor = true;
+            this.KullanıcıAdSoyad.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.KullanıcıAdSoyad.Cursor = System.Windows.Forms.Cursors.Default;
+            this.KullanıcıAdSoyad.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.KullanıcıAdSoyad.Location = new System.Drawing.Point(406, 136);
+            this.KullanıcıAdSoyad.Margin = new System.Windows.Forms.Padding(8);
+            this.KullanıcıAdSoyad.Name = "KullanıcıAdSoyad";
+            this.KullanıcıAdSoyad.Size = new System.Drawing.Size(105, 32);
+            this.KullanıcıAdSoyad.TabIndex = 16;
+            this.KullanıcıAdSoyad.Text = "Null Null";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
+            this.labelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.labelControl2.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.labelControl2.Location = new System.Drawing.Point(406, 84);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(6);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(100, 30);
+            this.labelControl2.TabIndex = 15;
+            this.labelControl2.Text = "İyi günler";
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btn_AnaSayfa);
@@ -166,11 +197,10 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.Controls.Add(this.btn_Minimize);
-            this.panel2.Controls.Add(this.btn_Maximize);
             this.panel2.Controls.Add(this.btn_CloseWindow);
-            this.panel2.Location = new System.Drawing.Point(865, 12);
+            this.panel2.Location = new System.Drawing.Point(892, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(83, 24);
+            this.panel2.Size = new System.Drawing.Size(56, 24);
             this.panel2.TabIndex = 3;
             // 
             // btn_Minimize
@@ -183,27 +213,11 @@
             this.btn_Minimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
             this.btn_Minimize.Location = new System.Drawing.Point(0, 0);
             this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(27, 24);
+            this.btn_Minimize.Size = new System.Drawing.Size(28, 24);
             this.btn_Minimize.TabIndex = 2;
             this.btn_Minimize.Text = "O";
             this.btn_Minimize.UseVisualStyleBackColor = true;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
-            // 
-            // btn_Maximize
-            // 
-            this.btn_Maximize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_Maximize.FlatAppearance.BorderSize = 0;
-            this.btn_Maximize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.btn_Maximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Maximize.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Maximize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_Maximize.Location = new System.Drawing.Point(27, 0);
-            this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.Size = new System.Drawing.Size(28, 24);
-            this.btn_Maximize.TabIndex = 1;
-            this.btn_Maximize.Text = "O";
-            this.btn_Maximize.UseVisualStyleBackColor = true;
-            this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
             // 
             // btn_CloseWindow
             // 
@@ -213,7 +227,7 @@
             this.btn_CloseWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CloseWindow.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CloseWindow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_CloseWindow.Location = new System.Drawing.Point(55, 0);
+            this.btn_CloseWindow.Location = new System.Drawing.Point(28, 0);
             this.btn_CloseWindow.Name = "btn_CloseWindow";
             this.btn_CloseWindow.Size = new System.Drawing.Size(28, 24);
             this.btn_CloseWindow.TabIndex = 0;
@@ -231,44 +245,12 @@
             this.labelControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelControl1.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.labelControl1.Location = new System.Drawing.Point(499, 14);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(8);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(154, 23);
             this.labelControl1.TabIndex = 14;
             this.labelControl1.Text = "Banka Müdürü Girişi";
             this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
-            // 
-            // KullanıcıAdSoyad
-            // 
-            this.KullanıcıAdSoyad.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KullanıcıAdSoyad.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.KullanıcıAdSoyad.Appearance.Options.UseFont = true;
-            this.KullanıcıAdSoyad.Appearance.Options.UseForeColor = true;
-            this.KullanıcıAdSoyad.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.KullanıcıAdSoyad.Cursor = System.Windows.Forms.Cursors.Default;
-            this.KullanıcıAdSoyad.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.KullanıcıAdSoyad.Location = new System.Drawing.Point(406, 136);
-            this.KullanıcıAdSoyad.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.KullanıcıAdSoyad.Name = "KullanıcıAdSoyad";
-            this.KullanıcıAdSoyad.Size = new System.Drawing.Size(105, 32);
-            this.KullanıcıAdSoyad.TabIndex = 16;
-            this.KullanıcıAdSoyad.Text = "Null Null";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.labelControl2.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.labelControl2.Location = new System.Drawing.Point(406, 84);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(100, 30);
-            this.labelControl2.TabIndex = 15;
-            this.labelControl2.Text = "İyi günler";
             // 
             // Account_BankManager
             // 
@@ -308,7 +290,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_CloseWindow;
         private System.Windows.Forms.Button btn_Minimize;
-        private System.Windows.Forms.Button btn_Maximize;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl KullanıcıAdSoyad;
         private DevExpress.XtraEditors.LabelControl labelControl2;

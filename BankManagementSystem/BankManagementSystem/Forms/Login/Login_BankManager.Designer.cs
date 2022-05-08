@@ -30,12 +30,12 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.btn_PersonelYönetimi = new System.Windows.Forms.Button();
+            this.btn_Giriş = new System.Windows.Forms.Button();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -55,7 +55,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.panel2.Controls.Add(this.btn_PersonelYönetimi);
+            this.panel2.Controls.Add(this.btn_Giriş);
             this.panel2.Controls.Add(this.labelControl4);
             this.panel2.Controls.Add(this.textEdit4);
             this.panel2.Controls.Add(this.labelControl3);
@@ -66,31 +66,20 @@
             this.panel2.Size = new System.Drawing.Size(328, 268);
             this.panel2.TabIndex = 0;
             // 
-            // labelControl1
+            // btn_Giriş
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft JhengHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl1.Location = new System.Drawing.Point(0, 0);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(124, 17);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "Banka Müdürü Girişi";
-            // 
-            // btn_PersonelYönetimi
-            // 
-            this.btn_PersonelYönetimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_PersonelYönetimi.FlatAppearance.BorderSize = 0;
-            this.btn_PersonelYönetimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.btn_PersonelYönetimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PersonelYönetimi.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_PersonelYönetimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_PersonelYönetimi.Location = new System.Drawing.Point(86, 168);
-            this.btn_PersonelYönetimi.Name = "btn_PersonelYönetimi";
-            this.btn_PersonelYönetimi.Size = new System.Drawing.Size(152, 45);
-            this.btn_PersonelYönetimi.TabIndex = 15;
-            this.btn_PersonelYönetimi.Text = "GİRİŞ";
-            this.btn_PersonelYönetimi.UseVisualStyleBackColor = false;
+            this.btn_Giriş.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_Giriş.FlatAppearance.BorderSize = 0;
+            this.btn_Giriş.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.btn_Giriş.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Giriş.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Giriş.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.btn_Giriş.Location = new System.Drawing.Point(86, 168);
+            this.btn_Giriş.Name = "btn_Giriş";
+            this.btn_Giriş.Size = new System.Drawing.Size(152, 45);
+            this.btn_Giriş.TabIndex = 15;
+            this.btn_Giriş.Text = "GİRİŞ";
+            this.btn_Giriş.UseVisualStyleBackColor = false;
             // 
             // labelControl4
             // 
@@ -150,8 +139,20 @@
             this.textEdit3.Size = new System.Drawing.Size(152, 26);
             this.textEdit3.TabIndex = 11;
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft JhengHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelControl1.Location = new System.Drawing.Point(0, 0);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(124, 17);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "Banka Müdürü Girişi";
+            // 
             // Login_BankManager
             // 
+            this.AcceptButton = this.btn_Giriş;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 398);
@@ -173,7 +174,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private System.Windows.Forms.Button btn_PersonelYönetimi;
+        private System.Windows.Forms.Button btn_Giriş;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.TextEdit textEdit4;
         private DevExpress.XtraEditors.LabelControl labelControl3;

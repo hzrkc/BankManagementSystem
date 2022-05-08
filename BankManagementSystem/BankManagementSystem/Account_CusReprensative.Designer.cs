@@ -32,40 +32,39 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Account_CusReprensative));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.btn_Minimize = new System.Windows.Forms.Button();
-            this.btn_Maximize = new System.Windows.Forms.Button();
             this.btn_CloseWindow = new System.Windows.Forms.Button();
+            this.btn_AnaSayfa = new DevExpress.XtraEditors.SimpleButton();
             this.BackColorpanel = new System.Windows.Forms.Panel();
             this.panel_childform = new System.Windows.Forms.Panel();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.btn_YeniMüşteri = new System.Windows.Forms.Button();
-            this.btn_İlgilenilenMüşteri = new System.Windows.Forms.Button();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.KullanıcıAdSoyad = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.MüşteriKayıtFormu = new System.Windows.Forms.GroupBox();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_PersonelYönetimi = new System.Windows.Forms.Button();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.btn_AnaSayfa = new DevExpress.XtraEditors.SimpleButton();
             this.KayıtlıMüşteriler = new System.Windows.Forms.GroupBox();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MüşteriKayıtFormu = new System.Windows.Forms.GroupBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_PersonelYönetimi = new System.Windows.Forms.Button();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.KullanıcıAdSoyad = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.btn_YeniMüşteri = new System.Windows.Forms.Button();
+            this.btn_İlgilenilenMüşteri = new System.Windows.Forms.Button();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.BackColorpanel.SuspendLayout();
             this.panel_childform.SuspendLayout();
-            this.panelMenu.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.MüşteriKayıtFormu.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.KayıtlıMüşteriler.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.MüşteriKayıtFormu.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,13 +87,29 @@
             this.panel3.AutoSize = true;
             this.panel3.Controls.Add(this.labelControl2);
             this.panel3.Controls.Add(this.btn_Minimize);
-            this.panel3.Controls.Add(this.btn_Maximize);
             this.panel3.Controls.Add(this.btn_CloseWindow);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(960, 23);
             this.panel3.TabIndex = 17;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
+            this.labelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelControl2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelControl2.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.labelControl2.Location = new System.Drawing.Point(0, 0);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(6);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(174, 23);
+            this.labelControl2.TabIndex = 19;
+            this.labelControl2.Text = "Müşteri Temsilcisi Girişi";
             // 
             // btn_Minimize
             // 
@@ -104,29 +119,13 @@
             this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Minimize.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Minimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_Minimize.Location = new System.Drawing.Point(872, 0);
+            this.btn_Minimize.Location = new System.Drawing.Point(900, 0);
             this.btn_Minimize.Name = "btn_Minimize";
             this.btn_Minimize.Size = new System.Drawing.Size(32, 23);
             this.btn_Minimize.TabIndex = 2;
             this.btn_Minimize.Text = "O";
             this.btn_Minimize.UseVisualStyleBackColor = true;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
-            // 
-            // btn_Maximize
-            // 
-            this.btn_Maximize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_Maximize.FlatAppearance.BorderSize = 0;
-            this.btn_Maximize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.btn_Maximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Maximize.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Maximize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_Maximize.Location = new System.Drawing.Point(904, 0);
-            this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.Size = new System.Drawing.Size(28, 23);
-            this.btn_Maximize.TabIndex = 1;
-            this.btn_Maximize.Text = "O";
-            this.btn_Maximize.UseVisualStyleBackColor = true;
-            this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
             // 
             // btn_CloseWindow
             // 
@@ -143,6 +142,40 @@
             this.btn_CloseWindow.Text = "O";
             this.btn_CloseWindow.UseVisualStyleBackColor = true;
             this.btn_CloseWindow.Click += new System.EventHandler(this.btn_CloseWindow_Click);
+            // 
+            // btn_AnaSayfa
+            // 
+            this.btn_AnaSayfa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_AnaSayfa.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_AnaSayfa.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_AnaSayfa.Appearance.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AnaSayfa.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.btn_AnaSayfa.Appearance.Options.UseBackColor = true;
+            this.btn_AnaSayfa.Appearance.Options.UseBorderColor = true;
+            this.btn_AnaSayfa.Appearance.Options.UseFont = true;
+            this.btn_AnaSayfa.Appearance.Options.UseForeColor = true;
+            this.btn_AnaSayfa.AppearanceDisabled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_AnaSayfa.AppearanceDisabled.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_AnaSayfa.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_AnaSayfa.AppearanceDisabled.Options.UseBackColor = true;
+            this.btn_AnaSayfa.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btn_AnaSayfa.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_AnaSayfa.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_AnaSayfa.AppearanceHovered.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_AnaSayfa.AppearanceHovered.Options.UseBackColor = true;
+            this.btn_AnaSayfa.AppearanceHovered.Options.UseBorderColor = true;
+            this.btn_AnaSayfa.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_AnaSayfa.AppearancePressed.Options.UseBackColor = true;
+            this.btn_AnaSayfa.AutoSize = true;
+            this.btn_AnaSayfa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_AnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_AnaSayfa.ImageOptions.Image")));
+            this.btn_AnaSayfa.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.btn_AnaSayfa.Location = new System.Drawing.Point(12, 42);
+            this.btn_AnaSayfa.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_AnaSayfa.Name = "btn_AnaSayfa";
+            this.btn_AnaSayfa.Size = new System.Drawing.Size(38, 36);
+            this.btn_AnaSayfa.TabIndex = 15;
+            this.btn_AnaSayfa.Click += new System.EventHandler(this.btn_AnaSayfa_Click);
             // 
             // BackColorpanel
             // 
@@ -162,6 +195,174 @@
             this.panel_childform.Name = "panel_childform";
             this.panel_childform.Size = new System.Drawing.Size(936, 390);
             this.panel_childform.TabIndex = 0;
+            // 
+            // KayıtlıMüşteriler
+            // 
+            this.KayıtlıMüşteriler.Controls.Add(this.labelControl6);
+            this.KayıtlıMüşteriler.Controls.Add(this.dataGridView1);
+            this.KayıtlıMüşteriler.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.KayıtlıMüşteriler.Location = new System.Drawing.Point(360, 103);
+            this.KayıtlıMüşteriler.Name = "KayıtlıMüşteriler";
+            this.KayıtlıMüşteriler.Size = new System.Drawing.Size(550, 237);
+            this.KayıtlıMüşteriler.TabIndex = 19;
+            this.KayıtlıMüşteriler.TabStop = false;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Appearance.Options.UseForeColor = true;
+            this.labelControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelControl6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelControl6.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.labelControl6.Location = new System.Drawing.Point(3, 18);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(10);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(340, 30);
+            this.labelControl6.TabIndex = 13;
+            this.labelControl6.Text = "                        Müşteri Bilgileri";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(11, 78);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(533, 136);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // MüşteriKayıtFormu
+            // 
+            this.MüşteriKayıtFormu.Controls.Add(this.panel4);
+            this.MüşteriKayıtFormu.Controls.Add(this.labelControl1);
+            this.MüşteriKayıtFormu.Location = new System.Drawing.Point(23, 103);
+            this.MüşteriKayıtFormu.Name = "MüşteriKayıtFormu";
+            this.MüşteriKayıtFormu.Size = new System.Drawing.Size(318, 237);
+            this.MüşteriKayıtFormu.TabIndex = 18;
+            this.MüşteriKayıtFormu.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.panel4.Controls.Add(this.btn_PersonelYönetimi);
+            this.panel4.Controls.Add(this.labelControl3);
+            this.panel4.Controls.Add(this.textEdit3);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(3, 78);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(312, 136);
+            this.panel4.TabIndex = 13;
+            // 
+            // btn_PersonelYönetimi
+            // 
+            this.btn_PersonelYönetimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.btn_PersonelYönetimi.FlatAppearance.BorderSize = 0;
+            this.btn_PersonelYönetimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.btn_PersonelYönetimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_PersonelYönetimi.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PersonelYönetimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.btn_PersonelYönetimi.Location = new System.Drawing.Point(107, 74);
+            this.btn_PersonelYönetimi.Name = "btn_PersonelYönetimi";
+            this.btn_PersonelYönetimi.Size = new System.Drawing.Size(152, 45);
+            this.btn_PersonelYönetimi.TabIndex = 10;
+            this.btn_PersonelYönetimi.Text = "SORGULA";
+            this.btn_PersonelYönetimi.UseVisualStyleBackColor = false;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelControl3.Location = new System.Drawing.Point(39, 31);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(50, 20);
+            this.labelControl3.TabIndex = 6;
+            this.labelControl3.Text = "TC no :";
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Location = new System.Drawing.Point(96, 28);
+            this.textEdit3.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit3.Properties.Appearance.Options.UseFont = true;
+            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.textEdit3.Properties.NullText = "Giriniz...";
+            this.textEdit3.Size = new System.Drawing.Size(190, 26);
+            this.textEdit3.TabIndex = 5;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelControl1.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.labelControl1.Location = new System.Drawing.Point(3, 18);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(8);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(253, 60);
+            this.labelControl1.TabIndex = 12;
+            this.labelControl1.Text = "      Müşteri Sorgulama      \r\n  ";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.KullanıcıAdSoyad);
+            this.panel2.Controls.Add(this.labelControl5);
+            this.panel2.Location = new System.Drawing.Point(0, 17);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(936, 45);
+            this.panel2.TabIndex = 17;
+            // 
+            // KullanıcıAdSoyad
+            // 
+            this.KullanıcıAdSoyad.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KullanıcıAdSoyad.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.KullanıcıAdSoyad.Appearance.Options.UseFont = true;
+            this.KullanıcıAdSoyad.Appearance.Options.UseForeColor = true;
+            this.KullanıcıAdSoyad.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.KullanıcıAdSoyad.Cursor = System.Windows.Forms.Cursors.Default;
+            this.KullanıcıAdSoyad.Dock = System.Windows.Forms.DockStyle.Left;
+            this.KullanıcıAdSoyad.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.KullanıcıAdSoyad.Location = new System.Drawing.Point(159, 0);
+            this.KullanıcıAdSoyad.Margin = new System.Windows.Forms.Padding(10);
+            this.KullanıcıAdSoyad.Name = "KullanıcıAdSoyad";
+            this.KullanıcıAdSoyad.Size = new System.Drawing.Size(120, 32);
+            this.KullanıcıAdSoyad.TabIndex = 17;
+            this.KullanıcıAdSoyad.Text = "Null Null !";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.labelControl5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.labelControl5.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.labelControl5.Location = new System.Drawing.Point(0, 0);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(6);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(159, 32);
+            this.labelControl5.TabIndex = 15;
+            this.labelControl5.Text = "   İyi günler,   ";
             // 
             // panelMenu
             // 
@@ -211,225 +412,6 @@
             this.btn_İlgilenilenMüşteri.UseVisualStyleBackColor = false;
             this.btn_İlgilenilenMüşteri.Click += new System.EventHandler(this.btn_İlgilenilenMüşteri_Click);
             // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.labelControl5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelControl5.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.labelControl5.Location = new System.Drawing.Point(0, 0);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(159, 32);
-            this.labelControl5.TabIndex = 15;
-            this.labelControl5.Text = "   İyi günler,   ";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.panel2.Controls.Add(this.KullanıcıAdSoyad);
-            this.panel2.Controls.Add(this.labelControl5);
-            this.panel2.Location = new System.Drawing.Point(0, 17);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(936, 45);
-            this.panel2.TabIndex = 17;
-            // 
-            // KullanıcıAdSoyad
-            // 
-            this.KullanıcıAdSoyad.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KullanıcıAdSoyad.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.KullanıcıAdSoyad.Appearance.Options.UseFont = true;
-            this.KullanıcıAdSoyad.Appearance.Options.UseForeColor = true;
-            this.KullanıcıAdSoyad.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.KullanıcıAdSoyad.Cursor = System.Windows.Forms.Cursors.Default;
-            this.KullanıcıAdSoyad.Dock = System.Windows.Forms.DockStyle.Left;
-            this.KullanıcıAdSoyad.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.KullanıcıAdSoyad.Location = new System.Drawing.Point(159, 0);
-            this.KullanıcıAdSoyad.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
-            this.KullanıcıAdSoyad.Name = "KullanıcıAdSoyad";
-            this.KullanıcıAdSoyad.Size = new System.Drawing.Size(120, 32);
-            this.KullanıcıAdSoyad.TabIndex = 17;
-            this.KullanıcıAdSoyad.Text = "Null Null !";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl2.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.labelControl2.Location = new System.Drawing.Point(0, 0);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(174, 23);
-            this.labelControl2.TabIndex = 19;
-            this.labelControl2.Text = "Müşteri Temsilcisi Girişi";
-            // 
-            // MüşteriKayıtFormu
-            // 
-            this.MüşteriKayıtFormu.Controls.Add(this.panel4);
-            this.MüşteriKayıtFormu.Controls.Add(this.labelControl1);
-            this.MüşteriKayıtFormu.Location = new System.Drawing.Point(23, 103);
-            this.MüşteriKayıtFormu.Name = "MüşteriKayıtFormu";
-            this.MüşteriKayıtFormu.Size = new System.Drawing.Size(318, 237);
-            this.MüşteriKayıtFormu.TabIndex = 18;
-            this.MüşteriKayıtFormu.TabStop = false;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl1.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.labelControl1.Location = new System.Drawing.Point(3, 18);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(8);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(253, 60);
-            this.labelControl1.TabIndex = 12;
-            this.labelControl1.Text = "      Müşteri Sorgulama      \r\n  ";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.panel4.Controls.Add(this.btn_PersonelYönetimi);
-            this.panel4.Controls.Add(this.labelControl3);
-            this.panel4.Controls.Add(this.textEdit3);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(3, 78);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(312, 136);
-            this.panel4.TabIndex = 13;
-            // 
-            // btn_PersonelYönetimi
-            // 
-            this.btn_PersonelYönetimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.btn_PersonelYönetimi.FlatAppearance.BorderSize = 0;
-            this.btn_PersonelYönetimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.btn_PersonelYönetimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PersonelYönetimi.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_PersonelYönetimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_PersonelYönetimi.Location = new System.Drawing.Point(107, 74);
-            this.btn_PersonelYönetimi.Name = "btn_PersonelYönetimi";
-            this.btn_PersonelYönetimi.Size = new System.Drawing.Size(152, 45);
-            this.btn_PersonelYönetimi.TabIndex = 10;
-            this.btn_PersonelYönetimi.Text = "SORGULA";
-            this.btn_PersonelYönetimi.UseVisualStyleBackColor = false;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelControl3.Location = new System.Drawing.Point(39, 31);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(50, 20);
-            this.labelControl3.TabIndex = 6;
-            this.labelControl3.Text = "TC no :";
-            // 
-            // btn_AnaSayfa
-            // 
-            this.btn_AnaSayfa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_AnaSayfa.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_AnaSayfa.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_AnaSayfa.Appearance.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AnaSayfa.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_AnaSayfa.Appearance.Options.UseBackColor = true;
-            this.btn_AnaSayfa.Appearance.Options.UseBorderColor = true;
-            this.btn_AnaSayfa.Appearance.Options.UseFont = true;
-            this.btn_AnaSayfa.Appearance.Options.UseForeColor = true;
-            this.btn_AnaSayfa.AppearanceDisabled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_AnaSayfa.AppearanceDisabled.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_AnaSayfa.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_AnaSayfa.AppearanceDisabled.Options.UseBackColor = true;
-            this.btn_AnaSayfa.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btn_AnaSayfa.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_AnaSayfa.AppearanceHovered.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_AnaSayfa.AppearanceHovered.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_AnaSayfa.AppearanceHovered.Options.UseBackColor = true;
-            this.btn_AnaSayfa.AppearanceHovered.Options.UseBorderColor = true;
-            this.btn_AnaSayfa.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_AnaSayfa.AppearancePressed.Options.UseBackColor = true;
-            this.btn_AnaSayfa.AutoSize = true;
-            this.btn_AnaSayfa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_AnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_AnaSayfa.ImageOptions.Image")));
-            this.btn_AnaSayfa.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.btn_AnaSayfa.Location = new System.Drawing.Point(12, 42);
-            this.btn_AnaSayfa.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btn_AnaSayfa.Name = "btn_AnaSayfa";
-            this.btn_AnaSayfa.Size = new System.Drawing.Size(38, 36);
-            this.btn_AnaSayfa.TabIndex = 15;
-            this.btn_AnaSayfa.Click += new System.EventHandler(this.btn_AnaSayfa_Click);
-            // 
-            // KayıtlıMüşteriler
-            // 
-            this.KayıtlıMüşteriler.Controls.Add(this.labelControl6);
-            this.KayıtlıMüşteriler.Controls.Add(this.dataGridView1);
-            this.KayıtlıMüşteriler.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.KayıtlıMüşteriler.Location = new System.Drawing.Point(360, 103);
-            this.KayıtlıMüşteriler.Name = "KayıtlıMüşteriler";
-            this.KayıtlıMüşteriler.Size = new System.Drawing.Size(550, 237);
-            this.KayıtlıMüşteriler.TabIndex = 19;
-            this.KayıtlıMüşteriler.TabStop = false;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Appearance.Options.UseForeColor = true;
-            this.labelControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelControl6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl6.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.labelControl6.Location = new System.Drawing.Point(3, 18);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(10);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(340, 30);
-            this.labelControl6.TabIndex = 13;
-            this.labelControl6.Text = "                        Müşteri Bilgileri";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(533, 136);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.Location = new System.Drawing.Point(96, 28);
-            this.textEdit3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.textEdit3.Properties.NullText = "Giriniz...";
-            this.textEdit3.Size = new System.Drawing.Size(190, 26);
-            this.textEdit3.TabIndex = 5;
-            // 
             // Account_CusReprensative
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -445,18 +427,18 @@
             this.panel3.PerformLayout();
             this.BackColorpanel.ResumeLayout(false);
             this.panel_childform.ResumeLayout(false);
-            this.panelMenu.ResumeLayout(false);
-            this.panelMenu.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.KayıtlıMüşteriler.ResumeLayout(false);
+            this.KayıtlıMüşteriler.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.MüşteriKayıtFormu.ResumeLayout(false);
             this.MüşteriKayıtFormu.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.KayıtlıMüşteriler.ResumeLayout(false);
-            this.KayıtlıMüşteriler.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -471,7 +453,6 @@
         private System.Windows.Forms.Button btn_İlgilenilenMüşteri;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_Minimize;
-        private System.Windows.Forms.Button btn_Maximize;
         private System.Windows.Forms.Button btn_CloseWindow;
         private System.Windows.Forms.Panel BackColorpanel;
         private System.Windows.Forms.Panel panel_childform;

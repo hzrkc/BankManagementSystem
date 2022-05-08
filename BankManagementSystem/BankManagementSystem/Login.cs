@@ -44,7 +44,7 @@ namespace BankManagementSystem
                 {
                     previousBtn.BackColor = Color.FromArgb(210, 175, 255);
                     previousBtn.ForeColor = Color.FromArgb(63, 52, 76);
-                    panelLogin.BackColor = Color.FromArgb(232, 215, 255);
+                    panelLogin.BackColor = Color.FromArgb(214, 183, 255);
                 }
             }
         }
@@ -71,14 +71,6 @@ namespace BankManagementSystem
             Application.Exit();
         }
 
-        private void btn_Maximize_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-                this.WindowState = FormWindowState.Maximized;
-            else
-                this.WindowState = FormWindowState.Normal;
-        }
-
         private void btn_Minimize_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Maximized)
@@ -99,6 +91,18 @@ namespace BankManagementSystem
         private void btn_BankManager_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.Login.Login_BankManager(), sender);
+        }
+
+        private void AnaSayfa_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            Reset();
+        }
+        private void Reset()
+        {
+            DisableButton();
+            currentButton = null;
         }
     }
 }
