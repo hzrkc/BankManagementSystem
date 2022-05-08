@@ -1,2 +1,2 @@
 # BankManagementSystem
- C# Form application, with DevExpress 
+ C# Form application
