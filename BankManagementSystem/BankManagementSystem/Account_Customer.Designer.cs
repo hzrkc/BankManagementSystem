@@ -35,6 +35,9 @@
             this.btn_Maximize = new System.Windows.Forms.Button();
             this.btn_CloseWindow = new System.Windows.Forms.Button();
             this.panelMüşteriGrişi = new System.Windows.Forms.Panel();
+            this.panelBack = new System.Windows.Forms.Panel();
+            this.panel_childform = new System.Windows.Forms.Panel();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.btn_AnaSayfa = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelMenu = new System.Windows.Forms.Panel();
@@ -44,15 +47,13 @@
             this.btn_Transfer = new System.Windows.Forms.Button();
             this.btn_HesapBilgileri = new System.Windows.Forms.Button();
             this.btn_AylıkÖzet = new System.Windows.Forms.Button();
-            this.panel_childform = new System.Windows.Forms.Panel();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.panelBack = new System.Windows.Forms.Panel();
+            this.KullanıcıAdSoyad = new DevExpress.XtraEditors.LabelControl();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelMüşteriGrişi.SuspendLayout();
-            this.panelMenu.SuspendLayout();
-            this.panel_childform.SuspendLayout();
             this.panelBack.SuspendLayout();
+            this.panel_childform.SuspendLayout();
+            this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -141,6 +142,42 @@
             this.panelMüşteriGrişi.Size = new System.Drawing.Size(960, 540);
             this.panelMüşteriGrişi.TabIndex = 0;
             // 
+            // panelBack
+            // 
+            this.panelBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(183)))), ((int)(((byte)(255)))));
+            this.panelBack.Controls.Add(this.panel_childform);
+            this.panelBack.Location = new System.Drawing.Point(198, 42);
+            this.panelBack.Name = "panelBack";
+            this.panelBack.Size = new System.Drawing.Size(759, 495);
+            this.panelBack.TabIndex = 20;
+            // 
+            // panel_childform
+            // 
+            this.panel_childform.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel_childform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.panel_childform.Controls.Add(this.KullanıcıAdSoyad);
+            this.panel_childform.Controls.Add(this.labelControl5);
+            this.panel_childform.Location = new System.Drawing.Point(9, 15);
+            this.panel_childform.Name = "panel_childform";
+            this.panel_childform.Size = new System.Drawing.Size(741, 471);
+            this.panel_childform.TabIndex = 0;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.labelControl5.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.labelControl5.Location = new System.Drawing.Point(305, 53);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(5);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(100, 30);
+            this.labelControl5.TabIndex = 13;
+            this.labelControl5.Text = "İyi günler";
+            // 
             // btn_AnaSayfa
             // 
             this.btn_AnaSayfa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
@@ -150,7 +187,7 @@
             this.btn_AnaSayfa.Appearance.Options.UseFont = true;
             this.btn_AnaSayfa.Appearance.Options.UseForeColor = true;
             this.btn_AnaSayfa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_AnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btn_AnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_AnaSayfa.ImageOptions.Image")));
             this.btn_AnaSayfa.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btn_AnaSayfa.Location = new System.Drawing.Point(151, 94);
             this.btn_AnaSayfa.Margin = new System.Windows.Forms.Padding(5);
@@ -299,40 +336,21 @@
             this.btn_AylıkÖzet.UseVisualStyleBackColor = false;
             this.btn_AylıkÖzet.Click += new System.EventHandler(this.btn_AylıkÖzet_Click);
             // 
-            // panel_childform
+            // KullanıcıAdSoyad
             // 
-            this.panel_childform.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel_childform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.panel_childform.Controls.Add(this.labelControl5);
-            this.panel_childform.Location = new System.Drawing.Point(9, 15);
-            this.panel_childform.Name = "panel_childform";
-            this.panel_childform.Size = new System.Drawing.Size(741, 471);
-            this.panel_childform.TabIndex = 0;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.labelControl5.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.labelControl5.Location = new System.Drawing.Point(290, 5);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(5);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(117, 27);
-            this.labelControl5.TabIndex = 13;
-            this.labelControl5.Text = "Hoşgeldiniz!";
-            // 
-            // panelBack
-            // 
-            this.panelBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(183)))), ((int)(((byte)(255)))));
-            this.panelBack.Controls.Add(this.panel_childform);
-            this.panelBack.Location = new System.Drawing.Point(198, 42);
-            this.panelBack.Name = "panelBack";
-            this.panelBack.Size = new System.Drawing.Size(759, 495);
-            this.panelBack.TabIndex = 20;
+            this.KullanıcıAdSoyad.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KullanıcıAdSoyad.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.KullanıcıAdSoyad.Appearance.Options.UseFont = true;
+            this.KullanıcıAdSoyad.Appearance.Options.UseForeColor = true;
+            this.KullanıcıAdSoyad.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.KullanıcıAdSoyad.Cursor = System.Windows.Forms.Cursors.Default;
+            this.KullanıcıAdSoyad.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.KullanıcıAdSoyad.Location = new System.Drawing.Point(305, 94);
+            this.KullanıcıAdSoyad.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.KullanıcıAdSoyad.Name = "KullanıcıAdSoyad";
+            this.KullanıcıAdSoyad.Size = new System.Drawing.Size(105, 32);
+            this.KullanıcıAdSoyad.TabIndex = 14;
+            this.KullanıcıAdSoyad.Text = "Null Null";
             // 
             // Account_Customer
             // 
@@ -348,10 +366,10 @@
             this.panel3.ResumeLayout(false);
             this.panelMüşteriGrişi.ResumeLayout(false);
             this.panelMüşteriGrişi.PerformLayout();
-            this.panelMenu.ResumeLayout(false);
+            this.panelBack.ResumeLayout(false);
             this.panel_childform.ResumeLayout(false);
             this.panel_childform.PerformLayout();
-            this.panelBack.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -376,5 +394,6 @@
         private System.Windows.Forms.Panel panel_childform;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private System.Windows.Forms.Button btn_AylıkÖzet;
+        private DevExpress.XtraEditors.LabelControl KullanıcıAdSoyad;
     }
 }

@@ -40,6 +40,8 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.MüşteriKayıtFormu = new System.Windows.Forms.GroupBox();
+            this.KayıtlıMüşteriler = new System.Windows.Forms.GroupBox();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.panel1.SuspendLayout();
@@ -47,6 +49,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.MüşteriKayıtFormu.SuspendLayout();
+            this.KayıtlıMüşteriler.SuspendLayout();
             this.SuspendLayout();
             // 
             // textEdit1
@@ -76,7 +80,7 @@
             this.panel1.Controls.Add(this.textEdit2);
             this.panel1.Controls.Add(this.labelControl1);
             this.panel1.Controls.Add(this.textEdit1);
-            this.panel1.Location = new System.Drawing.Point(47, 60);
+            this.panel1.Location = new System.Drawing.Point(10, 56);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(291, 235);
             this.panel1.TabIndex = 2;
@@ -202,7 +206,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(378, 60);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 54);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -211,35 +215,58 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
             this.labelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelControl5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl5.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.labelControl5.Location = new System.Drawing.Point(94, 26);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl5.Location = new System.Drawing.Point(3, 18);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(194, 27);
+            this.labelControl5.Size = new System.Drawing.Size(309, 30);
             this.labelControl5.TabIndex = 12;
-            this.labelControl5.Text = "Müşteri Kayıt Formu";
+            this.labelControl5.Text = "      Müşteri Kayıt Formu      ";
+            // 
+            // MüşteriKayıtFormu
+            // 
+            this.MüşteriKayıtFormu.Controls.Add(this.labelControl5);
+            this.MüşteriKayıtFormu.Controls.Add(this.panel1);
+            this.MüşteriKayıtFormu.Location = new System.Drawing.Point(17, 24);
+            this.MüşteriKayıtFormu.Name = "MüşteriKayıtFormu";
+            this.MüşteriKayıtFormu.Size = new System.Drawing.Size(318, 322);
+            this.MüşteriKayıtFormu.TabIndex = 14;
+            this.MüşteriKayıtFormu.TabStop = false;
+            // 
+            // KayıtlıMüşteriler
+            // 
+            this.KayıtlıMüşteriler.Controls.Add(this.labelControl6);
+            this.KayıtlıMüşteriler.Controls.Add(this.dataGridView1);
+            this.KayıtlıMüşteriler.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.KayıtlıMüşteriler.Location = new System.Drawing.Point(345, 15);
+            this.KayıtlıMüşteriler.Name = "KayıtlıMüşteriler";
+            this.KayıtlıMüşteriler.Size = new System.Drawing.Size(545, 337);
+            this.KayıtlıMüşteriler.TabIndex = 15;
+            this.KayıtlıMüşteriler.TabStop = false;
             // 
             // labelControl6
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelControl6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelControl6.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl6.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.labelControl6.Location = new System.Drawing.Point(578, 26);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl6.Location = new System.Drawing.Point(3, 18);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(159, 27);
+            this.labelControl6.Size = new System.Drawing.Size(396, 30);
             this.labelControl6.TabIndex = 13;
-            this.labelControl6.Text = "Kayıtlı Müşteriler";
+            this.labelControl6.Text = "                        Kayıtlı Müşteriler      ";
             // 
             // Müşteriİşlemleri
             // 
@@ -247,10 +274,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(918, 364);
-            this.Controls.Add(this.labelControl6);
-            this.Controls.Add(this.labelControl5);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.KayıtlıMüşteriler);
+            this.Controls.Add(this.MüşteriKayıtFormu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Müşteriİşlemleri";
             this.Text = "Müşteriİşlemleri";
@@ -261,8 +286,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.MüşteriKayıtFormu.ResumeLayout(false);
+            this.MüşteriKayıtFormu.PerformLayout();
+            this.KayıtlıMüşteriler.ResumeLayout(false);
+            this.KayıtlıMüşteriler.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -278,7 +306,9 @@
         private DevExpress.XtraEditors.TextEdit textEdit4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
         private System.Windows.Forms.Button btn_PersonelYönetimi;
+        private System.Windows.Forms.GroupBox MüşteriKayıtFormu;
+        private System.Windows.Forms.GroupBox KayıtlıMüşteriler;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
     }
 }
