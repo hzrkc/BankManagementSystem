@@ -1,3 +1,6 @@
+# PostgreSQL_Database
+
+
 ## Backup yapmak için:
 
 1 - Database üzerine gelinip backup seçilir.(Hata alıyorsanız NOT'lara bakınız)
