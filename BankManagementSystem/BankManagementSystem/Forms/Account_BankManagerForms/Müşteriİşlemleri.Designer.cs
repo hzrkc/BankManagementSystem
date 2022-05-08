@@ -127,7 +127,7 @@
             this.textEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.textEdit4.Properties.NullText = "Giriniz...";
             this.textEdit4.Size = new System.Drawing.Size(152, 26);
-            this.textEdit4.TabIndex = 8;
+            this.textEdit4.TabIndex = 4;
             // 
             // labelControl3
             // 
@@ -156,7 +156,7 @@
             this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.textEdit3.Properties.NullText = "Giriniz...";
             this.textEdit3.Size = new System.Drawing.Size(152, 26);
-            this.textEdit3.TabIndex = 5;
+            this.textEdit3.TabIndex = 3;
             // 
             // labelControl2
             // 
@@ -185,7 +185,7 @@
             this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.textEdit2.Properties.NullText = "Giriniz...";
             this.textEdit2.Size = new System.Drawing.Size(152, 26);
-            this.textEdit2.TabIndex = 3;
+            this.textEdit2.TabIndex = 2;
             // 
             // labelControl1
             // 
@@ -224,7 +224,7 @@
             this.labelControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl5.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.labelControl5.Location = new System.Drawing.Point(3, 18);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(8);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(309, 30);
             this.labelControl5.TabIndex = 12;
@@ -262,7 +262,7 @@
             this.labelControl6.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl6.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.labelControl6.Location = new System.Drawing.Point(3, 18);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(10);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(396, 30);
             this.labelControl6.TabIndex = 13;
