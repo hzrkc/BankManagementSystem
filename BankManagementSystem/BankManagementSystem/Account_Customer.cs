@@ -114,14 +114,6 @@ namespace BankManagementSystem
             Application.Exit();
         }
 
-        private void btn_Maximize_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-                this.WindowState = FormWindowState.Maximized;
-            else
-                this.WindowState = FormWindowState.Normal;
-        }
-
         private void btn_Minimize_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Maximized)

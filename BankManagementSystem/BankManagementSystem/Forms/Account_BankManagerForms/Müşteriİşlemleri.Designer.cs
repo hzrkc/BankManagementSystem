@@ -28,77 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtAd = new DevExpress.XtraEditors.TextEdit();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_PersonelYönetimi = new System.Windows.Forms.Button();
+            this.btn_MüşteriKayıt = new System.Windows.Forms.Button();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtAdres = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtTc = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtSoyad = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.MüşteriKayıtFormu = new System.Windows.Forms.GroupBox();
             this.KayıtlıMüşteriler = new System.Windows.Forms.GroupBox();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtTelefon = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtEmail = new DevExpress.XtraEditors.TextEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdres.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTc.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.MüşteriKayıtFormu.SuspendLayout();
             this.KayıtlıMüşteriler.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmail.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // textEdit1
+            // TxtAd
             // 
-            this.textEdit1.Location = new System.Drawing.Point(111, 26);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.textEdit1.Properties.NullText = "Giriniz...";
-            this.textEdit1.Size = new System.Drawing.Size(152, 26);
-            this.textEdit1.TabIndex = 1;
+            this.TxtAd.Location = new System.Drawing.Point(117, 26);
+            this.TxtAd.Name = "TxtAd";
+            this.TxtAd.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.TxtAd.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAd.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.TxtAd.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtAd.Properties.Appearance.Options.UseFont = true;
+            this.TxtAd.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtAd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.TxtAd.Properties.NullText = "Giriniz...";
+            this.TxtAd.Size = new System.Drawing.Size(152, 26);
+            this.TxtAd.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.btn_PersonelYönetimi);
+            this.panel1.Controls.Add(this.labelControl8);
+            this.panel1.Controls.Add(this.TxtTelefon);
+            this.panel1.Controls.Add(this.labelControl9);
+            this.panel1.Controls.Add(this.TxtEmail);
+            this.panel1.Controls.Add(this.btn_MüşteriKayıt);
             this.panel1.Controls.Add(this.labelControl4);
-            this.panel1.Controls.Add(this.textEdit4);
+            this.panel1.Controls.Add(this.TxtAdres);
             this.panel1.Controls.Add(this.labelControl3);
-            this.panel1.Controls.Add(this.textEdit3);
+            this.panel1.Controls.Add(this.TxtTc);
             this.panel1.Controls.Add(this.labelControl2);
-            this.panel1.Controls.Add(this.textEdit2);
+            this.panel1.Controls.Add(this.TxtSoyad);
             this.panel1.Controls.Add(this.labelControl1);
-            this.panel1.Controls.Add(this.textEdit1);
+            this.panel1.Controls.Add(this.TxtAd);
             this.panel1.Location = new System.Drawing.Point(10, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(291, 235);
+            this.panel1.Size = new System.Drawing.Size(302, 288);
             this.panel1.TabIndex = 2;
             // 
-            // btn_PersonelYönetimi
+            // btn_MüşteriKayıt
             // 
-            this.btn_PersonelYönetimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.btn_PersonelYönetimi.FlatAppearance.BorderSize = 0;
-            this.btn_PersonelYönetimi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.btn_PersonelYönetimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PersonelYönetimi.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_PersonelYönetimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_PersonelYönetimi.Location = new System.Drawing.Point(111, 167);
-            this.btn_PersonelYönetimi.Name = "btn_PersonelYönetimi";
-            this.btn_PersonelYönetimi.Size = new System.Drawing.Size(152, 45);
-            this.btn_PersonelYönetimi.TabIndex = 10;
-            this.btn_PersonelYönetimi.Text = "KAYIT";
-            this.btn_PersonelYönetimi.UseVisualStyleBackColor = false;
+            this.btn_MüşteriKayıt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.btn_MüşteriKayıt.FlatAppearance.BorderSize = 0;
+            this.btn_MüşteriKayıt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
+            this.btn_MüşteriKayıt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MüşteriKayıt.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MüşteriKayıt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.btn_MüşteriKayıt.Location = new System.Drawing.Point(66, 233);
+            this.btn_MüşteriKayıt.Name = "btn_MüşteriKayıt";
+            this.btn_MüşteriKayıt.Size = new System.Drawing.Size(159, 36);
+            this.btn_MüşteriKayıt.TabIndex = 10;
+            this.btn_MüşteriKayıt.Text = "KAYIT";
+            this.btn_MüşteriKayıt.UseVisualStyleBackColor = false;
+            this.btn_MüşteriKayıt.Click += new System.EventHandler(this.btn_MüşteriKayıt_Click);
             // 
             // labelControl4
             // 
@@ -114,20 +125,20 @@
             this.labelControl4.TabIndex = 9;
             this.labelControl4.Text = "Adres :";
             // 
-            // textEdit4
+            // TxtAdres
             // 
-            this.textEdit4.Location = new System.Drawing.Point(111, 122);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit4.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.textEdit4.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.textEdit4.Properties.NullText = "Giriniz...";
-            this.textEdit4.Size = new System.Drawing.Size(152, 26);
-            this.textEdit4.TabIndex = 4;
+            this.TxtAdres.Location = new System.Drawing.Point(117, 122);
+            this.TxtAdres.Name = "TxtAdres";
+            this.TxtAdres.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.TxtAdres.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAdres.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.TxtAdres.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtAdres.Properties.Appearance.Options.UseFont = true;
+            this.TxtAdres.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtAdres.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.TxtAdres.Properties.NullText = "Giriniz...";
+            this.TxtAdres.Size = new System.Drawing.Size(152, 26);
+            this.TxtAdres.TabIndex = 4;
             // 
             // labelControl3
             // 
@@ -143,20 +154,20 @@
             this.labelControl3.TabIndex = 6;
             this.labelControl3.Text = "TC no :";
             // 
-            // textEdit3
+            // TxtTc
             // 
-            this.textEdit3.Location = new System.Drawing.Point(111, 90);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.textEdit3.Properties.NullText = "Giriniz...";
-            this.textEdit3.Size = new System.Drawing.Size(152, 26);
-            this.textEdit3.TabIndex = 3;
+            this.TxtTc.Location = new System.Drawing.Point(117, 90);
+            this.TxtTc.Name = "TxtTc";
+            this.TxtTc.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.TxtTc.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTc.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.TxtTc.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtTc.Properties.Appearance.Options.UseFont = true;
+            this.TxtTc.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtTc.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.TxtTc.Properties.NullText = "Giriniz...";
+            this.TxtTc.Size = new System.Drawing.Size(152, 26);
+            this.TxtTc.TabIndex = 3;
             // 
             // labelControl2
             // 
@@ -172,20 +183,20 @@
             this.labelControl2.TabIndex = 4;
             this.labelControl2.Text = "Soyad  :";
             // 
-            // textEdit2
+            // TxtSoyad
             // 
-            this.textEdit2.Location = new System.Drawing.Point(111, 58);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.textEdit2.Properties.NullText = "Giriniz...";
-            this.textEdit2.Size = new System.Drawing.Size(152, 26);
-            this.textEdit2.TabIndex = 2;
+            this.TxtSoyad.Location = new System.Drawing.Point(117, 58);
+            this.TxtSoyad.Name = "TxtSoyad";
+            this.TxtSoyad.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.TxtSoyad.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSoyad.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.TxtSoyad.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtSoyad.Properties.Appearance.Options.UseFont = true;
+            this.TxtSoyad.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtSoyad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.TxtSoyad.Properties.NullText = "Giriniz...";
+            this.TxtSoyad.Size = new System.Drawing.Size(152, 26);
+            this.TxtSoyad.TabIndex = 2;
             // 
             // labelControl1
             // 
@@ -210,7 +221,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(513, 277);
+            this.dataGridView1.Size = new System.Drawing.Size(529, 277);
             this.dataGridView1.TabIndex = 3;
             // 
             // labelControl5
@@ -234,9 +245,9 @@
             // 
             this.MüşteriKayıtFormu.Controls.Add(this.labelControl5);
             this.MüşteriKayıtFormu.Controls.Add(this.panel1);
-            this.MüşteriKayıtFormu.Location = new System.Drawing.Point(17, 24);
+            this.MüşteriKayıtFormu.Location = new System.Drawing.Point(12, 2);
             this.MüşteriKayıtFormu.Name = "MüşteriKayıtFormu";
-            this.MüşteriKayıtFormu.Size = new System.Drawing.Size(318, 322);
+            this.MüşteriKayıtFormu.Size = new System.Drawing.Size(323, 344);
             this.MüşteriKayıtFormu.TabIndex = 14;
             this.MüşteriKayıtFormu.TabStop = false;
             // 
@@ -247,7 +258,7 @@
             this.KayıtlıMüşteriler.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.KayıtlıMüşteriler.Location = new System.Drawing.Point(345, 15);
             this.KayıtlıMüşteriler.Name = "KayıtlıMüşteriler";
-            this.KayıtlıMüşteriler.Size = new System.Drawing.Size(545, 337);
+            this.KayıtlıMüşteriler.Size = new System.Drawing.Size(561, 337);
             this.KayıtlıMüşteriler.TabIndex = 15;
             this.KayıtlıMüşteriler.TabStop = false;
             // 
@@ -264,9 +275,67 @@
             this.labelControl6.Location = new System.Drawing.Point(3, 18);
             this.labelControl6.Margin = new System.Windows.Forms.Padding(10);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(396, 30);
+            this.labelControl6.Size = new System.Drawing.Size(431, 30);
             this.labelControl6.TabIndex = 13;
-            this.labelControl6.Text = "                        Kayıtlı Müşteriler      ";
+            this.labelControl6.Text = "                             Kayıtlı Müşteriler      ";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Appearance.Options.UseForeColor = true;
+            this.labelControl8.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelControl8.Location = new System.Drawing.Point(25, 189);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(86, 20);
+            this.labelControl8.TabIndex = 15;
+            this.labelControl8.Text = "Telefon no :";
+            // 
+            // TxtTelefon
+            // 
+            this.TxtTelefon.Location = new System.Drawing.Point(117, 186);
+            this.TxtTelefon.Name = "TxtTelefon";
+            this.TxtTelefon.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.TxtTelefon.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTelefon.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.TxtTelefon.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtTelefon.Properties.Appearance.Options.UseFont = true;
+            this.TxtTelefon.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtTelefon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.TxtTelefon.Properties.NullText = "Giriniz...";
+            this.TxtTelefon.Size = new System.Drawing.Size(152, 26);
+            this.TxtTelefon.TabIndex = 12;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Appearance.Options.UseForeColor = true;
+            this.labelControl9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelControl9.Location = new System.Drawing.Point(25, 157);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(50, 20);
+            this.labelControl9.TabIndex = 14;
+            this.labelControl9.Text = "Email  :";
+            // 
+            // TxtEmail
+            // 
+            this.TxtEmail.Location = new System.Drawing.Point(117, 154);
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.TxtEmail.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtEmail.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.TxtEmail.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtEmail.Properties.Appearance.Options.UseFont = true;
+            this.TxtEmail.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtEmail.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.TxtEmail.Properties.NullText = "Giriniz...";
+            this.TxtEmail.Size = new System.Drawing.Size(152, 26);
+            this.TxtEmail.TabIndex = 11;
             // 
             // Müşteriİşlemleri
             // 
@@ -279,36 +348,42 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Müşteriİşlemleri";
             this.Text = "Müşteriİşlemleri";
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdres.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTc.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.MüşteriKayıtFormu.ResumeLayout(false);
             this.MüşteriKayıtFormu.PerformLayout();
             this.KayıtlıMüşteriler.ResumeLayout(false);
             this.KayıtlıMüşteriler.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEmail.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit TxtAd;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit TxtTc;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit TxtSoyad;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit TxtAdres;
         private System.Windows.Forms.DataGridView dataGridView1;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private System.Windows.Forms.Button btn_PersonelYönetimi;
+        private System.Windows.Forms.Button btn_MüşteriKayıt;
         private System.Windows.Forms.GroupBox MüşteriKayıtFormu;
         private System.Windows.Forms.GroupBox KayıtlıMüşteriler;
         private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.TextEdit TxtTelefon;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.TextEdit TxtEmail;
     }
 }

@@ -32,11 +32,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_Minimize = new System.Windows.Forms.Button();
-            this.btn_Maximize = new System.Windows.Forms.Button();
             this.btn_CloseWindow = new System.Windows.Forms.Button();
             this.panelMüşteriGrişi = new System.Windows.Forms.Panel();
             this.panelBack = new System.Windows.Forms.Panel();
             this.panel_childform = new System.Windows.Forms.Panel();
+            this.KullanıcıAdSoyad = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.btn_AnaSayfa = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -47,7 +47,6 @@
             this.btn_Transfer = new System.Windows.Forms.Button();
             this.btn_HesapBilgileri = new System.Windows.Forms.Button();
             this.btn_AylıkÖzet = new System.Windows.Forms.Button();
-            this.KullanıcıAdSoyad = new DevExpress.XtraEditors.LabelControl();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelMüşteriGrişi.SuspendLayout();
@@ -71,11 +70,10 @@
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.Controls.Add(this.btn_Minimize);
-            this.panel3.Controls.Add(this.btn_Maximize);
             this.panel3.Controls.Add(this.btn_CloseWindow);
-            this.panel3.Location = new System.Drawing.Point(865, 12);
+            this.panel3.Location = new System.Drawing.Point(893, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(83, 24);
+            this.panel3.Size = new System.Drawing.Size(55, 24);
             this.panel3.TabIndex = 17;
             // 
             // btn_Minimize
@@ -95,23 +93,6 @@
             this.btn_Minimize.UseVisualStyleBackColor = false;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
             // 
-            // btn_Maximize
-            // 
-            this.btn_Maximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
-            this.btn_Maximize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_Maximize.FlatAppearance.BorderSize = 0;
-            this.btn_Maximize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.btn_Maximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Maximize.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Maximize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_Maximize.Location = new System.Drawing.Point(27, 0);
-            this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.Size = new System.Drawing.Size(28, 24);
-            this.btn_Maximize.TabIndex = 1;
-            this.btn_Maximize.Text = "O";
-            this.btn_Maximize.UseVisualStyleBackColor = false;
-            this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
-            // 
             // btn_CloseWindow
             // 
             this.btn_CloseWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
@@ -121,7 +102,7 @@
             this.btn_CloseWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CloseWindow.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CloseWindow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_CloseWindow.Location = new System.Drawing.Point(55, 0);
+            this.btn_CloseWindow.Location = new System.Drawing.Point(27, 0);
             this.btn_CloseWindow.Name = "btn_CloseWindow";
             this.btn_CloseWindow.Size = new System.Drawing.Size(28, 24);
             this.btn_CloseWindow.TabIndex = 0;
@@ -161,6 +142,22 @@
             this.panel_childform.Name = "panel_childform";
             this.panel_childform.Size = new System.Drawing.Size(741, 471);
             this.panel_childform.TabIndex = 0;
+            // 
+            // KullanıcıAdSoyad
+            // 
+            this.KullanıcıAdSoyad.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KullanıcıAdSoyad.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.KullanıcıAdSoyad.Appearance.Options.UseFont = true;
+            this.KullanıcıAdSoyad.Appearance.Options.UseForeColor = true;
+            this.KullanıcıAdSoyad.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.KullanıcıAdSoyad.Cursor = System.Windows.Forms.Cursors.Default;
+            this.KullanıcıAdSoyad.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.KullanıcıAdSoyad.Location = new System.Drawing.Point(305, 94);
+            this.KullanıcıAdSoyad.Margin = new System.Windows.Forms.Padding(6);
+            this.KullanıcıAdSoyad.Name = "KullanıcıAdSoyad";
+            this.KullanıcıAdSoyad.Size = new System.Drawing.Size(105, 32);
+            this.KullanıcıAdSoyad.TabIndex = 14;
+            this.KullanıcıAdSoyad.Text = "Null Null";
             // 
             // labelControl5
             // 
@@ -336,22 +333,6 @@
             this.btn_AylıkÖzet.UseVisualStyleBackColor = false;
             this.btn_AylıkÖzet.Click += new System.EventHandler(this.btn_AylıkÖzet_Click);
             // 
-            // KullanıcıAdSoyad
-            // 
-            this.KullanıcıAdSoyad.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KullanıcıAdSoyad.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.KullanıcıAdSoyad.Appearance.Options.UseFont = true;
-            this.KullanıcıAdSoyad.Appearance.Options.UseForeColor = true;
-            this.KullanıcıAdSoyad.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.KullanıcıAdSoyad.Cursor = System.Windows.Forms.Cursors.Default;
-            this.KullanıcıAdSoyad.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.KullanıcıAdSoyad.Location = new System.Drawing.Point(305, 94);
-            this.KullanıcıAdSoyad.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.KullanıcıAdSoyad.Name = "KullanıcıAdSoyad";
-            this.KullanıcıAdSoyad.Size = new System.Drawing.Size(105, 32);
-            this.KullanıcıAdSoyad.TabIndex = 14;
-            this.KullanıcıAdSoyad.Text = "Null Null";
-            // 
             // Account_Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -379,7 +360,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_Minimize;
-        private System.Windows.Forms.Button btn_Maximize;
         private System.Windows.Forms.Button btn_CloseWindow;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.Panel panelMenu;
