@@ -10,7 +10,7 @@
 
 2 - istenilen backup dosyası seçilir.
 
-# NOT
+### NOT
 
 ! File-> Preferences -> Path -> Binary Path kısmına gelinir
 
