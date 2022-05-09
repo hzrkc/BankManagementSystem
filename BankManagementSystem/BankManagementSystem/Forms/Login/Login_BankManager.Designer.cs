@@ -48,8 +48,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(507, 398);
+            this.panel1.Size = new System.Drawing.Size(759, 490);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -61,7 +62,8 @@
             this.panel2.Controls.Add(this.labelControl3);
             this.panel2.Controls.Add(this.textEdit3);
             this.panel2.Controls.Add(this.labelControl1);
-            this.panel2.Location = new System.Drawing.Point(87, 62);
+            this.panel2.Location = new System.Drawing.Point(215, 111);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(328, 268);
             this.panel2.TabIndex = 0;
@@ -74,9 +76,10 @@
             this.btn_Giriş.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Giriş.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Giriş.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_Giriş.Location = new System.Drawing.Point(86, 168);
+            this.btn_Giriş.Location = new System.Drawing.Point(85, 167);
+            this.btn_Giriş.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Giriş.Name = "btn_Giriş";
-            this.btn_Giriş.Size = new System.Drawing.Size(152, 45);
+            this.btn_Giriş.Size = new System.Drawing.Size(152, 46);
             this.btn_Giriş.TabIndex = 15;
             this.btn_Giriş.Text = "GİRİŞ";
             this.btn_Giriş.UseVisualStyleBackColor = false;
@@ -90,6 +93,7 @@
             this.labelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelControl4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelControl4.Location = new System.Drawing.Point(44, 108);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(41, 20);
             this.labelControl4.TabIndex = 14;
@@ -97,7 +101,8 @@
             // 
             // textEdit4
             // 
-            this.textEdit4.Location = new System.Drawing.Point(130, 105);
+            this.textEdit4.Location = new System.Drawing.Point(131, 105);
+            this.textEdit4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textEdit4.Name = "textEdit4";
             this.textEdit4.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
             this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -119,6 +124,7 @@
             this.labelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelControl3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelControl3.Location = new System.Drawing.Point(44, 76);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(50, 20);
             this.labelControl3.TabIndex = 12;
@@ -126,7 +132,8 @@
             // 
             // textEdit3
             // 
-            this.textEdit3.Location = new System.Drawing.Point(130, 73);
+            this.textEdit3.Location = new System.Drawing.Point(131, 73);
+            this.textEdit3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
             this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,6 +152,7 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl1.Location = new System.Drawing.Point(0, 0);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(124, 17);
             this.labelControl1.TabIndex = 0;
@@ -155,9 +163,10 @@
             this.AcceptButton = this.btn_Giriş;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 398);
+            this.ClientSize = new System.Drawing.Size(759, 490);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login_BankManager";
             this.Text = "Login_BankManager";
             this.panel1.ResumeLayout(false);

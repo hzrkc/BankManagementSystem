@@ -250,11 +250,53 @@
     <Compile Include="Forms\Login\Login_Customer.Designer.cs">
       <DependentUpon>Login_Customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\GenelDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\GenelDurum.Designer.cs">
+      <DependentUpon>GenelDurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\Güncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\Güncelleme.Designer.cs">
+      <DependentUpon>Güncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\HesapAyarları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\HesapAyarları.Designer.cs">
+      <DependentUpon>HesapAyarları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\HesapOluşturma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\HesapOluşturma.Designer.cs">
+      <DependentUpon>HesapOluşturma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\KayıtGüncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\KayıtGüncelleme.Designer.cs">
+      <DependentUpon>KayıtGüncelleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\İlgilenilenMüşteriler\Krediİşlemleri.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\İlgilenilenMüşteriler\Krediİşlemleri.Designer.cs">
       <DependentUpon>Krediİşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\MüşteriBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\MüşteriBilgileri.Designer.cs">
+      <DependentUpon>MüşteriBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\İşlem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\İlgilenilenMüşteriler\İşlem.Designer.cs">
+      <DependentUpon>İşlem.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -289,11 +331,47 @@
     <EmbeddedResource Include="Forms\Account_CusRepresentative\İlgilenilenMüşteriler_MüşteriBilgileri.resx">
       <DependentUpon>İlgilenilenMüşteriler_MüşteriBilgileri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Account_Customer\Account_Information.resx">
+      <DependentUpon>Account_Information.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Account_Customer\AylıkÖzet.resx">
       <DependentUpon>AylıkÖzet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Account_Customer\CreditTransactions.resx">
+      <DependentUpon>CreditTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Account_Customer\Investing.resx">
+      <DependentUpon>Investing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Account_Customer\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Account_Customer\Transfer.resx">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Account_Information\ParaÇekme_Yatırma.resx">
+      <DependentUpon>ParaÇekme_Yatırma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Account_Information\YeniHesapOluşturma.resx">
+      <DependentUpon>YeniHesapOluşturma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaYönetimi\Krediİşlemleri.resx">
+      <DependentUpon>Krediİşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaYönetimi\PersonelYönetimi.resx">
+      <DependentUpon>PersonelYönetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaYönetimi\SistemGüncelleme.resx">
+      <DependentUpon>SistemGüncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankaYönetimi\YatırımFonu.resx">
+      <DependentUpon>YatırımFonu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bankaİşlemleri\Genel Durum.resx">
+      <DependentUpon>Genel Durum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bankaİşlemleri\Tümİşlemler.resx">
+      <DependentUpon>Tümİşlemler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\Login_BankManager.resx">
       <DependentUpon>Login_BankManager.cs</DependentUpon>
@@ -303,6 +381,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\Login_Customer.resx">
       <DependentUpon>Login_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\İlgilenilenMüşteriler\GenelDurum.resx">
+      <DependentUpon>GenelDurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\İlgilenilenMüşteriler\Güncelleme.resx">
+      <DependentUpon>Güncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\İlgilenilenMüşteriler\HesapAyarları.resx">
+      <DependentUpon>HesapAyarları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\İlgilenilenMüşteriler\HesapOluşturma.resx">
+      <DependentUpon>HesapOluşturma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\İlgilenilenMüşteriler\KayıtGüncelleme.resx">
+      <DependentUpon>KayıtGüncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\İlgilenilenMüşteriler\Krediİşlemleri.resx">
+      <DependentUpon>Krediİşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\İlgilenilenMüşteriler\MüşteriBilgileri.resx">
+      <DependentUpon>MüşteriBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\İlgilenilenMüşteriler\İşlem.resx">
+      <DependentUpon>İşlem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -318,6 +420,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Forms\Account_CusRepresentative\İlgilenilenMüşteriler._MüşteriBilgilerics" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
