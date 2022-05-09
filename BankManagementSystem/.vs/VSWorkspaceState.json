@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BankManagementSystem\\Forms"
+    "\\BankManagementSystem",
+    "\\BankManagementSystem\\Forms",
+    "\\BankManagementSystem\\Forms\\Account_BankManagerForms"
   ],
   "SelectedNode": "\\BankManagementSystem.sln",
   "PreviewInSolutionExplorer": false
