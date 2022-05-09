@@ -78,7 +78,7 @@
             this.panel1.Controls.Add(this.panelMenu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(720, 439);
             this.panel1.TabIndex = 0;
@@ -91,7 +91,7 @@
             this.panel3.Controls.Add(this.btn_CloseWindow);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(720, 20);
             this.panel3.TabIndex = 17;
@@ -122,7 +122,7 @@
             this.btn_Minimize.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Minimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
             this.btn_Minimize.Location = new System.Drawing.Point(675, 0);
-            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Minimize.Name = "btn_Minimize";
             this.btn_Minimize.Size = new System.Drawing.Size(24, 20);
             this.btn_Minimize.TabIndex = 2;
@@ -139,7 +139,7 @@
             this.btn_CloseWindow.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CloseWindow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
             this.btn_CloseWindow.Location = new System.Drawing.Point(699, 0);
-            this.btn_CloseWindow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_CloseWindow.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CloseWindow.Name = "btn_CloseWindow";
             this.btn_CloseWindow.Size = new System.Drawing.Size(21, 20);
             this.btn_CloseWindow.TabIndex = 0;
@@ -175,7 +175,7 @@
             this.btn_AnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_AnaSayfa.ImageOptions.Image")));
             this.btn_AnaSayfa.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btn_AnaSayfa.Location = new System.Drawing.Point(9, 34);
-            this.btn_AnaSayfa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_AnaSayfa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AnaSayfa.Name = "btn_AnaSayfa";
             this.btn_AnaSayfa.Size = new System.Drawing.Size(38, 36);
             this.btn_AnaSayfa.TabIndex = 15;
@@ -185,7 +185,7 @@
             // 
             this.BackColorpanel.Controls.Add(this.panel_childform);
             this.BackColorpanel.Location = new System.Drawing.Point(0, 49);
-            this.BackColorpanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BackColorpanel.Margin = new System.Windows.Forms.Padding(2);
             this.BackColorpanel.Name = "BackColorpanel";
             this.BackColorpanel.Size = new System.Drawing.Size(720, 358);
             this.BackColorpanel.TabIndex = 16;
@@ -197,7 +197,7 @@
             this.panel_childform.Controls.Add(this.MüşteriKayıtFormu);
             this.panel_childform.Controls.Add(this.panel2);
             this.panel_childform.Location = new System.Drawing.Point(9, 21);
-            this.panel_childform.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_childform.Margin = new System.Windows.Forms.Padding(2);
             this.panel_childform.Name = "panel_childform";
             this.panel_childform.Size = new System.Drawing.Size(702, 317);
             this.panel_childform.TabIndex = 0;
@@ -208,9 +208,9 @@
             this.KayıtlıMüşteriler.Controls.Add(this.dataGridView1);
             this.KayıtlıMüşteriler.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.KayıtlıMüşteriler.Location = new System.Drawing.Point(270, 84);
-            this.KayıtlıMüşteriler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.KayıtlıMüşteriler.Margin = new System.Windows.Forms.Padding(2);
             this.KayıtlıMüşteriler.Name = "KayıtlıMüşteriler";
-            this.KayıtlıMüşteriler.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.KayıtlıMüşteriler.Padding = new System.Windows.Forms.Padding(2);
             this.KayıtlıMüşteriler.Size = new System.Drawing.Size(412, 193);
             this.KayıtlıMüşteriler.TabIndex = 19;
             this.KayıtlıMüşteriler.TabStop = false;
@@ -226,7 +226,7 @@
             this.labelControl6.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl6.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.labelControl6.Location = new System.Drawing.Point(2, 15);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(8);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(287, 25);
             this.labelControl6.TabIndex = 13;
@@ -238,7 +238,7 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(8, 63);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -250,9 +250,9 @@
             this.MüşteriKayıtFormu.Controls.Add(this.panel4);
             this.MüşteriKayıtFormu.Controls.Add(this.labelControl1);
             this.MüşteriKayıtFormu.Location = new System.Drawing.Point(17, 84);
-            this.MüşteriKayıtFormu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MüşteriKayıtFormu.Margin = new System.Windows.Forms.Padding(2);
             this.MüşteriKayıtFormu.Name = "MüşteriKayıtFormu";
-            this.MüşteriKayıtFormu.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MüşteriKayıtFormu.Padding = new System.Windows.Forms.Padding(2);
             this.MüşteriKayıtFormu.Size = new System.Drawing.Size(238, 193);
             this.MüşteriKayıtFormu.TabIndex = 18;
             this.MüşteriKayıtFormu.TabStop = false;
@@ -265,7 +265,7 @@
             this.panel4.Controls.Add(this.textEdit3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(2, 65);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(234, 110);
             this.panel4.TabIndex = 13;
@@ -279,7 +279,7 @@
             this.btn_PersonelYönetimi.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_PersonelYönetimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
             this.btn_PersonelYönetimi.Location = new System.Drawing.Point(80, 60);
-            this.btn_PersonelYönetimi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_PersonelYönetimi.Margin = new System.Windows.Forms.Padding(2);
             this.btn_PersonelYönetimi.Name = "btn_PersonelYönetimi";
             this.btn_PersonelYönetimi.Size = new System.Drawing.Size(114, 37);
             this.btn_PersonelYönetimi.TabIndex = 10;
@@ -295,7 +295,7 @@
             this.labelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelControl3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelControl3.Location = new System.Drawing.Point(29, 25);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(41, 17);
             this.labelControl3.TabIndex = 6;
@@ -330,7 +330,7 @@
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl1.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.labelControl1.Location = new System.Drawing.Point(2, 15);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(211, 50);
             this.labelControl1.TabIndex = 12;
@@ -342,7 +342,7 @@
             this.panel2.Controls.Add(this.KullanıcıAdSoyad);
             this.panel2.Controls.Add(this.labelControl5);
             this.panel2.Location = new System.Drawing.Point(0, 14);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(702, 37);
             this.panel2.TabIndex = 17;
@@ -358,7 +358,7 @@
             this.KullanıcıAdSoyad.Dock = System.Windows.Forms.DockStyle.Left;
             this.KullanıcıAdSoyad.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.KullanıcıAdSoyad.Location = new System.Drawing.Point(130, 0);
-            this.KullanıcıAdSoyad.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.KullanıcıAdSoyad.Margin = new System.Windows.Forms.Padding(8);
             this.KullanıcıAdSoyad.Name = "KullanıcıAdSoyad";
             this.KullanıcıAdSoyad.Size = new System.Drawing.Size(94, 27);
             this.KullanıcıAdSoyad.TabIndex = 17;
@@ -387,7 +387,7 @@
             this.panelMenu.Controls.Add(this.btn_İlgilenilenMüşteri);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMenu.Location = new System.Drawing.Point(0, 402);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(720, 37);
             this.panelMenu.TabIndex = 0;
@@ -404,7 +404,7 @@
             this.btn_YeniMüşteri.Font = new System.Drawing.Font("Microsoft YaHei", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_YeniMüşteri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
             this.btn_YeniMüşteri.Location = new System.Drawing.Point(360, 0);
-            this.btn_YeniMüşteri.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_YeniMüşteri.Margin = new System.Windows.Forms.Padding(2);
             this.btn_YeniMüşteri.Name = "btn_YeniMüşteri";
             this.btn_YeniMüşteri.Size = new System.Drawing.Size(360, 37);
             this.btn_YeniMüşteri.TabIndex = 3;
@@ -424,7 +424,7 @@
             this.btn_İlgilenilenMüşteri.Font = new System.Drawing.Font("Microsoft YaHei", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_İlgilenilenMüşteri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
             this.btn_İlgilenilenMüşteri.Location = new System.Drawing.Point(0, 0);
-            this.btn_İlgilenilenMüşteri.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_İlgilenilenMüşteri.Margin = new System.Windows.Forms.Padding(2);
             this.btn_İlgilenilenMüşteri.Name = "btn_İlgilenilenMüşteri";
             this.btn_İlgilenilenMüşteri.Size = new System.Drawing.Size(360, 37);
             this.btn_İlgilenilenMüşteri.TabIndex = 2;
@@ -439,7 +439,7 @@
             this.ClientSize = new System.Drawing.Size(720, 439);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Account_CusReprensative";
             this.Text = "Account_CusReprensative";
             this.panel1.ResumeLayout(false);
