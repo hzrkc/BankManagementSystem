@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kredi İşlemleri\Banka Müdürü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kredi İşlemleri\Banka Müdürü.Designer.cs">
+      <DependentUpon>Banka Müdürü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banka Müdürü\Sistem Güncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banka Müdürü\Sistem Güncelleme.Designer.cs">
+      <DependentUpon>Sistem Güncelleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="BankaMüdürü.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BankaMüdürü.Designer.cs">
       <DependentUpon>BankaMüdürü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Müşteri Temsilcisi\İlgili Müşteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Müşteri Temsilcisi\İlgili Müşteri.Designer.cs">
+      <DependentUpon>İlgili Müşteri.cs</DependentUpon>
     </Compile>
     <Compile Include="MüşteriHesabı.cs">
       <SubType>Form</SubType>
@@ -58,13 +76,40 @@
     <Compile Include="MüşteriHesabı.Designer.cs">
       <DependentUpon>MüşteriHesabı.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kredi İşlemleri\Müşteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kredi İşlemleri\Müşteri.Designer.cs">
+      <DependentUpon>Müşteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Müşteri\Hesap Oluşturma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Müşteri\Hesap Oluşturma.Designer.cs">
+      <DependentUpon>Hesap Oluşturma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Kredi İşlemleri\Banka Müdürü.resx">
+      <DependentUpon>Banka Müdürü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banka Müdürü\Sistem Güncelleme.resx">
+      <DependentUpon>Sistem Güncelleme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BankaMüdürü.resx">
       <DependentUpon>BankaMüdürü.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Müşteri Temsilcisi\İlgili Müşteri.resx">
+      <DependentUpon>İlgili Müşteri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MüşteriHesabı.resx">
       <DependentUpon>MüşteriHesabı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kredi İşlemleri\Müşteri.resx">
+      <DependentUpon>Müşteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Müşteri\Hesap Oluşturma.resx">
+      <DependentUpon>Hesap Oluşturma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,5 +133,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
