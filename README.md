@@ -2,6 +2,19 @@
  C# Form application with PostgreSQL
 
 # Renk Paleti
+![#d2afff Color Hex](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_Color/%23d2afff%20Color%20Hex.png)
+
+ Koyu -> #3f344c
+
+ #a88ccc
+
+ Orta -> #d2afff
+
+ #dbbfff
+
+ #e8d7ff
+
+ Açık -> #f6efff
  
 
  
@@ -20,7 +33,7 @@
     conn.Open();
  ```
  
- # Not!
+ ### Not!
 
  1-form load fonksiyonu açıldığında bağlantı kur.
 
@@ -35,7 +48,7 @@
     sql=@"select * from müşteriler()";
     cmd= new NpgsqlCommand(sql,conn);
   ```
- # Not! 
+ ### Not! 
  
   1- form load kısmına ekle. Boş tablo açılmasın.
 
@@ -54,7 +67,7 @@
      dgvData.DataSource=dt;
 
   ```
- # Not!
+ ### Not!
   
   1- bu fonksiyonları try catch e adapte et
 
@@ -65,7 +78,7 @@
     txtFirstname.Text = dgvData.Rows[e.RowIndex].Cells["firstname"].Value.toString();
     txtSurname.Text=dgvData.Rows[e.RowIndex].Cells["surname"].Value.ToString();
  ```
- # Not
+ ### Not
  
  1 - dgvData_CellClick fonksiyonu içerisinde 
 
