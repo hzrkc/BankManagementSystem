@@ -69,27 +69,29 @@
             // 
             this.panel4.Controls.Add(this.button5);
             this.panel4.Controls.Add(this.button4);
-            this.panel4.Location = new System.Drawing.Point(0, 621);
+            this.panel4.Location = new System.Drawing.Point(0, 622);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(450, 95);
             this.panel4.TabIndex = 6;
             // 
             // button5
             // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(225, 23);
+            this.button5.Location = new System.Drawing.Point(225, 0);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(225, 80);
+            this.button5.Size = new System.Drawing.Size(225, 95);
             this.button5.TabIndex = 9;
             this.button5.Text = "TRANSFER\r\n\r\nÖDEME";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Left;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 23);
+            this.button4.Location = new System.Drawing.Point(0, 0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(225, 80);
+            this.button4.Size = new System.Drawing.Size(225, 95);
             this.button4.TabIndex = 8;
             this.button4.Text = "AYARLAR";
             this.button4.UseVisualStyleBackColor = true;
@@ -175,14 +177,14 @@
             this.panel2.Size = new System.Drawing.Size(450, 33);
             this.panel2.TabIndex = 0;
             // 
-            // Form1
+            // MüşteriHesabı
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 720);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "MüşteriHesabı";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
