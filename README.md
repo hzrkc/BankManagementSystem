@@ -16,15 +16,9 @@
 
  Açık -> #f6efff 
 
- ### Button ayarları
-
- Cursor -> Hand
- BorderSize -> 0  
- 
-
- 
-
 # PostgreSql veritabanını C# formda kullanma
+!!!! Butonların enable olma durumlarını ayarlamayı unutma.
+
 
  ## Baglantı oluşturup açma
 
@@ -66,7 +60,6 @@
      dt= new DataTable();
      dt.Load(cmd.ExecuteReader());
      conn.Close();
-     
     //DataGridView ismi dgvData
      dgvData.DataSourse=null; //reset
      dgvData.DataSource=dt;
@@ -93,21 +86,63 @@
  
  1 - dgvData_CellClick fonksiyonu içerisinde 
 
- ## Insert Fonksiyonu
+ ## Insert and Update Fonksiyonu
  
  ```C#
-   rowIndex=-1;
-   txtFirstname.Text=txtSurname.Text= null;
-
-
- ```
-
- ## Upddate
- ```C#
-   if(rowIndex < 0)
+   int result=0;
+   if(rowIndex<0) //insert
    {
-      MessageBox.Show("Güncellenecek müşteriyi seçiniz");
+      try
+      {
+         conn.Open();
+         sql = @"selecet * from st_insert(: _firstname, :_surname)";
+         cmd= new NpsqlCommand(sql,conn);
+         cmd.Parameters.AddWithValue("_firstname",txtFirstname.Text);
+         cmd.Parameters.AddWithValue("_surname",txtFirstname.Text);
+         result = (int)cmd.ExecuteScaler();
+         conn.Close();
+         if(result == 1)
+         {
+            MessageBox.Show("Kayıt başarılı.");
+         }
+         else
+         {
+            MessageBox.Show("Kayıt başarısız.");
+         }
+      }
+      catch(Exception ex)
+      {
+         conn.Close();
+         MessageBox.Show("Kayıt Başarısız. Error: "+ ex.Message);
+      }
    }
+   else //update
+   {
+      try
+      {
+         conn.Open();
+         sql = @"select * from st_update(:_id, :_firstname)";
+         cmd= new NpsqlCommand(sql, conn);
+         cmd.Parameters.AddwithValue("_id", int.Parse(dgvData.Rows[rowIndex].Cells["id"].Value.ToString));
+         cmd.Parameters.AddWithValue("_firstname",txtFirstname.Text);
+         result = (int)cmd.ExecuteScaler();
+         conn.Close();
+         if(result == 1)
+         {
+            MessageBox.Show("Güncelleme başarılı.");
+         }
+         else
+         {
+            MessageBox.Show("Güncelleme başarısız.");
+         }
+      }
+      catch(Exception ex)
+      {
+         conn.Close();
+         MessageBox.Show("Güncelleme Başarısız. Error: "+ ex.Message);
+      }
+   }
+   result =0;
  ```
 
  ## Delete
@@ -115,6 +150,7 @@
    if(rowIndex < 0)
    {
       MessageBox.Show("Silme işlemi yapılacak müşteriyi seçiniz");
+      return;
    }
    try
    {
@@ -127,15 +163,14 @@
          MessageBox.Show("Silme işlemi başarılı");
          rowIndex=-1;
       }
+      conn.Close();
    }
-
-
-
+   catch(Exception ex)
+   {
+      conn.Close();
+      MessageBox.Show("Silme başarısız. ERROR: "+ ex.Message);
+   }
  ```
-
-  ### Not
- 
- 1 - try catch fonksiyonları oluştur
 
 
 ### Kaynakça
