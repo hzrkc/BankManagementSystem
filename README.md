@@ -1,24 +1,15 @@
 # BankManagementSystem
  C# Form application with PostgreSQL
 
-# Renk Paleti
-![#d2afff Color Hex](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_Color/%23d2afff%20Color%20Hex.png)
-
- Koyu -> #3f344c (label ve buton forecolor)
-
- #a88ccc (MouseOverBackColor)
-
- Orta -> #d2afff (Arka Plan rengi)
-
- #dbbfff
-
- #e8d7ff
-
- Açık -> #f6efff 
+# Kullanıcı bilgilerini diğer formlara taşıma
+Her formun private tc kısmı oluşturulur.
+Form nesnesi sayesinde değişkenler arası aktarım sağlanır.
 
 # PostgreSql veritabanını C# formda kullanma
-!!!! Butonların enable olma durumlarını ayarlamayı unutma.
-
+ !!! Kütüphane ekleme
+ ```C#
+   using Npgsql;
+ ```
 
  ## Baglantı oluşturup açma
 
@@ -172,6 +163,107 @@
    }
  ```
 
+# Buton Fonksiyonları 
+ ## Butona basılında görüntü değiştime, buton aktif değilken normale döndürme
+ ```C#
+   private Button currentButton;
+   private void ActivateButton(object btnSender)
+        {
+            if (btnSender != null)
+            {
+                if (currentButton != (Button)btnSender)
+                {
+                    DisableButton();
+                    Color backColor = ColorTranslator.FromHtml("#e8d7ff");
+                    Color foreColor = ColorTranslator.FromHtml("#BD9DE5");
+                    currentButton = (Button)btnSender;
+                    currentButton.BackColor = backColor;
+                    currentButton.ForeColor = foreColor;
+                    BackColorpanel.BackColor = backColor;
+                    btn_AnaSayfa.Visible = true;
+                }
+            }
+        }
+   private void DisableButton()
+        {
+            foreach (Control previousBtn in panelMenu.Controls)
+            {
+                if (previousBtn.GetType() == typeof(Button))
+                {
+                    previousBtn.BackColor = Color.FromArgb(210, 175, 255);
+                    previousBtn.ForeColor = Color.FromArgb(63, 52, 76);
+                    BackColorpanel.BackColor = Color.FromArgb(210, 175, 255);
+                }
+            }
+        }
+ ```
+ ## Minimize etme
+  ```C#
+   if (WindowState == FormWindowState.Maximized)   
+      this.WindowState = FormWindowState.Normal;
+   this.WindowState |= FormWindowState.Minimized;
+  ```
+ ## Window kapama
+ ```C#
+   Application.Exit();
+  ```
+ 
+
+
+
+# Form fonksiyonları
+ ## Formun içine form çağırma
+ ```C#
+   private Form activeForm;
+   
+   private void OpenChildForm(Form childForm, object btnSender)
+        {
+            if(activeForm != null)
+            {
+                activeForm.Close();
+            }
+            ActivateButton(btnSender);
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.panel_childform.Controls.Add(childForm);
+            this.panel_childform.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+ ```
+ ## Formun içindeki formu kapama
+ ```C#
+   private void btn_KAPAT(object sender, EventArgs e)
+        {
+            if(activeForm !=null)
+                activeForm.Close();
+            Reset();
+        }
+        private void Reset()
+        {
+            DisableButton();
+            currentButton = null;
+            btn_AnaSayfa.Visible = false;
+        }
+ ```
+
+
+# Renk Paleti
+![#d2afff Color Hex](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_Color/%23d2afff%20Color%20Hex.png)
+
+ Koyu -> #3f344c (label ve buton forecolor)
+
+ #a88ccc (MouseOverBackColor)
+
+ Orta -> #d2afff (Arka Plan rengi)
+
+ #dbbfff
+
+ #e8d7ff
+
+ Açık -> #f6efff 
 
 ### Kaynakça
 
