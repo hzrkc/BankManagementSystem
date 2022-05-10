@@ -1,6 +1,6 @@
 ﻿namespace BankaManagementSystem
 {
-    partial class Form1
+    partial class MüşteriHesabı
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
