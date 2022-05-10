@@ -4,17 +4,22 @@
 # Renk Paleti
 ![#d2afff Color Hex](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_Color/%23d2afff%20Color%20Hex.png)
 
- Koyu -> #3f344c
+ Koyu -> #3f344c (label ve buton forecolor)
 
- #a88ccc
+ #a88ccc (MouseOverBackColor)
 
- Orta -> #d2afff
+ Orta -> #d2afff (Arka Plan rengi)
 
  #dbbfff
 
  #e8d7ff
 
- Açık -> #f6efff
+ Açık -> #f6efff 
+
+ ### Button ayarları
+
+ Cursor -> Hand
+ BorderSize -> 0  
  
 
  
@@ -74,9 +79,15 @@
  ## DataGrivView den veri seçme 
  
  ```C#
+   private int rowIndex =-1; 
     //örnek textbox ismi txtFirstname
-    txtFirstname.Text = dgvData.Rows[e.RowIndex].Cells["firstname"].Value.toString();
-    txtSurname.Text=dgvData.Rows[e.RowIndex].Cells["surname"].Value.ToString();
+    if(e.RowIndex>=0)
+    {
+       row=e.RowIndex;
+      txtFirstname.Text = dgvData.Rows[e.RowIndex].Cells["firstname"].Value.toString();
+      txtSurname.Text=dgvData.Rows[e.RowIndex].Cells["surname"].Value.ToString();
+    }
+    
  ```
  ### Not
  
@@ -85,8 +96,46 @@
  ## Insert Fonksiyonu
  
  ```C#
+   rowIndex=-1;
+   txtFirstname.Text=txtSurname.Text= null;
+
 
  ```
+
+ ## Upddate
+ ```C#
+   if(rowIndex < 0)
+   {
+      MessageBox.Show("Güncellenecek müşteriyi seçiniz");
+   }
+ ```
+
+ ## Delete
+ ```C#
+   if(rowIndex < 0)
+   {
+      MessageBox.Show("Silme işlemi yapılacak müşteriyi seçiniz");
+   }
+   try
+   {
+      conn.Open();
+      sql=@"select * from müşteriler";
+      cmd= new NpsqlCommand(sql, conn);
+      cmd.Parameters.AddwithValue("_id", int.Parse(dgvData.Rows[rowIndex].Cells["id"].Value.ToString));
+      if((int)cmd.ExecuteScaler() == 1)
+      {
+         MessageBox.Show("Silme işlemi başarılı");
+         rowIndex=-1;
+      }
+   }
+
+
+
+ ```
+
+  ### Not
+ 
+ 1 - try catch fonksiyonları oluştur
 
 
 ### Kaynakça
