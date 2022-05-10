@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BankManagementSystem",
-    "\\BankManagementSystem\\BankManagementSystem",
-    "\\BankManagementSystem\\BankManagementSystem\\Forms",
-    "\\BankManagementSystem\\BankManagementSystem\\Forms\\Login"
+    "\\BankaManagementSystem",
+    "\\BankaManagementSystem\\BankaManagementSystem"
   ],
-  "SelectedNode": "\\BankManagementSystem\\BankManagementSystem\\Forms\\Login\\Login_Customer.cs",
+  "SelectedNode": "\\BankaManagementSystem\\BankaManagementSystem\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
