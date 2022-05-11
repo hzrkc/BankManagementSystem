@@ -16,5 +16,10 @@ namespace BankaManagementSystem.Menu_Login
         {
             InitializeComponent();
         }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
