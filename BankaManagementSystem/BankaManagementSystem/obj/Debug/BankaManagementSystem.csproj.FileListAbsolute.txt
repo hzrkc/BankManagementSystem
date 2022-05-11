@@ -87,3 +87,4 @@ C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagemen
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\bin\Debug\System.Threading.Channels.xml
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\bin\Debug\System.ValueTuple.xml
+C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.exe.config

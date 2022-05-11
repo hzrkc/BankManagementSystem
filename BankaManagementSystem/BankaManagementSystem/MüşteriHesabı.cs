@@ -20,8 +20,9 @@ namespace BankaManagementSystem
         //----PostgreSql ile ilgili kısımlar
 
         // PostgreSql veritabanına bağlantı oluşturmak için değişkenler
-        private string connstring = String.Format("Server={0};Port={1};" + "User Id={2};Password={3};Database={4};",
-                                                    "localhost", 5432, "postgres", "17052016", "bankManagement");
+        private string connstring = String.Format("Server={0};Port={1};" + 
+                                                  "User Id={2};Password={3};Database={4};",
+                                                  "localhost", 5432, "postgres", "7163", "bankManagement");
         private NpgsqlConnection conn;
 
         // sql sorguları ve komutları oluşturmak için değişkenler
@@ -146,7 +147,9 @@ namespace BankaManagementSystem
             try
             {
                 conn.Open();
-                sql= @"select * from select_musteriler()";
+                sql= @"SELECT T.tur, H.bakiye From hesaplar H 
+                      JOIN musteriler M ON M.id = H.uye_id
+                      JOIN hesap_tur T ON H.hesap_tur_id=T.id";
                 cmd= new NpgsqlCommand(sql, conn);
                 dt= new DataTable(); ;
                 dt.Load(cmd.ExecuteReader());

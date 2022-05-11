@@ -34,6 +34,7 @@
             this.btn_Ayarlar = new System.Windows.Forms.Button();
             this.btn_TransferVeÖdeme = new System.Windows.Forms.Button();
             this.pnl_BackColor = new System.Windows.Forms.Panel();
+            this.btn_CloseChildForm = new DevExpress.XtraEditors.SimpleButton();
             this.pnl_childFrom = new System.Windows.Forms.Panel();
             this.pnl_AnaMenu = new System.Windows.Forms.Panel();
             this.btn_Krediİşlemleri = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@
             this.pnl_label = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_top = new System.Windows.Forms.Panel();
-            this.btn_CloseChildForm = new DevExpress.XtraEditors.SimpleButton();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_MinWindow = new System.Windows.Forms.Button();
             this.btn_WindowClose = new System.Windows.Forms.Button();
@@ -135,6 +135,37 @@
             this.pnl_BackColor.Name = "pnl_BackColor";
             this.pnl_BackColor.Size = new System.Drawing.Size(600, 578);
             this.pnl_BackColor.TabIndex = 1;
+            // 
+            // btn_CloseChildForm
+            // 
+            this.btn_CloseChildForm.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.btn_CloseChildForm.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.btn_CloseChildForm.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
+            this.btn_CloseChildForm.Appearance.Options.UseBackColor = true;
+            this.btn_CloseChildForm.Appearance.Options.UseBorderColor = true;
+            this.btn_CloseChildForm.AppearanceDisabled.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CloseChildForm.AppearanceDisabled.BackColor2 = System.Drawing.Color.Transparent;
+            this.btn_CloseChildForm.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
+            this.btn_CloseChildForm.AppearanceDisabled.Options.UseBackColor = true;
+            this.btn_CloseChildForm.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btn_CloseChildForm.AppearanceHovered.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CloseChildForm.AppearanceHovered.BackColor2 = System.Drawing.Color.Transparent;
+            this.btn_CloseChildForm.AppearanceHovered.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_CloseChildForm.AppearanceHovered.Options.UseBackColor = true;
+            this.btn_CloseChildForm.AppearanceHovered.Options.UseBorderColor = true;
+            this.btn_CloseChildForm.AppearancePressed.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CloseChildForm.AppearancePressed.BackColor2 = System.Drawing.Color.Transparent;
+            this.btn_CloseChildForm.AppearancePressed.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_CloseChildForm.AppearancePressed.Options.UseBackColor = true;
+            this.btn_CloseChildForm.AppearancePressed.Options.UseBorderColor = true;
+            this.btn_CloseChildForm.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_CloseChildForm.ImageOptions.Image")));
+            this.btn_CloseChildForm.Location = new System.Drawing.Point(565, 0);
+            this.btn_CloseChildForm.Name = "btn_CloseChildForm";
+            this.btn_CloseChildForm.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.btn_CloseChildForm.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.True;
+            this.btn_CloseChildForm.Size = new System.Drawing.Size(35, 38);
+            this.btn_CloseChildForm.TabIndex = 23;
+            this.btn_CloseChildForm.Click += new System.EventHandler(this.btn_CloseChildForm_Click);
             // 
             // pnl_childFrom
             // 
@@ -225,6 +256,7 @@
             // 
             // Dgv_HesapBilgileri
             // 
+            this.Dgv_HesapBilgileri.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Dgv_HesapBilgileri.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
             this.Dgv_HesapBilgileri.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Dgv_HesapBilgileri.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
@@ -233,8 +265,10 @@
             this.Dgv_HesapBilgileri.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.Dgv_HesapBilgileri.Location = new System.Drawing.Point(0, 262);
             this.Dgv_HesapBilgileri.Margin = new System.Windows.Forms.Padding(4);
+            this.Dgv_HesapBilgileri.MultiSelect = false;
             this.Dgv_HesapBilgileri.Name = "Dgv_HesapBilgileri";
             this.Dgv_HesapBilgileri.RowHeadersWidth = 51;
+            this.Dgv_HesapBilgileri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgv_HesapBilgileri.Size = new System.Drawing.Size(594, 158);
             this.Dgv_HesapBilgileri.TabIndex = 16;
             // 
@@ -262,6 +296,10 @@
             // 
             // Dgv_AylikOzet
             // 
+            this.Dgv_AylikOzet.AllowUserToAddRows = false;
+            this.Dgv_AylikOzet.AllowUserToDeleteRows = false;
+            this.Dgv_AylikOzet.AllowUserToOrderColumns = true;
+            this.Dgv_AylikOzet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Dgv_AylikOzet.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
             this.Dgv_AylikOzet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Dgv_AylikOzet.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
@@ -270,8 +308,11 @@
             this.Dgv_AylikOzet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.Dgv_AylikOzet.Location = new System.Drawing.Point(0, 52);
             this.Dgv_AylikOzet.Margin = new System.Windows.Forms.Padding(4);
+            this.Dgv_AylikOzet.MultiSelect = false;
             this.Dgv_AylikOzet.Name = "Dgv_AylikOzet";
+            this.Dgv_AylikOzet.ReadOnly = true;
             this.Dgv_AylikOzet.RowHeadersWidth = 51;
+            this.Dgv_AylikOzet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgv_AylikOzet.Size = new System.Drawing.Size(594, 158);
             this.Dgv_AylikOzet.TabIndex = 14;
             // 
@@ -308,37 +349,6 @@
             this.pnl_top.Name = "pnl_top";
             this.pnl_top.Size = new System.Drawing.Size(600, 32);
             this.pnl_top.TabIndex = 0;
-            // 
-            // btn_CloseChildForm
-            // 
-            this.btn_CloseChildForm.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
-            this.btn_CloseChildForm.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
-            this.btn_CloseChildForm.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
-            this.btn_CloseChildForm.Appearance.Options.UseBackColor = true;
-            this.btn_CloseChildForm.Appearance.Options.UseBorderColor = true;
-            this.btn_CloseChildForm.AppearanceDisabled.BackColor = System.Drawing.Color.Transparent;
-            this.btn_CloseChildForm.AppearanceDisabled.BackColor2 = System.Drawing.Color.Transparent;
-            this.btn_CloseChildForm.AppearanceDisabled.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
-            this.btn_CloseChildForm.AppearanceDisabled.Options.UseBackColor = true;
-            this.btn_CloseChildForm.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btn_CloseChildForm.AppearanceHovered.BackColor = System.Drawing.Color.Transparent;
-            this.btn_CloseChildForm.AppearanceHovered.BackColor2 = System.Drawing.Color.Transparent;
-            this.btn_CloseChildForm.AppearanceHovered.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_CloseChildForm.AppearanceHovered.Options.UseBackColor = true;
-            this.btn_CloseChildForm.AppearanceHovered.Options.UseBorderColor = true;
-            this.btn_CloseChildForm.AppearancePressed.BackColor = System.Drawing.Color.Transparent;
-            this.btn_CloseChildForm.AppearancePressed.BackColor2 = System.Drawing.Color.Transparent;
-            this.btn_CloseChildForm.AppearancePressed.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_CloseChildForm.AppearancePressed.Options.UseBackColor = true;
-            this.btn_CloseChildForm.AppearancePressed.Options.UseBorderColor = true;
-            this.btn_CloseChildForm.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_CloseChildForm.ImageOptions.Image")));
-            this.btn_CloseChildForm.Location = new System.Drawing.Point(565, 0);
-            this.btn_CloseChildForm.Name = "btn_CloseChildForm";
-            this.btn_CloseChildForm.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.btn_CloseChildForm.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.True;
-            this.btn_CloseChildForm.Size = new System.Drawing.Size(35, 38);
-            this.btn_CloseChildForm.TabIndex = 23;
-            this.btn_CloseChildForm.Click += new System.EventHandler(this.btn_CloseChildForm_Click);
             // 
             // label2
             // 

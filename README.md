@@ -5,45 +5,27 @@
 Her formun private tc kısmı oluşturulur.
 Form nesnesi sayesinde değişkenler arası aktarım sağlanır.
 
-# PosgreSql fonksiyonlar oluşturma
-
-## Select fonksiyonları
-
-1 - Musteriler tablosu için
-```sql
-   create or replace function select_musteriler()
-   return table
-   {
-      _id int,
-      _isim ,
-      _soyisim ,
-      _adres ,
-      _email ,
-      _telefon ,
-      _tc ,
-      _temsilci_id,
-      _sifre 
-   }as
-   $$
-   begin
-      return query
-      select id,isim,soyisim,adres,email,telefon,tc,temsilci_id,sifre from musteriler order by _id;
-   end
-   $$
-   language plpgsql
-```
-
-
 # PostgreSql veritabanını C# formda kullanma
- !!! Kütüphane ekle
+Kütüphane ekle
  ```C#
    using Npgsql;
  ```
+ Karşılaştığımız versiyon hatası
+
+
+çözüm: https://stackoverflow.com/questions/63019110/could-not-load-file-or-assembly-system-buffers-version-4-0-2-0
+
+
+son durum 
+
+
+
+
 
  ## Baglantı oluşturup açma
 
  ```C#
-    private string connstring =String.Format("Server={0};Port={1};"+ "User Id={2};Password={3};Database={4};","localhost",5432,"postgres","17052016","db_bankManagementSystem");
+    private string connstring =String.Format("Server={0};Port={1};"+ "User Id={2};Password={3};Database={4};","localhost",5432,"postgres","17052016","bankManagementSystem");
 
     private NpgsqlConnection conn;
 
@@ -283,19 +265,48 @@ Form nesnesi sayesinde değişkenler arası aktarım sağlanır.
 # Renk Paleti
 ![#d2afff Color Hex](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_Color/%23d2afff%20Color%20Hex.png)
 
- Koyu -> #3f344c (label ve buton forecolor)
+ Koyu
+ 63, 52, 76
 
- #a88ccc 
 
- Orta -> #d2afff (Arka Plan rengi)
+ 210, 175, 255
+ 246, 239, 255 (mouseOver, active)
+ 246, 239, 255 (menu-buton)
+ Açık
 
- #dbbfff
+ # PosgreSql fonksiyonlar oluşturma
 
- #e8d7ff
+Kullanılmak zorunda değil.
 
- #eddfff
+## Select fonksiyonları
 
- Açık -> #f6efff 
+1 - Musteriler tablosu için
+```sql
+DROP FUNCTION select_musteriler();
+Create or replace function select_musteriler()
+
+returns table
+(
+  _id int,
+  _isim character varying,
+  _soyisim character varying,
+  _adres character varying,
+  _email character varying,
+  _telefon integer,
+  _tc integer,
+  _temsilci_id integer
+)as
+$$
+begin
+	return query
+	select _id,_isim,_soyisim,_adres,_email,_telefon,_tc,_temsilci_id from musteriler order by _id;
+end
+$$
+language plpgsql;
+
+--test
+SELECT * from select_musteriler();
+```
 
 ### Kaynakça
 
