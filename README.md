@@ -12,14 +12,20 @@ Kütüphane ekle
  ```
  Karşılaştığımız versiyon hatası
 
+ 
+![VersionHatası_HataEkranı](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/notlar/VersionHatas%C4%B1_HataEkran%C4%B1.png)
+
 
 çözüm: https://stackoverflow.com/questions/63019110/could-not-load-file-or-assembly-system-buffers-version-4-0-2-0
+
+
+![VersionHatası](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/notlar/VersionHatas%C4%B1.png)
 
 
 son durum 
 
 
-
+![VersionHatası_Duzeltme](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/notlar/VersionHatas%C4%B1_D%C3%BCzeltme.png)
 
 
  ## Baglantı oluşturup açma
