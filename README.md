@@ -5,8 +5,37 @@
 Her formun private tc kısmı oluşturulur.
 Form nesnesi sayesinde değişkenler arası aktarım sağlanır.
 
+# PosgreSql fonksiyonlar oluşturma
+
+## Select fonksiyonları
+
+1 - Musteriler tablosu için
+```sql
+   create or replace function select_musteriler()
+   return table
+   {
+      _id int,
+      _isim ,
+      _soyisim ,
+      _adres ,
+      _email ,
+      _telefon ,
+      _tc ,
+      _temsilci_id,
+      _sifre 
+   }as
+   $$
+   begin
+      return query
+      select id,isim,soyisim,adres,email,telefon,tc,temsilci_id,sifre from musteriler order by _id;
+   end
+   $$
+   language plpgsql
+```
+
+
 # PostgreSql veritabanını C# formda kullanma
- !!! Kütüphane ekleme
+ !!! Kütüphane ekle
  ```C#
    using Npgsql;
  ```
@@ -14,7 +43,7 @@ Form nesnesi sayesinde değişkenler arası aktarım sağlanır.
  ## Baglantı oluşturup açma
 
  ```C#
-    private string connstring =String.Format("Server={0};Port={1};"+ "User Id={2};Password={3};Database={4};","localhost",5432,"postgres","7163","db_bankManagementSystem");
+    private string connstring =String.Format("Server={0};Port={1};"+ "User Id={2};Password={3};Database={4};","localhost",5432,"postgres","17052016","db_bankManagementSystem");
 
     private NpgsqlConnection conn;
 
@@ -33,6 +62,7 @@ Form nesnesi sayesinde değişkenler arası aktarım sağlanır.
   ```C#
     private string sql;
     private NpgsqlCommand cmd;
+    private DataTable dt;
 
     //örnek
     sql=@"select * from müşteriler()";
@@ -255,13 +285,15 @@ Form nesnesi sayesinde değişkenler arası aktarım sağlanır.
 
  Koyu -> #3f344c (label ve buton forecolor)
 
- #a88ccc (MouseOverBackColor)
+ #a88ccc 
 
  Orta -> #d2afff (Arka Plan rengi)
 
  #dbbfff
 
  #e8d7ff
+
+ #eddfff
 
  Açık -> #f6efff 
 
