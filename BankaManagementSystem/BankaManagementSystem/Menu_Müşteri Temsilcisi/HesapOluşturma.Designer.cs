@@ -1,6 +1,6 @@
 ﻿namespace BankaManagementSystem.Menu_Müşteri_Temsilcisi
 {
-    partial class MT_MüşteriKayıt
+    partial class HesapOluşturma
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnl_anaPanel = new System.Windows.Forms.Panel();
+            this.pnl_AnaPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // pnl_anaPanel
+            // pnl_AnaPanel
             // 
-            this.pnl_anaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.pnl_anaPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_anaPanel.Location = new System.Drawing.Point(0, 0);
-            this.pnl_anaPanel.Name = "pnl_anaPanel";
-            this.pnl_anaPanel.Size = new System.Drawing.Size(800, 450);
-            this.pnl_anaPanel.TabIndex = 0;
+            this.pnl_AnaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.pnl_AnaPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_AnaPanel.Location = new System.Drawing.Point(0, 0);
+            this.pnl_AnaPanel.Name = "pnl_AnaPanel";
+            this.pnl_AnaPanel.Size = new System.Drawing.Size(417, 724);
+            this.pnl_AnaPanel.TabIndex = 1;
             // 
-            // MT_MüşteriKayıt
+            // HesapOluşturma
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pnl_anaPanel);
+            this.ClientSize = new System.Drawing.Size(417, 724);
+            this.Controls.Add(this.pnl_AnaPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MT_MüşteriKayıt";
-            this.Text = "MT_MüşteriKayıt";
+            this.Name = "HesapOluşturma";
+            this.Text = "HesapOluşturma";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pnl_anaPanel;
+        private System.Windows.Forms.Panel pnl_AnaPanel;
     }
 }

@@ -95,6 +95,7 @@
             this.TxtBox_sifre.Name = "TxtBox_sifre";
             this.TxtBox_sifre.Size = new System.Drawing.Size(215, 27);
             this.TxtBox_sifre.TabIndex = 9;
+            this.TxtBox_sifre.Text = "Giriniz....";
             // 
             // label2
             // 
@@ -116,6 +117,7 @@
             this.TxtBox_Tc.Name = "TxtBox_Tc";
             this.TxtBox_Tc.Size = new System.Drawing.Size(215, 27);
             this.TxtBox_Tc.TabIndex = 7;
+            this.TxtBox_Tc.Text = "Giriniz....";
             // 
             // label1
             // 

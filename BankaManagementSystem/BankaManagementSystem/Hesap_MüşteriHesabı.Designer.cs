@@ -131,7 +131,7 @@
             this.pnl_Back.Controls.Add(this.btn_CloseChildForm);
             this.pnl_Back.Controls.Add(this.pnl_childFrom);
             this.pnl_Back.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Back.Location = new System.Drawing.Point(0, 35);
+            this.pnl_Back.Location = new System.Drawing.Point(0, 33);
             this.pnl_Back.Name = "pnl_Back";
             this.pnl_Back.Size = new System.Drawing.Size(600, 578);
             this.pnl_Back.TabIndex = 1;
@@ -231,7 +231,7 @@
             this.btn_HesapSil.Location = new System.Drawing.Point(300, 0);
             this.btn_HesapSil.Margin = new System.Windows.Forms.Padding(4);
             this.btn_HesapSil.Name = "btn_HesapSil";
-            this.btn_HesapSil.Size = new System.Drawing.Size(300, 50);
+            this.btn_HesapSil.Size = new System.Drawing.Size(294, 50);
             this.btn_HesapSil.TabIndex = 8;
             this.btn_HesapSil.Text = "Hesap Sil\r\n(Seçili hesabı silme talebi oluşturur)";
             this.btn_HesapSil.UseVisualStyleBackColor = true;
@@ -347,7 +347,7 @@
             this.pnl_top.Location = new System.Drawing.Point(0, 0);
             this.pnl_top.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_top.Name = "pnl_top";
-            this.pnl_top.Size = new System.Drawing.Size(600, 35);
+            this.pnl_top.Size = new System.Drawing.Size(600, 33);
             this.pnl_top.TabIndex = 0;
             // 
             // label2
@@ -359,7 +359,7 @@
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(530, 35);
+            this.label2.Size = new System.Drawing.Size(403, 33);
             this.label2.TabIndex = 22;
             this.label2.Text = "Müsteri Girisi";
             // 
@@ -376,7 +376,7 @@
             this.btn_MinWindow.Location = new System.Drawing.Point(530, 0);
             this.btn_MinWindow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_MinWindow.Name = "btn_MinWindow";
-            this.btn_MinWindow.Size = new System.Drawing.Size(35, 35);
+            this.btn_MinWindow.Size = new System.Drawing.Size(35, 33);
             this.btn_MinWindow.TabIndex = 21;
             this.btn_MinWindow.Text = "O";
             this.btn_MinWindow.UseVisualStyleBackColor = false;
@@ -395,13 +395,13 @@
             this.btn_WindowClose.Location = new System.Drawing.Point(565, 0);
             this.btn_WindowClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_WindowClose.Name = "btn_WindowClose";
-            this.btn_WindowClose.Size = new System.Drawing.Size(35, 35);
+            this.btn_WindowClose.Size = new System.Drawing.Size(35, 33);
             this.btn_WindowClose.TabIndex = 20;
             this.btn_WindowClose.Text = "O";
             this.btn_WindowClose.UseVisualStyleBackColor = false;
             this.btn_WindowClose.Click += new System.EventHandler(this.btn_WindowClose_Click);
             // 
-            // MüşteriHesabı
+            // Hesap_MüşteriHesabı
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -409,7 +409,7 @@
             this.Controls.Add(this.pnl_anaPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "MüşteriHesabı";
+            this.Name = "Hesap_MüşteriHesabı";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MüşteriHesabı_Load);
             this.pnl_anaPanel.ResumeLayout(false);

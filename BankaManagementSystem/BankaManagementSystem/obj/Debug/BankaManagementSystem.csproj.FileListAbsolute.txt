@@ -80,7 +80,6 @@ C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagemen
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\bin\Debug\System.ValueTuple.xml
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.exe.config
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_BankaMüdürü.SistemGüncelleme.resources
-C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri_Temsilcisi.İlgiliMüşteri.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri.Ayarlar.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri.Mus_Krediİşlemleri.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri.TransferVeÖdemeler.resources
@@ -94,4 +93,5 @@ C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagemen
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Login.Login_BankaMüdürü.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Login.Login_Müşteri.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Login.Login_MüşteriTemsilcisi.resources
-C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri_Temsilcisi.MT_MüşteriKayıt.resources
+C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri_Temsilcisi.HesapOluşturma.resources
+C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri_Temsilcisi.MT_Krediİşlemleri.resources

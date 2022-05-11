@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BankaManagementSystem.Menu_Müşteri_Temsilcisi
 {
-    public partial class MT_MüşteriKayıt : Form
+    public partial class HesapOluşturma : Form
     {
-        public MT_MüşteriKayıt()
+        public HesapOluşturma()
         {
             InitializeComponent();
         }

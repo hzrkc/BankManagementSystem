@@ -163,17 +163,17 @@
     <Compile Include="Menu_Login\Login_MüşteriTemsilcisi.Designer.cs">
       <DependentUpon>Login_MüşteriTemsilcisi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Müşteri Temsilcisi\MT_MüşteriKayıt.cs">
+    <Compile Include="Menu_Müşteri Temsilcisi\HesapOluşturma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Müşteri Temsilcisi\MT_MüşteriKayıt.Designer.cs">
-      <DependentUpon>MT_MüşteriKayıt.cs</DependentUpon>
+    <Compile Include="Menu_Müşteri Temsilcisi\HesapOluşturma.Designer.cs">
+      <DependentUpon>HesapOluşturma.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Müşteri Temsilcisi\İlgiliMüşteri.cs">
+    <Compile Include="Menu_Müşteri Temsilcisi\MT_Krediİşlemleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Müşteri Temsilcisi\İlgiliMüşteri.Designer.cs">
-      <DependentUpon>İlgiliMüşteri.cs</DependentUpon>
+    <Compile Include="Menu_Müşteri Temsilcisi\MT_Krediİşlemleri.Designer.cs">
+      <DependentUpon>MT_Krediİşlemleri.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu_Müşteri\Ayarlar.cs">
       <SubType>Form</SubType>
@@ -237,11 +237,11 @@
     <EmbeddedResource Include="Menu_Login\Login_MüşteriTemsilcisi.resx">
       <DependentUpon>Login_MüşteriTemsilcisi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Müşteri Temsilcisi\MT_MüşteriKayıt.resx">
-      <DependentUpon>MT_MüşteriKayıt.cs</DependentUpon>
+    <EmbeddedResource Include="Menu_Müşteri Temsilcisi\HesapOluşturma.resx">
+      <DependentUpon>HesapOluşturma.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Müşteri Temsilcisi\İlgiliMüşteri.resx">
-      <DependentUpon>İlgiliMüşteri.cs</DependentUpon>
+    <EmbeddedResource Include="Menu_Müşteri Temsilcisi\MT_Krediİşlemleri.resx">
+      <DependentUpon>MT_Krediİşlemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_Müşteri\Ayarlar.resx">
       <DependentUpon>Ayarlar.cs</DependentUpon>
