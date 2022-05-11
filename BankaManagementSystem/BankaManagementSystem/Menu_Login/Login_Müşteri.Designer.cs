@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pnl_anaPanel = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // pnl_anaPanel
+            // 
+            this.pnl_anaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.pnl_anaPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_anaPanel.Location = new System.Drawing.Point(0, 0);
+            this.pnl_anaPanel.Name = "pnl_anaPanel";
+            this.pnl_anaPanel.Size = new System.Drawing.Size(800, 450);
+            this.pnl_anaPanel.TabIndex = 0;
+            this.pnl_anaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Login_Müşteri
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pnl_anaPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Login_Müşteri";
             this.Text = "Login_Müşteri";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel pnl_anaPanel;
     }
 }

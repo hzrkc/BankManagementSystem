@@ -210,11 +210,35 @@
     <EmbeddedResource Include="Hesap_BankaMüdürü.resx">
       <DependentUpon>Hesap_BankaMüdürü.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Hesap_MüşteriTemsilcisi.resx">
+      <DependentUpon>Hesap_MüşteriTemsilcisi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu_BankaMüdürü\BM_Krediİşlemleri.resx">
+      <DependentUpon>BM_Krediİşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_BankaMüdürü\MüşteriKayıt.resx">
+      <DependentUpon>MüşteriKayıt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu_BankaMüdürü\SistemGüncelleme.resx">
       <DependentUpon>SistemGüncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_BankaMüdürü\YatırımFonuDüzenleme.resx">
+      <DependentUpon>YatırımFonuDüzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Login\Login_BankaMüdürü.resx">
+      <DependentUpon>Login_BankaMüdürü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Login\Login_Müşteri.resx">
+      <DependentUpon>Login_Müşteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Login\Login_MüşteriTemsilcisi.resx">
+      <DependentUpon>Login_MüşteriTemsilcisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Müşteri Temsilcisi\MT_MüşteriKayıt.resx">
+      <DependentUpon>MT_MüşteriKayıt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_Müşteri Temsilcisi\İlgiliMüşteri.resx">
       <DependentUpon>İlgiliMüşteri.cs</DependentUpon>
