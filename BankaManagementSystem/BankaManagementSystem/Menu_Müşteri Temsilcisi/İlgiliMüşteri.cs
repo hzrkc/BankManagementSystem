@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BankaManagementSystem.Müşteri
+namespace BankaManagementSystem.Menu_Müşteri_Temsilcisi
 {
-    public partial class TransferVeÖdemeler : Form
+    public partial class İlgiliMüşteri : Form
     {
-        public TransferVeÖdemeler()
+        public İlgiliMüşteri()
         {
             InitializeComponent();
         }

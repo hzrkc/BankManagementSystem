@@ -103,97 +103,136 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Hesap_MüşteriTemsilcisi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Hesap_MüşteriTemsilcisi.Designer.cs">
+      <DependentUpon>Hesap_MüşteriTemsilcisi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kredi İşlemleri\Banka Müdürü.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kredi İşlemleri\Banka Müdürü.Designer.cs">
-      <DependentUpon>Banka Müdürü.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Banka Müdürü\Sistem Güncelleme.cs">
+    <Compile Include="Menu_BankaMüdürü\BM_Krediİşlemleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Banka Müdürü\Sistem Güncelleme.Designer.cs">
-      <DependentUpon>Sistem Güncelleme.cs</DependentUpon>
+    <Compile Include="Menu_BankaMüdürü\BM_Krediİşlemleri.Designer.cs">
+      <DependentUpon>BM_Krediİşlemleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="BankaMüdürü.cs">
+    <Compile Include="Hesap_BankaMüdürü.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BankaMüdürü.Designer.cs">
-      <DependentUpon>BankaMüdürü.cs</DependentUpon>
+    <Compile Include="Hesap_BankaMüdürü.Designer.cs">
+      <DependentUpon>Hesap_BankaMüdürü.cs</DependentUpon>
     </Compile>
-    <Compile Include="Müşteri Temsilcisi\İlgili Müşteri.cs">
+    <Compile Include="Menu_BankaMüdürü\MüşteriKayıt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Müşteri Temsilcisi\İlgili Müşteri.Designer.cs">
-      <DependentUpon>İlgili Müşteri.cs</DependentUpon>
+    <Compile Include="Menu_BankaMüdürü\MüşteriKayıt.Designer.cs">
+      <DependentUpon>MüşteriKayıt.cs</DependentUpon>
     </Compile>
-    <Compile Include="MüşteriHesabı.cs">
+    <Compile Include="Menu_BankaMüdürü\SistemGüncelleme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MüşteriHesabı.Designer.cs">
-      <DependentUpon>MüşteriHesabı.cs</DependentUpon>
+    <Compile Include="Menu_BankaMüdürü\SistemGüncelleme.Designer.cs">
+      <DependentUpon>SistemGüncelleme.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kredi İşlemleri\Müşteri.cs">
+    <Compile Include="Menu_BankaMüdürü\YatırımFonuDüzenleme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kredi İşlemleri\Müşteri.Designer.cs">
-      <DependentUpon>Müşteri.cs</DependentUpon>
+    <Compile Include="Menu_BankaMüdürü\YatırımFonuDüzenleme.Designer.cs">
+      <DependentUpon>YatırımFonuDüzenleme.cs</DependentUpon>
     </Compile>
-    <Compile Include="Müşteri\Ayarlar.cs">
+    <Compile Include="Menu_Login\Login_BankaMüdürü.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Müşteri\Ayarlar.Designer.cs">
+    <Compile Include="Menu_Login\Login_BankaMüdürü.Designer.cs">
+      <DependentUpon>Login_BankaMüdürü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Login\Login_Müşteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Login\Login_Müşteri.Designer.cs">
+      <DependentUpon>Login_Müşteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Login\Login_MüşteriTemsilcisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Login\Login_MüşteriTemsilcisi.Designer.cs">
+      <DependentUpon>Login_MüşteriTemsilcisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Müşteri Temsilcisi\MT_MüşteriKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Müşteri Temsilcisi\MT_MüşteriKayıt.Designer.cs">
+      <DependentUpon>MT_MüşteriKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Müşteri Temsilcisi\İlgiliMüşteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Müşteri Temsilcisi\İlgiliMüşteri.Designer.cs">
+      <DependentUpon>İlgiliMüşteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Müşteri\Ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Müşteri\Ayarlar.Designer.cs">
       <DependentUpon>Ayarlar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Müşteri\Hesap Oluşturma.cs">
+    <Compile Include="Menu_Müşteri\Mus_Krediİşlemleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Müşteri\Hesap Oluşturma.Designer.cs">
-      <DependentUpon>Hesap Oluşturma.cs</DependentUpon>
+    <Compile Include="Menu_Müşteri\Mus_Krediİşlemleri.Designer.cs">
+      <DependentUpon>Mus_Krediİşlemleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="Müşteri\TransferVeÖdemeler.cs">
+    <Compile Include="Menu_Müşteri\TransferVeÖdemeler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Müşteri\TransferVeÖdemeler.Designer.cs">
+    <Compile Include="Menu_Müşteri\TransferVeÖdemeler.Designer.cs">
       <DependentUpon>TransferVeÖdemeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hesap_MüşteriHesabı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hesap_MüşteriHesabı.Designer.cs">
+      <DependentUpon>Hesap_MüşteriHesabı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Müşteri\Hesap Oluşturma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Müşteri\Hesap Oluşturma.Designer.cs">
+      <DependentUpon>Hesap Oluşturma.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Hesap_BankaMüdürü.resx">
+      <DependentUpon>Hesap_BankaMüdürü.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kredi İşlemleri\Banka Müdürü.resx">
-      <DependentUpon>Banka Müdürü.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Banka Müdürü\Sistem Güncelleme.resx">
-      <DependentUpon>Sistem Güncelleme.cs</DependentUpon>
+    <EmbeddedResource Include="Menu_BankaMüdürü\SistemGüncelleme.resx">
+      <DependentUpon>SistemGüncelleme.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BankaMüdürü.resx">
-      <DependentUpon>BankaMüdürü.cs</DependentUpon>
+    <EmbeddedResource Include="Menu_Müşteri Temsilcisi\İlgiliMüşteri.resx">
+      <DependentUpon>İlgiliMüşteri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Müşteri Temsilcisi\İlgili Müşteri.resx">
-      <DependentUpon>İlgili Müşteri.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MüşteriHesabı.resx">
-      <DependentUpon>MüşteriHesabı.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Kredi İşlemleri\Müşteri.resx">
-      <DependentUpon>Müşteri.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Müşteri\Ayarlar.resx">
+    <EmbeddedResource Include="Menu_Müşteri\Ayarlar.resx">
       <DependentUpon>Ayarlar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Müşteri\Hesap Oluşturma.resx">
-      <DependentUpon>Hesap Oluşturma.cs</DependentUpon>
+    <EmbeddedResource Include="Menu_Müşteri\Mus_Krediİşlemleri.resx">
+      <DependentUpon>Mus_Krediİşlemleri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Müşteri\TransferVeÖdemeler.resx">
+    <EmbeddedResource Include="Menu_Müşteri\TransferVeÖdemeler.resx">
       <DependentUpon>TransferVeÖdemeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hesap_MüşteriHesabı.resx">
+      <DependentUpon>Hesap_MüşteriHesabı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Müşteri\Hesap Oluşturma.resx">
+      <DependentUpon>Hesap Oluşturma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -203,6 +242,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -217,6 +257,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ıconBank.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

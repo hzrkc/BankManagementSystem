@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BankaManagementSystem.Müşteri
+namespace BankaManagementSystem.Menu_BankaMüdürü
 {
-    public partial class Kredi_İşlemleri : Form
+    public partial class YatırımFonuDüzenleme : Form
     {
-        public Kredi_İşlemleri()
+        public YatırımFonuDüzenleme()
         {
             InitializeComponent();
         }

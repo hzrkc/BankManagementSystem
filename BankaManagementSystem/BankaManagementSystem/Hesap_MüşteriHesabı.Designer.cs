@@ -1,6 +1,6 @@
 ﻿namespace BankaManagementSystem
 {
-    partial class MüşteriHesabı
+    partial class Hesap_MüşteriHesabı
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MüşteriHesabı));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hesap_MüşteriHesabı));
             this.pnl_anaPanel = new System.Windows.Forms.Panel();
             this.pnl_Menu = new System.Windows.Forms.Panel();
             this.btn_Ayarlar = new System.Windows.Forms.Button();
             this.btn_TransferVeÖdeme = new System.Windows.Forms.Button();
-            this.pnl_BackColor = new System.Windows.Forms.Panel();
+            this.pnl_Back = new System.Windows.Forms.Panel();
             this.btn_CloseChildForm = new DevExpress.XtraEditors.SimpleButton();
             this.pnl_childFrom = new System.Windows.Forms.Panel();
             this.pnl_AnaMenu = new System.Windows.Forms.Panel();
@@ -53,7 +53,7 @@
             this.btn_WindowClose = new System.Windows.Forms.Button();
             this.pnl_anaPanel.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
-            this.pnl_BackColor.SuspendLayout();
+            this.pnl_Back.SuspendLayout();
             this.pnl_childFrom.SuspendLayout();
             this.pnl_AnaMenu.SuspendLayout();
             this.pnl_Button.SuspendLayout();
@@ -68,7 +68,7 @@
             // 
             this.pnl_anaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
             this.pnl_anaPanel.Controls.Add(this.pnl_Menu);
-            this.pnl_anaPanel.Controls.Add(this.pnl_BackColor);
+            this.pnl_anaPanel.Controls.Add(this.pnl_Back);
             this.pnl_anaPanel.Controls.Add(this.pnl_top);
             this.pnl_anaPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_anaPanel.Location = new System.Drawing.Point(0, 0);
@@ -125,16 +125,16 @@
             this.btn_TransferVeÖdeme.UseVisualStyleBackColor = true;
             this.btn_TransferVeÖdeme.Click += new System.EventHandler(this.btn_TransferVeÖdeme_Click);
             // 
-            // pnl_BackColor
+            // pnl_Back
             // 
-            this.pnl_BackColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.pnl_BackColor.Controls.Add(this.btn_CloseChildForm);
-            this.pnl_BackColor.Controls.Add(this.pnl_childFrom);
-            this.pnl_BackColor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_BackColor.Location = new System.Drawing.Point(0, 32);
-            this.pnl_BackColor.Name = "pnl_BackColor";
-            this.pnl_BackColor.Size = new System.Drawing.Size(600, 578);
-            this.pnl_BackColor.TabIndex = 1;
+            this.pnl_Back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.pnl_Back.Controls.Add(this.btn_CloseChildForm);
+            this.pnl_Back.Controls.Add(this.pnl_childFrom);
+            this.pnl_Back.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Back.Location = new System.Drawing.Point(0, 35);
+            this.pnl_Back.Name = "pnl_Back";
+            this.pnl_Back.Size = new System.Drawing.Size(600, 578);
+            this.pnl_Back.TabIndex = 1;
             // 
             // btn_CloseChildForm
             // 
@@ -347,19 +347,19 @@
             this.pnl_top.Location = new System.Drawing.Point(0, 0);
             this.pnl_top.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_top.Name = "pnl_top";
-            this.pnl_top.Size = new System.Drawing.Size(600, 32);
+            this.pnl_top.Size = new System.Drawing.Size(600, 35);
             this.pnl_top.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.label2.Location = new System.Drawing.Point(0, 1);
+            this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(530, 31);
+            this.label2.Size = new System.Drawing.Size(530, 35);
             this.label2.TabIndex = 22;
             this.label2.Text = "Müsteri Girisi";
             // 
@@ -376,7 +376,7 @@
             this.btn_MinWindow.Location = new System.Drawing.Point(530, 0);
             this.btn_MinWindow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_MinWindow.Name = "btn_MinWindow";
-            this.btn_MinWindow.Size = new System.Drawing.Size(35, 32);
+            this.btn_MinWindow.Size = new System.Drawing.Size(35, 35);
             this.btn_MinWindow.TabIndex = 21;
             this.btn_MinWindow.Text = "O";
             this.btn_MinWindow.UseVisualStyleBackColor = false;
@@ -395,7 +395,7 @@
             this.btn_WindowClose.Location = new System.Drawing.Point(565, 0);
             this.btn_WindowClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_WindowClose.Name = "btn_WindowClose";
-            this.btn_WindowClose.Size = new System.Drawing.Size(35, 32);
+            this.btn_WindowClose.Size = new System.Drawing.Size(35, 35);
             this.btn_WindowClose.TabIndex = 20;
             this.btn_WindowClose.Text = "O";
             this.btn_WindowClose.UseVisualStyleBackColor = false;
@@ -414,7 +414,7 @@
             this.Load += new System.EventHandler(this.MüşteriHesabı_Load);
             this.pnl_anaPanel.ResumeLayout(false);
             this.pnl_Menu.ResumeLayout(false);
-            this.pnl_BackColor.ResumeLayout(false);
+            this.pnl_Back.ResumeLayout(false);
             this.pnl_childFrom.ResumeLayout(false);
             this.pnl_AnaMenu.ResumeLayout(false);
             this.pnl_Button.ResumeLayout(false);
@@ -437,7 +437,7 @@
         private System.Windows.Forms.Panel pnl_Menu;
         private System.Windows.Forms.Button btn_Ayarlar;
         private System.Windows.Forms.Button btn_TransferVeÖdeme;
-        private System.Windows.Forms.Panel pnl_BackColor;
+        private System.Windows.Forms.Panel pnl_Back;
         private System.Windows.Forms.Panel pnl_childFrom;
         private System.Windows.Forms.Panel pnl_AnaMenu;
         private System.Windows.Forms.Button btn_Krediİşlemleri;

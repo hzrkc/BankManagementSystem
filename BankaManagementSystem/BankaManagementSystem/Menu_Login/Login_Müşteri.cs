@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BankaManagementSystem.Banka_Müdürü
+namespace BankaManagementSystem.Menu_Login
 {
-    public partial class Sistem_Güncelleme : Form
+    public partial class Login_Müşteri : Form
     {
-        public Sistem_Güncelleme()
+        public Login_Müşteri()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

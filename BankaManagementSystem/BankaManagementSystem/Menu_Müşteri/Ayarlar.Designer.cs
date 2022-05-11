@@ -1,4 +1,4 @@
-﻿namespace BankaManagementSystem.Müşteri
+﻿namespace BankaManagementSystem.Menu_Müşteri
 {
     partial class Ayarlar
     {
@@ -43,7 +43,7 @@
             this.pnl_childFrom.Location = new System.Drawing.Point(0, 0);
             this.pnl_childFrom.Name = "pnl_childFrom";
             this.pnl_childFrom.Size = new System.Drawing.Size(600, 578);
-            this.pnl_childFrom.TabIndex = 3;
+            this.pnl_childFrom.TabIndex = 5;
             // 
             // pnl_top
             // 

@@ -16,7 +16,7 @@ namespace BankaManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MüşteriHesabı());
+            Application.Run(new Hesap_BankaMüdürü());
         }
     }
 }

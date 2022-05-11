@@ -1,4 +1,4 @@
-﻿namespace BankaManagementSystem.Müşteri
+﻿namespace BankaManagementSystem.Menu_Müşteri
 {
     partial class TransferVeÖdemeler
     {
@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnl_childFrom = new System.Windows.Forms.Panel();
+            this.pnl_anaPanel = new System.Windows.Forms.Panel();
             this.pnl_top = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pnl_childFrom.SuspendLayout();
+            this.pnl_anaPanel.SuspendLayout();
             this.pnl_top.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnl_childFrom
+            // pnl_anaPanel
             // 
-            this.pnl_childFrom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.pnl_childFrom.Controls.Add(this.pnl_top);
-            this.pnl_childFrom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_childFrom.Location = new System.Drawing.Point(0, 0);
-            this.pnl_childFrom.Name = "pnl_childFrom";
-            this.pnl_childFrom.Size = new System.Drawing.Size(600, 578);
-            this.pnl_childFrom.TabIndex = 2;
+            this.pnl_anaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.pnl_anaPanel.Controls.Add(this.pnl_top);
+            this.pnl_anaPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_anaPanel.Location = new System.Drawing.Point(0, 0);
+            this.pnl_anaPanel.Name = "pnl_anaPanel";
+            this.pnl_anaPanel.Size = new System.Drawing.Size(600, 578);
+            this.pnl_anaPanel.TabIndex = 4;
             // 
             // pnl_top
             // 
@@ -72,11 +72,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 578);
-            this.Controls.Add(this.pnl_childFrom);
+            this.Controls.Add(this.pnl_anaPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TransferVeÖdemeler";
             this.Text = "TransferVeÖdemeler";
-            this.pnl_childFrom.ResumeLayout(false);
+            this.pnl_anaPanel.ResumeLayout(false);
             this.pnl_top.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -84,7 +84,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnl_childFrom;
+        private System.Windows.Forms.Panel pnl_anaPanel;
         private System.Windows.Forms.Panel pnl_top;
         private System.Windows.Forms.Label label1;
     }

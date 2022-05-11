@@ -11,7 +11,7 @@ using Npgsql;
 
 namespace BankaManagementSystem
 {
-    public partial class MüşteriHesabı : Form
+    public partial class Hesap_MüşteriHesabı : Form
     {
         private int tc;//kullanıcı bilgilerini formlar arası aktarmak için
         private Button currentButton;//aktif butonu tutmak için
@@ -29,7 +29,7 @@ namespace BankaManagementSystem
         private string sql;
         private NpgsqlCommand cmd;
         private DataTable dt;
-        public MüşteriHesabı()
+        public Hesap_MüşteriHesabı()
         {
             InitializeComponent();
             btn_CloseChildForm.Visible = false;
@@ -98,12 +98,12 @@ namespace BankaManagementSystem
 
         private void btn_TransferVeÖdeme_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Müşteri.TransferVeÖdemeler(), sender);
+            OpenChildForm(new Menu_Müşteri.TransferVeÖdemeler(), sender);
         }
 
         private void btn_Ayarlar_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Müşteri.Ayarlar(), sender);
+            OpenChildForm(new Menu_Müşteri.Ayarlar(), sender);
         }
         
 
