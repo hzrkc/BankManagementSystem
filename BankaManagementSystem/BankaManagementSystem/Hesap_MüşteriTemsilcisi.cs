@@ -33,7 +33,16 @@ namespace BankaManagementSystem
         {
             InitializeComponent();
             btn_CloseChildForm.Visible = false;
-            btn_MüşteriKayıt.Visible = false;
+            btn_MüşteriKayıt.Enabled = false;
+            btn_MüşteriSil.Enabled = false;
+            btn_Guncelle.Enabled = false;
+            txtBox_Ad.Enabled = false;
+            txtBox_Soyad.Enabled = false;
+            txtBox_Adres.Enabled = false;
+            txtBox_Email.Enabled = false;
+            txtBox_Sifre.Enabled = false;
+            txtBox_Telefon.Enabled = false;
+
         }
         private void ActivateButton(object btnSender)
         {
@@ -83,11 +92,6 @@ namespace BankaManagementSystem
             this.pnl_ChildForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-
-        }
-
-        private void btn_Login_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -143,6 +147,22 @@ namespace BankaManagementSystem
         private void Hesap_MüşteriTemsilcisi_Load(object sender, EventArgs e)
         {
             conn = new NpgsqlConnection(connstring);
+        }
+
+        private void btn_Sorgula_Click(object sender, EventArgs e)
+        {   
+            //Müşteri Kayıtlıysa
+            btn_MüşteriSil.Enabled = true;
+            btn_Guncelle.Enabled = true;
+
+            //Müşteri Kayıtlı Değil ise
+            txtBox_Ad.Enabled = true;
+            txtBox_Soyad.Enabled = true;
+            txtBox_Adres.Enabled = true;
+            txtBox_Email.Enabled = true;
+            txtBox_Sifre.Enabled = true;
+            txtBox_Telefon.Enabled = true;
+            btn_MüşteriKayıt.Enabled = true;
         }
     }
 }

@@ -40,8 +40,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_MüşteriKayıt = new System.Windows.Forms.Button();
             this.pnl_Button = new System.Windows.Forms.Panel();
-            this.btn_HesapSil = new System.Windows.Forms.Button();
-            this.btn_YeniHesap = new System.Windows.Forms.Button();
+            this.btn_MüşteriSil = new System.Windows.Forms.Button();
+            this.btn_Guncelle = new System.Windows.Forms.Button();
             this.txtBox_Sifre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtBox_Telefon = new System.Windows.Forms.TextBox();
@@ -55,7 +55,7 @@
             this.txtBox_Ad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.GrpBox_LoginForm = new System.Windows.Forms.GroupBox();
-            this.btn_Login = new System.Windows.Forms.Button();
+            this.btn_Sorgula = new System.Windows.Forms.Button();
             this.TxtBox_Tc = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pnl_Back = new System.Windows.Forms.Panel();
@@ -271,8 +271,8 @@
             // pnl_Button
             // 
             this.pnl_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.pnl_Button.Controls.Add(this.btn_HesapSil);
-            this.pnl_Button.Controls.Add(this.btn_YeniHesap);
+            this.pnl_Button.Controls.Add(this.btn_MüşteriSil);
+            this.pnl_Button.Controls.Add(this.btn_Guncelle);
             this.pnl_Button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnl_Button.Location = new System.Drawing.Point(3, 305);
             this.pnl_Button.Margin = new System.Windows.Forms.Padding(4);
@@ -280,41 +280,41 @@
             this.pnl_Button.Size = new System.Drawing.Size(386, 54);
             this.pnl_Button.TabIndex = 19;
             // 
-            // btn_HesapSil
+            // btn_MüşteriSil
             // 
-            this.btn_HesapSil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_HesapSil.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_HesapSil.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
-            this.btn_HesapSil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_HesapSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HesapSil.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_HesapSil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_HesapSil.Location = new System.Drawing.Point(193, 0);
-            this.btn_HesapSil.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_HesapSil.Name = "btn_HesapSil";
-            this.btn_HesapSil.Size = new System.Drawing.Size(193, 54);
-            this.btn_HesapSil.TabIndex = 8;
-            this.btn_HesapSil.Text = "SIL";
-            this.btn_HesapSil.UseVisualStyleBackColor = true;
-            this.btn_HesapSil.Click += new System.EventHandler(this.btn_HesapSil_Click);
+            this.btn_MüşteriSil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MüşteriSil.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_MüşteriSil.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
+            this.btn_MüşteriSil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_MüşteriSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MüşteriSil.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MüşteriSil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.btn_MüşteriSil.Location = new System.Drawing.Point(193, 0);
+            this.btn_MüşteriSil.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_MüşteriSil.Name = "btn_MüşteriSil";
+            this.btn_MüşteriSil.Size = new System.Drawing.Size(193, 54);
+            this.btn_MüşteriSil.TabIndex = 8;
+            this.btn_MüşteriSil.Text = "SIL";
+            this.btn_MüşteriSil.UseVisualStyleBackColor = true;
+            this.btn_MüşteriSil.Click += new System.EventHandler(this.btn_HesapSil_Click);
             // 
-            // btn_YeniHesap
+            // btn_Guncelle
             // 
-            this.btn_YeniHesap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_YeniHesap.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_YeniHesap.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
-            this.btn_YeniHesap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_YeniHesap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_YeniHesap.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_YeniHesap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_YeniHesap.Location = new System.Drawing.Point(0, 0);
-            this.btn_YeniHesap.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_YeniHesap.Name = "btn_YeniHesap";
-            this.btn_YeniHesap.Size = new System.Drawing.Size(193, 54);
-            this.btn_YeniHesap.TabIndex = 7;
-            this.btn_YeniHesap.Text = "GUNCELLE";
-            this.btn_YeniHesap.UseVisualStyleBackColor = true;
-            this.btn_YeniHesap.Click += new System.EventHandler(this.btn_YeniHesap_Click);
+            this.btn_Guncelle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Guncelle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_Guncelle.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
+            this.btn_Guncelle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_Guncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Guncelle.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Guncelle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.btn_Guncelle.Location = new System.Drawing.Point(0, 0);
+            this.btn_Guncelle.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Guncelle.Name = "btn_Guncelle";
+            this.btn_Guncelle.Size = new System.Drawing.Size(193, 54);
+            this.btn_Guncelle.TabIndex = 7;
+            this.btn_Guncelle.Text = "GUNCELLE";
+            this.btn_Guncelle.UseVisualStyleBackColor = true;
+            this.btn_Guncelle.Click += new System.EventHandler(this.btn_YeniHesap_Click);
             // 
             // txtBox_Sifre
             // 
@@ -445,7 +445,7 @@
             // GrpBox_LoginForm
             // 
             this.GrpBox_LoginForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
-            this.GrpBox_LoginForm.Controls.Add(this.btn_Login);
+            this.GrpBox_LoginForm.Controls.Add(this.btn_Sorgula);
             this.GrpBox_LoginForm.Controls.Add(this.TxtBox_Tc);
             this.GrpBox_LoginForm.Controls.Add(this.label6);
             this.GrpBox_LoginForm.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -457,24 +457,24 @@
             this.GrpBox_LoginForm.TabStop = false;
             this.GrpBox_LoginForm.Text = "Müşteri Sorgulama";
             // 
-            // btn_Login
+            // btn_Sorgula
             // 
-            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Login.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
-            this.btn_Login.FlatAppearance.BorderSize = 2;
-            this.btn_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Login.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.btn_Login.Location = new System.Drawing.Point(95, 93);
-            this.btn_Login.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(215, 35);
-            this.btn_Login.TabIndex = 11;
-            this.btn_Login.Text = "SORGULA";
-            this.btn_Login.UseVisualStyleBackColor = false;
-            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
+            this.btn_Sorgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.btn_Sorgula.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Sorgula.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
+            this.btn_Sorgula.FlatAppearance.BorderSize = 2;
+            this.btn_Sorgula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_Sorgula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Sorgula.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Sorgula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.btn_Sorgula.Location = new System.Drawing.Point(95, 93);
+            this.btn_Sorgula.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Sorgula.Name = "btn_Sorgula";
+            this.btn_Sorgula.Size = new System.Drawing.Size(215, 35);
+            this.btn_Sorgula.TabIndex = 11;
+            this.btn_Sorgula.Text = "SORGULA";
+            this.btn_Sorgula.UseVisualStyleBackColor = false;
+            this.btn_Sorgula.Click += new System.EventHandler(this.btn_Sorgula_Click);
             // 
             // TxtBox_Tc
             // 
@@ -760,7 +760,7 @@
         private System.Windows.Forms.Button btn_WindowClose;
         private System.Windows.Forms.Panel pnl_Müşteriİşlemleri;
         private System.Windows.Forms.GroupBox GrpBox_LoginForm;
-        private System.Windows.Forms.Button btn_Login;
+        private System.Windows.Forms.Button btn_Sorgula;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtBox_Ad;
@@ -777,8 +777,8 @@
         private System.Windows.Forms.TextBox txtBox_Soyad;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel pnl_Button;
-        private System.Windows.Forms.Button btn_HesapSil;
-        private System.Windows.Forms.Button btn_YeniHesap;
+        private System.Windows.Forms.Button btn_MüşteriSil;
+        private System.Windows.Forms.Button btn_Guncelle;
         private System.Windows.Forms.Button btn_MüşteriKayıt;
         private System.Windows.Forms.Panel pnl_Back2;
         private System.Windows.Forms.Panel pnl_ChildForm;
