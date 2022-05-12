@@ -1,9 +1,6 @@
 # C# Form Application with PostgreSql
  Kullanılan bazı fonksiyonlar ve işlevleri
 
-
-
-
 # Kullanıcı bilgilerini diğer formlara taşıma
  Her formun private tc kısmı oluşturulur.
  Form nesnesi sayesinde değişkenler arası aktarım sağlanır.

@@ -4,7 +4,17 @@
  *(Proje içerisindeki bazı hata ve kodların çözümleri ilgili klasörün içerisindeki README.md'ye eklenmiştir.)*
 
  ## Form Dizaynları
+  1 - __Banka Müdürü__
 
+  ![Hesap_BankaMüdürü](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_BankaM%C3%BCd%C3%BCr%C3%BC.png)
+
+  2 - __Müşteri Temsilcisi__
+
+  ![Hesap_MüşteriTemsilcisi](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_M%C3%BC%C5%9FteriTemsilcisi.png)
+
+  3 - __Müşteri__
+
+  ![Hesap_Müşteri](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_M%C3%BC%C5%9Fteri.png)
 
 
  ## Renk Paleti
