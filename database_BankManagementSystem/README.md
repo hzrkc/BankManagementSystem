@@ -1,79 +1,80 @@
 # PostgreSQL_Database
 
-# Kullanılan Komutlar
+  # Kullanılan Komutlar
 
-1 - İlgilenilen Müşteriler Tablosu
-
-```sql
+  1 - __İlgilenilen Müşteriler Tablosu__
 
 
-```
 
-2 - 
+  ```sql
 
 
-# BACKUP oluşturma
+  ```
 
-### Export yapmak için:
+  2 - 
 
-1 - Database üzerine gelinip backup seçilir.(Hata alıyorsanız NOT'lara bakınız)
 
-2 - İstenilen klasöre "istenilenisim.sql" şeklinde kaydedilir.
+  # BACKUP oluşturma
 
-### Import yapmak için
+  ### Export yapmak için:
 
-1 - import edilmek istenilen database'in üzerine gelinip Restore seçilir.
+    1 - Database üzerine gelinip backup seçilir.(Hata alıyorsanız NOT'lara bakınız)
 
-2 - istenilen backup dosyası seçilir.
+    2 - İstenilen klasöre "istenilenisim.sql" şeklinde kaydedilir.
 
-### NOT
+  ### Import yapmak için
 
-! File-> Preferences -> Path -> Binary Path kısmına gelinir
+    1 - import edilmek istenilen database'in üzerine gelinip Restore seçilir.
 
-!! Database server türünün dosya seçmesine gelinir.
+    2 - istenilen backup dosyası seçilir.
 
-Örnek (PostgreSQL 10 için) C:\Program Files\PostgreSQL\10\bin seçilir.
+  ### NOT
 
-# PosgreSql fonksiyonlar oluşturma
+    ! File-> Preferences -> Path -> Binary Path kısmına gelinir
 
-Kullanılmak zorunda değil.
+    !! Database server türünün dosya seçmesine gelinir.
 
-## Select fonksiyonları
+    Örnek (PostgreSQL 10 için) C:\Program Files\PostgreSQL\10\bin seçilir.
 
-1 - Musteriler tablosu için
-```sql
-DROP FUNCTION select_musteriler();
-Create or replace function select_musteriler()
+  # PosgreSql fonksiyonlar oluşturma
 
-returns table
-(
-  _id int,
-  _isim character varying,
-  _soyisim character varying,
-  _adres character varying,
-  _email character varying,
-  _telefon integer,
-  _tc integer,
-  _temsilci_id integer
-)as
-$$
-begin
-	return query
-	select _id,_isim,_soyisim,_adres,_email,_telefon,_tc,_temsilci_id from musteriler order by _id;
-end
-$$
-language plpgsql;
+  Kullanılmak zorunda değil.
 
---test
-SELECT * from select_musteriler();
-```
+  ## Select fonksiyonları
 
-# Kaynakça
+  1 - Musteriler tablosu için
+  ```sql
+      DROP FUNCTION select_musteriler();
+      Create or replace function select_musteriler()
+      returns table
+      (
+        _id int,
+        _isim character varying,
+        _soyisim character varying,
+        _adres character varying,
+        _email character varying,
+        _telefon integer,
+        _tc integer,
+        _temsilci_id integer
+      )as
+      $$
+      begin
+        return query
+        select _id,_isim,_soyisim,_adres,_email,_telefon,_tc,_temsilci_id from musteriler order by _id;
+      end
+      $$
+      language plpgsql;
 
-1 - https://www.youtube.com/watch?v=JFxY2qajjwA
+      --test
+      SELECT * from select_musteriler();
+    ```
 
-2 - https://www.youtube.com/watch?v=URskGHtvFlE&t=22128s
+  # Kaynakça
 
-3 - https://www.youtube.com/playlist?list=PLh9ECzBB8tJOS7WQKdeUaAa5fmPLYAouD
+    1 - https://www.youtube.com/watch?v=JFxY2qajjwA
 
-4 - https://www.youtube.com/watch?v=U_v1dSglNjE
+    2 - https://www.youtube.com/watch?v=URskGHtvFlE&t=22128s
+
+    3 - https://www.youtube.com/playlist?list=PLh9ECzBB8tJOS7WQKdeUaAa5fmPLYAouD
+
+    4 - https://www.youtube.com/watch?v=U_v1dSglNjE
