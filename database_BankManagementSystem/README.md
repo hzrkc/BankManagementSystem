@@ -72,6 +72,23 @@
    1 - Musteriler tablosu için   
    ```sql
 
+   create or replace function insert_musteriler(_isim character varying, _soyisim character varying, _adres character varying, _email character varying, _telefon integer, _tc integer, _temsilci_id integer, _sifre character varying)
+
+   returns int as
+ 
+  $$
+  begin
+ 	    insert into musteriler(isim, soyisim, adres, email, telefon, tc, temsilci_id, sifre)
+	    values(_isim, _soyisim, _adres, _email, _telefon, _tc, _temsilci_id, _sifre);
+	    if found then
+	    	return 1;
+	   else 
+	    	return 0;
+    	end if;
+  end
+  $$
+  language plpgsql;
+
    ```
    ## Select fonksiyonları
    1 - Musteriler tablosu için
