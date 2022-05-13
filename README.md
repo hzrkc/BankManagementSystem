@@ -1,7 +1,7 @@
 # BankManagementSystem
  C# Form application with PostgreSQL
  
- *(Proje içerisindeki bazı hata ve kodların çözümleri ilgili klasörün içerisindeki README.md'ye eklenmiştir.)*
+ *(Proje içerisindeki bazı hataların çözümleri ve kodların açıklamaları ilgili klasörün içerisindeki README.md'ye eklenmiştir.)*
 
  ## Form Dizaynları
 

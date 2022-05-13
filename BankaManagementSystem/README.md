@@ -10,23 +10,14 @@
    __*Manage NuGet packeges -> Npgsql -> install*__
 
 
-   __Kütüphane ekle__
-   ```C#
-      using Npgsql;
-   ```
+   __Kütüphane ekle:__    `using Npgsql;` 
 
    __Karşılaştığımız versiyon hatası__
 
-   ![VersionHatası_HataEkranı](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/notlar/VersionHatas%C4%B1_HataEkran%C4%B1.png)
-
-   __çözüm:__ https://stackoverflow.com/questions/63019110/could-not-load-file-or-assembly-system-buffers-version-4-0-2-0
-
-   ![VersionHatası](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/notlar/VersionHatas%C4%B1.png)
-
-   __son durum__
-
-   ![VersionHatası_Duzeltme](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/notlar/VersionHatas%C4%B1_D%C3%BCzeltme.png)
-
+   * <p align="center"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/notlar/VersionHatas%C4%B1_HataEkran%C4%B1.png" width="100" heigh="100"></p>
+   * __çözüm:__ https://stackoverflow.com/questions/63019110/could-not-load-file-or-assembly-system-buffers-version-4-0-2-0
+   <p align="center"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/notlar/VersionHatas%C4%B1.png" width="100" heigh="100"></p>
+   <p align="center"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/notlar/VersionHatas%C4%B1_D%C3%BCzeltme.png"></p>
 
    ## Baglantı oluşturup açma
 
