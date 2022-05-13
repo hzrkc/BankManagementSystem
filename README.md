@@ -1,6 +1,13 @@
 # BankManagementSystem
  C# Form application with PostgreSQL
  
+Banka içerisinde müşteri, temsilci ve banka müdürü olmak üzere 3 adet rol bulunmaktadır. Müşteriler ve
+çalışanlar için gerekli tanımlayıcı bilgiler (Ad Soyad, Telefon, TC No, Adres, E-posta) veri tabanında
+saklanmalıdır. Bir müşterinin birden fazla hesabı bulunabilir. Hesaplar sistem içerisinde kayıtlı bulunan
+herhangi bir para birimi cinsinden açılabilir (TL varsayılan olarak gelmelidir). Hesaplar arası para
+transferinde gerekli durumlarda kur dönüşümü otomatik olarak yapılmaktadir.Tüm bu eylemlerin tasarlanan bir arayüz üzerinden görsel bir şekilde
+gösterilmiştir.
+ 
  *(Proje içerisindeki bazı hataların çözümleri ve kodların açıklamaları ilgili klasörün içerisindeki README.md'ye eklenmiştir.)*
 
  ## Form Dizaynları
