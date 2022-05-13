@@ -6,16 +6,16 @@
  ## Form Dizaynları
 
   1 - __Banka Müdürü__
+<p align="left"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_BankaM%C3%BCd%C3%BCr%C3%BC.png" width="300"></p>
 
-  ![Hesap_BankaMüdürü](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_BankaM%C3%BCd%C3%BCr%C3%BC.png)
 
   2 - __Müşteri Temsilcisi__
+<p align="left"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_M%C3%BC%C5%9FteriTemsilcisi.png" width="300"></p>
 
-  ![Hesap_MüşteriTemsilcisi](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_M%C3%BC%C5%9FteriTemsilcisi.png)
 
   3 - __Müşteri__
+<p align="left"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_M%C3%BC%C5%9Fteri.png" width="300"></p>
 
-  ![Hesap_Müşteri](https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_M%C3%BC%C5%9Fteri.png)
 
 
  ## Renk Paleti

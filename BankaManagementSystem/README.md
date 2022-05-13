@@ -255,4 +255,3 @@
                btn_AnaSayfa.Visible = false;
          }
    ```
-   ## Form içerisindeki form ile formun kendisini saklama
