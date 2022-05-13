@@ -79,9 +79,6 @@ C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagemen
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_BankaMüdürü.MüşteriKayıt.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_BankaMüdürü.SistemGüncelleme.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_BankaMüdürü.YatırımFonuDüzenleme.resources
-C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Login.Login_BankaMüdürü.resources
-C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Login.Login_Müşteri.resources
-C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Login.Login_MüşteriTemsilcisi.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri_Temsilcisi.HesapOluşturma.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri_Temsilcisi.MT_Krediİşlemleri.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri.Ayarlar.resources
@@ -95,3 +92,6 @@ C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagemen
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.csproj.CopyComplete
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.exe
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.pdb
+C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Login.Login_Mus.resources
+C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Login.Login_BMüdürü.resources
+C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Login.Login_MusTemsilcisi.resources

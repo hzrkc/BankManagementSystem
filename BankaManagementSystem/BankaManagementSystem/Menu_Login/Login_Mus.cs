@@ -11,21 +11,25 @@ using Npgsql;
 
 namespace BankaManagementSystem.Menu_Login
 {
-    public partial class Login_MüşteriTemsilcisi : Form
+    public partial class Login_Mus : Form
     {
         // PostgreSql veritabanına bağlantı oluşturmak için değişkenler
         private string connstring = String.Format("Server={0};Port={1};" +
                                                   "User Id={2};Password={3};Database={4};",
                                                   "localhost", 5432, "postgres", "7163", "bankManagement");
         private NpgsqlConnection conn;
-        int result = 0; //giriş için kontrol
-
+        private bool MainFormKapa = false;
         // sql sorguları ve komutları oluşturmak için değişkenler
         private string sql;
         private NpgsqlCommand cmd;
-        public Login_MüşteriTemsilcisi()
+        public Login_Mus()
         {
             InitializeComponent();
+        }
+
+        private void Login_Mus_Load(object sender, EventArgs e)
+        {
+            conn = new NpgsqlConnection(connstring);
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
@@ -33,41 +37,54 @@ namespace BankaManagementSystem.Menu_Login
             try
             {
                 conn.Open();
-                sql = @"SELECT * From Login_BankaCalışanları(:_tc,:_sifre,:_kullanıcıKodu)";
+                sql = @"SELECT * From u_loginmus(:_tc,:_sifre)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
                 cmd.Parameters.AddWithValue("_sifre", TxtBox_sifre.Text);
-                cmd.Parameters.AddWithValue("_kullanıcıKodu", 1);
                 int result = (int)cmd.ExecuteScalar();
-
-
+                conn.Close();
                 if (result == 1)
                 {
-                    conn.Close();
-                    Hesap_MüşteriTemsilcisi hesap_MüşteriTemsilcisi = new Hesap_MüşteriTemsilcisi();
-                    hesap_MüşteriTemsilcisi.tc = int.Parse(MskdTxBox_Tc.Text);
-                    hesap_MüşteriTemsilcisi.Show();
+
+                    Hesap_MüşteriHesabı hesap_Müşteri = new Hesap_MüşteriHesabı();
+                    hesap_Müşteri.tc = int.Parse(MskdTxBox_Tc.Text);
+                    hesap_Müşteri.Show();
                     this.Hide();
 
                 }
                 else
                 {
-                    conn.Close();
                     MessageBox.Show("Giriş başarısız.");
                     return;
                 }
-                conn.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ERROR: " + ex.Message);
                 conn.Close();
+                MessageBox.Show("ERROR: " + ex.Message);
             }
+
         }
 
-        private void Login_MüşteriTemsilcisi_Load(object sender, EventArgs e)
+        private void btn_WindowClose_Click(object sender, EventArgs e)
         {
-            conn= new NpgsqlConnection(connstring);
+            Application.Exit();
+        }
+
+        private void btn_MinWindow_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+                this.WindowState = FormWindowState.Normal;
+            this.WindowState |= FormWindowState.Minimized;
+        }
+
+
+        private void picBox_CloseChildForm_Click(object sender, EventArgs e)
+        {
+            Login anaSayfa = new Login();
+            this.Hide();
+            anaSayfa.Show();
+            
         }
     }
 }

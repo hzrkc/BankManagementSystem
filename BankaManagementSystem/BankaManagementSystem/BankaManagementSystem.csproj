@@ -145,23 +145,23 @@
     <Compile Include="Menu_BankaMüdürü\YatırımFonuDüzenleme.Designer.cs">
       <DependentUpon>YatırımFonuDüzenleme.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Login\Login_BankaMüdürü.cs">
+    <Compile Include="Menu_Login\Login_BMüdürü.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Login\Login_BankaMüdürü.Designer.cs">
-      <DependentUpon>Login_BankaMüdürü.cs</DependentUpon>
+    <Compile Include="Menu_Login\Login_BMüdürü.Designer.cs">
+      <DependentUpon>Login_BMüdürü.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Login\Login_Müşteri.cs">
+    <Compile Include="Menu_Login\Login_Mus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Login\Login_Müşteri.Designer.cs">
-      <DependentUpon>Login_Müşteri.cs</DependentUpon>
+    <Compile Include="Menu_Login\Login_Mus.Designer.cs">
+      <DependentUpon>Login_Mus.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu_Login\Login_MüşteriTemsilcisi.cs">
+    <Compile Include="Menu_Login\Login_MusTemsilcisi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu_Login\Login_MüşteriTemsilcisi.Designer.cs">
-      <DependentUpon>Login_MüşteriTemsilcisi.cs</DependentUpon>
+    <Compile Include="Menu_Login\Login_MusTemsilcisi.Designer.cs">
+      <DependentUpon>Login_MusTemsilcisi.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu_Müşteri Temsilcisi\HesapOluşturma.cs">
       <SubType>Form</SubType>
@@ -228,14 +228,14 @@
     <EmbeddedResource Include="Menu_BankaMüdürü\YatırımFonuDüzenleme.resx">
       <DependentUpon>YatırımFonuDüzenleme.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Login\Login_BankaMüdürü.resx">
-      <DependentUpon>Login_BankaMüdürü.cs</DependentUpon>
+    <EmbeddedResource Include="Menu_Login\Login_BMüdürü.resx">
+      <DependentUpon>Login_BMüdürü.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Login\Login_Müşteri.resx">
-      <DependentUpon>Login_Müşteri.cs</DependentUpon>
+    <EmbeddedResource Include="Menu_Login\Login_Mus.resx">
+      <DependentUpon>Login_Mus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Login\Login_MüşteriTemsilcisi.resx">
-      <DependentUpon>Login_MüşteriTemsilcisi.cs</DependentUpon>
+    <EmbeddedResource Include="Menu_Login\Login_MusTemsilcisi.resx">
+      <DependentUpon>Login_MusTemsilcisi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_Müşteri Temsilcisi\HesapOluşturma.resx">
       <DependentUpon>HesapOluşturma.cs</DependentUpon>

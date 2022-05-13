@@ -1,9 +1,9 @@
 # C# Form Application with PostgreSql
  Kullanılan bazı fonksiyonlar ve işlevleri
 
-   # Kullanıcı bilgilerini diğer formlara taşıma
+   ## Kullanıcı bilgilerini diğer formlara taşıma
    Her formun private tc kısmı oluşturulur.
-   Form nesnesi sayesinde değişkenler arası aktarım sağlanır.
+   Form nesnesindeki constructor methodları sayesinde değişkenler arası aktarım sağlanır.
 
    # PostgreSql veritabanını C# formda kullanma
 
@@ -173,50 +173,50 @@
    ```
 
    # Buton Fonksiyonları 
-   ## Butona basılında görüntü değiştime, buton aktif değilken normale döndürme
-   ```C#
-      private Button currentButton;
-      private void ActivateButton(object btnSender)
-         {
-               if (btnSender != null)
-               {
-                  if (currentButton != (Button)btnSender)
+      ## Butona basılında görüntü değiştime, buton aktif değilken normale döndürme
+      ```C#
+         private Button currentButton;
+         private void ActivateButton(object btnSender)
+            {
+                  if (btnSender != null)
                   {
-                     DisableButton();
-                     Color backColor = ColorTranslator.FromHtml("#e8d7ff");
-                     Color foreColor = ColorTranslator.FromHtml("#BD9DE5");
-                     currentButton = (Button)btnSender;
-                     currentButton.BackColor = backColor;
-                     currentButton.ForeColor = foreColor;
-                     BackColorpanel.BackColor = backColor;
-                     btn_AnaSayfa.Visible = true;
+                     if (currentButton != (Button)btnSender)
+                     {
+                        DisableButton();
+                        Color backColor = ColorTranslator.FromHtml("#e8d7ff");
+                        Color foreColor = ColorTranslator.FromHtml("#BD9DE5");
+                        currentButton = (Button)btnSender;
+                        currentButton.BackColor = backColor;
+                        currentButton.ForeColor = foreColor;
+                        BackColorpanel.BackColor = backColor;
+                        btn_AnaSayfa.Visible = true;
+                     }
                   }
-               }
-         }
-      private void DisableButton()
-         {
-               foreach (Control previousBtn in panelMenu.Controls)
-               {
-                  if (previousBtn.GetType() == typeof(Button))
+            }
+         private void DisableButton()
+            {
+                  foreach (Control previousBtn in panelMenu.Controls)
                   {
-                     previousBtn.BackColor = Color.FromArgb(210, 175, 255);
-                     previousBtn.ForeColor = Color.FromArgb(63, 52, 76);
-                     BackColorpanel.BackColor = Color.FromArgb(210, 175, 255);
+                     if (previousBtn.GetType() == typeof(Button))
+                     {
+                        previousBtn.BackColor = Color.FromArgb(210, 175, 255);
+                        previousBtn.ForeColor = Color.FromArgb(63, 52, 76);
+                        BackColorpanel.BackColor = Color.FromArgb(210, 175, 255);
+                     }
                   }
-               }
-         }
-   ```
-   ## Minimize etme
-   ```C#
-      if (WindowState == FormWindowState.Maximized)   
-         this.WindowState = FormWindowState.Normal;
-      this.WindowState |= FormWindowState.Minimized;
-   ```
-   ## Window kapama
-   ```C#
-      Application.Exit();
-   ```
-   
+            }
+      ```
+      ## Minimize etme
+      ```C#
+         if (WindowState == FormWindowState.Maximized)   
+            this.WindowState = FormWindowState.Normal;
+         this.WindowState |= FormWindowState.Minimized;
+      ```
+      ## Window kapama
+      ```C#
+         Application.Exit();
+      ```
+      
 
    # Form fonksiyonları
    ## Formun içine form çağırma
@@ -255,3 +255,4 @@
                btn_AnaSayfa.Visible = false;
          }
    ```
+   ## Form içerisindeki form ile formun kendisini saklama
