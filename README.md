@@ -4,16 +4,22 @@
  *(Proje içerisindeki bazı hataların çözümleri ve kodların açıklamaları ilgili klasörün içerisindeki README.md'ye eklenmiştir.)*
 
  ## Form Dizaynları
-
-  1 - __Banka Müdürü__
+  1 - __Login__
+  <p align="left"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Login.png" width="300"></p>
+  
+   *Müşteri için Giriş*
+  
+  <p align="left"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Login_Mus.png" width="300"></p>
+  
+  2 - __Banka Müdürü__
 <p align="left"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_BankaM%C3%BCd%C3%BCr%C3%BC.png" width="300"></p>
 
 
-  2 - __Müşteri Temsilcisi__
+  3 - __Müşteri Temsilcisi__
 <p align="left"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_M%C3%BC%C5%9FteriTemsilcisi.png" width="300"></p>
 
 
-  3 - __Müşteri__
+  4 - __Müşteri__
 <p align="left"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/img_FormDesign/Hesap_M%C3%BC%C5%9Fteri.png" width="300"></p>
 
 
