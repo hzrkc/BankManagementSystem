@@ -30,7 +30,8 @@
   # PosgreSql fonksiyonlar oluşturma
    __PostgreSql de oluşturulan fonksiyonlar nerede kaydoluyor?__
 
-   XXXXXXXXX
+   <p align="left"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/notlar/PostgreSql_Fonksiyonlar.png" width="300"></p>
+
 
    __*NOT:*__ Kullanılan fonksiyonlara, fonksiyonların parametre değişken tiplerine göre değer yollanmalıdır. C# form uygulamasında textbox'dan alınan bilgi string türünde olduğundan eğer fonksiyon integer gibi farklı değer tipi istiyorsa o değer tipine değiştirilmelidir.
 
