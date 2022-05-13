@@ -227,8 +227,6 @@
    ```
    
 
-
-
    # Form fonksiyonları
    ## Formun içine form çağırma
    ```C#
