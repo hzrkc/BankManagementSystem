@@ -36,17 +36,19 @@
             this.pnl_anaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.pnl_anaPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_anaPanel.Location = new System.Drawing.Point(0, 0);
+            this.pnl_anaPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnl_anaPanel.Name = "pnl_anaPanel";
-            this.pnl_anaPanel.Size = new System.Drawing.Size(800, 450);
+            this.pnl_anaPanel.Size = new System.Drawing.Size(876, 556);
             this.pnl_anaPanel.TabIndex = 0;
             // 
             // BM_Krediİşlemleri
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(876, 556);
             this.Controls.Add(this.pnl_anaPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BM_Krediİşlemleri";
             this.Text = "BM_Krediİşlemleri";
             this.ResumeLayout(false);
