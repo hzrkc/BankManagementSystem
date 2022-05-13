@@ -1,4 +1,4 @@
-# BankManagementSystem
+# Bank Management System
  C# Form application with PostgreSQL
  
 Banka içerisinde müşteri, temsilci ve banka müdürü olmak üzere 3 adet rol bulunmaktadır. Müşteriler ve
