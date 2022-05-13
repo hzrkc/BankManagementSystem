@@ -46,3 +46,6 @@ gösterilmiştir.
 
   __Açık__
 
+Geliştirenler
+
+Zeynep Asli Erhan, Hazar Koç(https://github.com/hzrkc)
