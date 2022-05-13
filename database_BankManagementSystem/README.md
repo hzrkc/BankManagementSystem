@@ -63,7 +63,18 @@
    ```
    2 - Calısanlar için
    ```sql
-
+      Create function Login_BankaCalışanları(_tc integer, _sifre character varying, _kullanıcıKodu integer)
+      returns int as
+      $$
+      begin
+      if(select count(*) from calisanlar where tc=_tc and sifre=_sifre and kullanıcı_kodu=_kullanıcıKodu) > 0 then 
+        return 1; -- sistemde var oldupunu gösterir
+      else 
+        return 0;
+      end if;
+      end
+      $$
+     language plpgsql
    ```
 
 
