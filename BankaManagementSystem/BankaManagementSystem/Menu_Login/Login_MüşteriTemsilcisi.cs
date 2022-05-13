@@ -33,31 +33,41 @@ namespace BankaManagementSystem.Menu_Login
             try
             {
                 conn.Open();
-                sql = @"SELECT * From Login_Müsteriler(:_tc,:_sifre)";
+                sql = @"SELECT * From Login_BankaCalışanları(:_tc,:_sifre,:_kullanıcıKodu)";
                 cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_tc", MskdTxBox_Tc.Text);
+                cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
                 cmd.Parameters.AddWithValue("_sifre", TxtBox_sifre.Text);
-                NpgsqlDataReader reader = cmd.ExecuteReader();
-                conn.Close();
+                cmd.Parameters.AddWithValue("_kullanıcıKodu", 1);
+                int result = (int)cmd.ExecuteScalar();
 
-                if (reader.Read())
+
+                if (result == 1)
                 {
-                    Hesap_MüşteriHesabı hesap_Müşteri = new Hesap_MüşteriHesabı();
-                    hesap_Müşteri.Show();
+                    conn.Close();
+                    Hesap_MüşteriTemsilcisi hesap_MüşteriTemsilcisi = new Hesap_MüşteriTemsilcisi();
+                    hesap_MüşteriTemsilcisi.tc = int.Parse(MskdTxBox_Tc.Text);
+                    hesap_MüşteriTemsilcisi.Show();
                     this.Hide();
 
                 }
                 else
                 {
+                    conn.Close();
                     MessageBox.Show("Giriş başarısız.");
                     return;
                 }
+                conn.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("ERROR: " + ex.Message);
                 conn.Close();
             }
+        }
+
+        private void Login_MüşteriTemsilcisi_Load(object sender, EventArgs e)
+        {
+            conn= new NpgsqlConnection(connstring);
         }
     }
 }

@@ -30,17 +30,19 @@
         {
             this.pnl_anaPanel = new System.Windows.Forms.Panel();
             this.GrpBox_LoginForm = new System.Windows.Forms.GroupBox();
+            this.MskdTxBox_Tc = new System.Windows.Forms.MaskedTextBox();
             this.btn_Login = new System.Windows.Forms.Button();
             this.TxtBox_sifre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.MskdTxBox_Tc = new System.Windows.Forms.MaskedTextBox();
+            this.pnl_anaPanel.SuspendLayout();
             this.GrpBox_LoginForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_anaPanel
             // 
             this.pnl_anaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.pnl_anaPanel.Controls.Add(this.GrpBox_LoginForm);
             this.pnl_anaPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_anaPanel.Location = new System.Drawing.Point(0, 0);
             this.pnl_anaPanel.Margin = new System.Windows.Forms.Padding(4);
@@ -58,12 +60,25 @@
             this.GrpBox_LoginForm.Controls.Add(this.label1);
             this.GrpBox_LoginForm.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GrpBox_LoginForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.GrpBox_LoginForm.Location = new System.Drawing.Point(26, 12);
+            this.GrpBox_LoginForm.Location = new System.Drawing.Point(28, 12);
             this.GrpBox_LoginForm.Name = "GrpBox_LoginForm";
             this.GrpBox_LoginForm.Size = new System.Drawing.Size(364, 345);
             this.GrpBox_LoginForm.TabIndex = 1;
             this.GrpBox_LoginForm.TabStop = false;
             this.GrpBox_LoginForm.Text = "Müşteri Temsilcisi Girisi";
+            // 
+            // MskdTxBox_Tc
+            // 
+            this.MskdTxBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.MskdTxBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MskdTxBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MskdTxBox_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.MskdTxBox_Tc.Location = new System.Drawing.Point(104, 85);
+            this.MskdTxBox_Tc.Mask = "00000000000";
+            this.MskdTxBox_Tc.Name = "MskdTxBox_Tc";
+            this.MskdTxBox_Tc.Size = new System.Drawing.Size(215, 27);
+            this.MskdTxBox_Tc.TabIndex = 13;
+            this.MskdTxBox_Tc.ValidatingType = typeof(int);
             // 
             // btn_Login
             // 
@@ -116,30 +131,18 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Tc :";
             // 
-            // MskdTxBox_Tc
-            // 
-            this.MskdTxBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.MskdTxBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MskdTxBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MskdTxBox_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.MskdTxBox_Tc.Location = new System.Drawing.Point(104, 85);
-            this.MskdTxBox_Tc.Mask = "00000000000";
-            this.MskdTxBox_Tc.Name = "MskdTxBox_Tc";
-            this.MskdTxBox_Tc.Size = new System.Drawing.Size(215, 27);
-            this.MskdTxBox_Tc.TabIndex = 13;
-            this.MskdTxBox_Tc.ValidatingType = typeof(int);
-            // 
             // Login_MüşteriTemsilcisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(416, 369);
-            this.Controls.Add(this.GrpBox_LoginForm);
             this.Controls.Add(this.pnl_anaPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login_MüşteriTemsilcisi";
             this.Text = "Login_MüşteriTemsilcisi";
+            this.Load += new System.EventHandler(this.Login_MüşteriTemsilcisi_Load);
+            this.pnl_anaPanel.ResumeLayout(false);
             this.GrpBox_LoginForm.ResumeLayout(false);
             this.GrpBox_LoginForm.PerformLayout();
             this.ResumeLayout(false);

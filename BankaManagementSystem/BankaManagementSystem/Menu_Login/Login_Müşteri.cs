@@ -33,16 +33,16 @@ namespace BankaManagementSystem.Menu_Login
             try
             {
                 conn.Open();
-                sql = @"SELECT * From Login_Müsteriler(:_tc,:_sifre)";
+                sql = @"SELECT * From u_loginmus(:_tc,:_sifre)";
                 cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_tc",TxtBox_Tc.Text);
-                cmd.Parameters.AddWithValue("_sifre",TxtBox_sifre.Text);
-                NpgsqlDataReader reader = cmd.ExecuteReader();
-                conn.Close();
+                cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
+                cmd.Parameters.AddWithValue("_sifre", TxtBox_sifre.Text);
+                int result = (int)cmd.ExecuteScalar();
 
-                if (reader.Read())
+                if (result==1)
                 {
                     Hesap_MüşteriHesabı hesap_Müşteri = new Hesap_MüşteriHesabı();
+                    hesap_Müşteri.tc = int.Parse(MskdTxBox_Tc.Text);
                     hesap_Müşteri.Show();
                     this.Hide();
 

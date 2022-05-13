@@ -55,6 +55,7 @@
             this.txtBox_Ad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.GrpBox_LoginForm = new System.Windows.Forms.GroupBox();
+            this.MskdTxBox_Tc = new System.Windows.Forms.MaskedTextBox();
             this.btn_Sorgula = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.pnl_Back = new System.Windows.Forms.Panel();
@@ -73,7 +74,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btn_MinWindow = new System.Windows.Forms.Button();
             this.btn_WindowClose = new System.Windows.Forms.Button();
-            this.MskdTxBox_Tc = new System.Windows.Forms.MaskedTextBox();
+            this.lbl_Tc = new System.Windows.Forms.Label();
             this.pnl_anaPanel.SuspendLayout();
             this.pnl_İşlemler.SuspendLayout();
             this.pnl_Back2.SuspendLayout();
@@ -457,6 +458,19 @@
             this.GrpBox_LoginForm.TabStop = false;
             this.GrpBox_LoginForm.Text = "Müşteri Sorgulama";
             // 
+            // MskdTxBox_Tc
+            // 
+            this.MskdTxBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.MskdTxBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MskdTxBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MskdTxBox_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.MskdTxBox_Tc.Location = new System.Drawing.Point(95, 44);
+            this.MskdTxBox_Tc.Mask = "00000000000";
+            this.MskdTxBox_Tc.Name = "MskdTxBox_Tc";
+            this.MskdTxBox_Tc.Size = new System.Drawing.Size(215, 27);
+            this.MskdTxBox_Tc.TabIndex = 13;
+            this.MskdTxBox_Tc.ValidatingType = typeof(int);
+            // 
             // btn_Sorgula
             // 
             this.btn_Sorgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
@@ -643,6 +657,7 @@
             // 
             // pnl_Top
             // 
+            this.pnl_Top.Controls.Add(this.lbl_Tc);
             this.pnl_Top.Controls.Add(this.label4);
             this.pnl_Top.Controls.Add(this.btn_MinWindow);
             this.pnl_Top.Controls.Add(this.btn_WindowClose);
@@ -662,7 +677,7 @@
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(818, 33);
+            this.label4.Size = new System.Drawing.Size(151, 33);
             this.label4.TabIndex = 22;
             this.label4.Text = "Müsteri Temsilcisi Girişi";
             // 
@@ -704,18 +719,18 @@
             this.btn_WindowClose.UseVisualStyleBackColor = false;
             this.btn_WindowClose.Click += new System.EventHandler(this.btn_WindowClose_Click);
             // 
-            // MskdTxBox_Tc
+            // lbl_Tc
             // 
-            this.MskdTxBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.MskdTxBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MskdTxBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MskdTxBox_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.MskdTxBox_Tc.Location = new System.Drawing.Point(95, 44);
-            this.MskdTxBox_Tc.Mask = "00000000000";
-            this.MskdTxBox_Tc.Name = "MskdTxBox_Tc";
-            this.MskdTxBox_Tc.Size = new System.Drawing.Size(215, 27);
-            this.MskdTxBox_Tc.TabIndex = 13;
-            this.MskdTxBox_Tc.ValidatingType = typeof(int);
+            this.lbl_Tc.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Tc.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbl_Tc.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.lbl_Tc.Location = new System.Drawing.Point(151, 0);
+            this.lbl_Tc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Tc.Name = "lbl_Tc";
+            this.lbl_Tc.Size = new System.Drawing.Size(151, 33);
+            this.lbl_Tc.TabIndex = 23;
+            this.lbl_Tc.Text = "Null";
             // 
             // Hesap_MüşteriTemsilcisi
             // 
@@ -799,5 +814,6 @@
         private System.Windows.Forms.Panel pnl_label;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox MskdTxBox_Tc;
+        private System.Windows.Forms.Label lbl_Tc;
     }
 }

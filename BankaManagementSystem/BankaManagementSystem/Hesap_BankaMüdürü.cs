@@ -13,7 +13,7 @@ namespace BankaManagementSystem
 {
     public partial class Hesap_BankaMüdürü : Form
     {
-        private int tc;//kullanıcı bilgilerini formlar arası aktarmak için
+        public int tc;//kullanıcı bilgilerini formlar arası aktarmak için
         private Button currentButton;//aktif butonu tutmak için
         private Form activeForm;//form içerisine çağırılan formu tutmak için
         private int sonIslemSayisi = 0;
@@ -130,6 +130,7 @@ namespace BankaManagementSystem
         private void BankaMüdürü_Load(object sender, EventArgs e)
         {
             conn = new NpgsqlConnection(connstring);
+            lbl_Tc.Text =Convert.ToString(tc);
             Select();
         }
 

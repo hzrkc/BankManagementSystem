@@ -34,7 +34,7 @@
             this.TxtBox_sifre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TxtBox_Tc = new System.Windows.Forms.TextBox();
+            this.MskdTxBox_Tc = new System.Windows.Forms.MaskedTextBox();
             this.pnl_anaPanel.SuspendLayout();
             this.GrpBox_LoginForm.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +53,7 @@
             // GrpBox_LoginForm
             // 
             this.GrpBox_LoginForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
-            this.GrpBox_LoginForm.Controls.Add(this.TxtBox_Tc);
+            this.GrpBox_LoginForm.Controls.Add(this.MskdTxBox_Tc);
             this.GrpBox_LoginForm.Controls.Add(this.btn_Login);
             this.GrpBox_LoginForm.Controls.Add(this.TxtBox_sifre);
             this.GrpBox_LoginForm.Controls.Add(this.label2);
@@ -118,15 +118,18 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Tc :";
             // 
-            // TxtBox_Tc
+            // MskdTxBox_Tc
             // 
-            this.TxtBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.TxtBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_Tc.Location = new System.Drawing.Point(104, 80);
-            this.TxtBox_Tc.Name = "TxtBox_Tc";
-            this.TxtBox_Tc.Size = new System.Drawing.Size(215, 27);
-            this.TxtBox_Tc.TabIndex = 12;
+            this.MskdTxBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.MskdTxBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MskdTxBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MskdTxBox_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.MskdTxBox_Tc.Location = new System.Drawing.Point(104, 80);
+            this.MskdTxBox_Tc.Mask = "00000000000";
+            this.MskdTxBox_Tc.Name = "MskdTxBox_Tc";
+            this.MskdTxBox_Tc.Size = new System.Drawing.Size(215, 27);
+            this.MskdTxBox_Tc.TabIndex = 14;
+            this.MskdTxBox_Tc.ValidatingType = typeof(int);
             // 
             // Login_Müşteri
             // 
@@ -154,6 +157,6 @@
         private System.Windows.Forms.TextBox TxtBox_sifre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtBox_Tc;
+        private System.Windows.Forms.MaskedTextBox MskdTxBox_Tc;
     }
 }

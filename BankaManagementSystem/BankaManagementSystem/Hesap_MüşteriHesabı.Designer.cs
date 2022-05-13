@@ -51,6 +51,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_MinWindow = new System.Windows.Forms.Button();
             this.btn_WindowClose = new System.Windows.Forms.Button();
+            this.lbl_Tc = new System.Windows.Forms.Label();
             this.pnl_anaPanel.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
             this.pnl_Back.SuspendLayout();
@@ -340,6 +341,7 @@
             // 
             // pnl_top
             // 
+            this.pnl_top.Controls.Add(this.lbl_Tc);
             this.pnl_top.Controls.Add(this.label2);
             this.pnl_top.Controls.Add(this.btn_MinWindow);
             this.pnl_top.Controls.Add(this.btn_WindowClose);
@@ -359,7 +361,7 @@
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(403, 33);
+            this.label2.Size = new System.Drawing.Size(95, 33);
             this.label2.TabIndex = 22;
             this.label2.Text = "Müsteri Girisi";
             // 
@@ -400,6 +402,19 @@
             this.btn_WindowClose.Text = "O";
             this.btn_WindowClose.UseVisualStyleBackColor = false;
             this.btn_WindowClose.Click += new System.EventHandler(this.btn_WindowClose_Click);
+            // 
+            // lbl_Tc
+            // 
+            this.lbl_Tc.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Tc.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbl_Tc.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.lbl_Tc.Location = new System.Drawing.Point(95, 0);
+            this.lbl_Tc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Tc.Name = "lbl_Tc";
+            this.lbl_Tc.Size = new System.Drawing.Size(117, 33);
+            this.lbl_Tc.TabIndex = 24;
+            this.lbl_Tc.Text = "Null";
             // 
             // Hesap_MüşteriHesabı
             // 
@@ -451,6 +466,7 @@
         private System.Windows.Forms.Panel pnl_label;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.SimpleButton btn_CloseChildForm;
+        private System.Windows.Forms.Label lbl_Tc;
     }
 }
 

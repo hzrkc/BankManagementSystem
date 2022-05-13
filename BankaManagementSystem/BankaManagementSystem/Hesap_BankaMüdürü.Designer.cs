@@ -44,7 +44,7 @@
             this.pnl_label = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_top = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_GirişBankaMüdürü = new System.Windows.Forms.Label();
             this.btn_MinWindow = new System.Windows.Forms.Button();
             this.btn_WindowClose = new System.Windows.Forms.Button();
             this.pnl_Menu = new System.Windows.Forms.Panel();
@@ -54,6 +54,7 @@
             this.btn_SistemGüncelleme = new System.Windows.Forms.Button();
             this.pnl_picIconBank = new System.Windows.Forms.Panel();
             this.picBox_iconBank = new System.Windows.Forms.PictureBox();
+            this.lbl_Tc = new System.Windows.Forms.Label();
             this.pnl_anaPanel.SuspendLayout();
             this.pnl_Back.SuspendLayout();
             this.pnl_childFrom.SuspendLayout();
@@ -279,7 +280,8 @@
             // 
             // pnl_top
             // 
-            this.pnl_top.Controls.Add(this.label2);
+            this.pnl_top.Controls.Add(this.lbl_Tc);
+            this.pnl_top.Controls.Add(this.lbl_GirişBankaMüdürü);
             this.pnl_top.Controls.Add(this.btn_MinWindow);
             this.pnl_top.Controls.Add(this.btn_WindowClose);
             this.pnl_top.Dock = System.Windows.Forms.DockStyle.Top;
@@ -289,18 +291,18 @@
             this.pnl_top.Size = new System.Drawing.Size(900, 35);
             this.pnl_top.TabIndex = 10;
             // 
-            // label2
+            // lbl_GirişBankaMüdürü
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(530, 35);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Banka Müdürü Girisi";
+            this.lbl_GirişBankaMüdürü.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_GirişBankaMüdürü.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbl_GirişBankaMüdürü.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_GirişBankaMüdürü.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.lbl_GirişBankaMüdürü.Location = new System.Drawing.Point(0, 0);
+            this.lbl_GirişBankaMüdürü.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_GirişBankaMüdürü.Name = "lbl_GirişBankaMüdürü";
+            this.lbl_GirişBankaMüdürü.Size = new System.Drawing.Size(139, 35);
+            this.lbl_GirişBankaMüdürü.TabIndex = 22;
+            this.lbl_GirişBankaMüdürü.Text = "Banka Müdürü Girisi";
             // 
             // btn_MinWindow
             // 
@@ -452,6 +454,19 @@
             this.picBox_iconBank.TabIndex = 0;
             this.picBox_iconBank.TabStop = false;
             // 
+            // lbl_Tc
+            // 
+            this.lbl_Tc.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Tc.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbl_Tc.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.lbl_Tc.Location = new System.Drawing.Point(139, 0);
+            this.lbl_Tc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Tc.Name = "lbl_Tc";
+            this.lbl_Tc.Size = new System.Drawing.Size(134, 35);
+            this.lbl_Tc.TabIndex = 23;
+            this.lbl_Tc.Text = "Null ";
+            // 
             // Hesap_BankaMüdürü
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -488,7 +503,7 @@
         private System.Windows.Forms.Panel pnl_picIconBank;
         private System.Windows.Forms.Panel pnl_childFrom;
         private System.Windows.Forms.Panel pnl_top;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_GirişBankaMüdürü;
         private System.Windows.Forms.Button btn_MinWindow;
         private System.Windows.Forms.Button btn_WindowClose;
         private System.Windows.Forms.Panel pnl_AnaMenu;
@@ -508,5 +523,6 @@
         private System.Windows.Forms.DataGridView Dgv_BankaIslemleri;
         private DevExpress.XtraEditors.SimpleButton btn_CloseChildForm;
         private System.Windows.Forms.Panel pnl_Back;
+        private System.Windows.Forms.Label lbl_Tc;
     }
 }
