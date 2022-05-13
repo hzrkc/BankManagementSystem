@@ -108,7 +108,7 @@
             cmd= new NpsqlCommand(sql,conn);
             cmd.Parameters.AddWithValue("_firstname",txtFirstname.Text);
             cmd.Parameters.AddWithValue("_surname",txtFirstname.Text);
-            result = (int)cmd.ExecuteScaler();
+            result = (int)cmd.ExecuteScalar();
             conn.Close();
             if(result == 1)
             {
@@ -134,7 +134,7 @@
             cmd= new NpsqlCommand(sql, conn);
             cmd.Parameters.AddwithValue("_id", int.Parse(dgvData.Rows[rowIndex].Cells["id"].Value.ToString));
             cmd.Parameters.AddWithValue("_firstname",txtFirstname.Text);
-            result = (int)cmd.ExecuteScaler();
+            result = (int)cmd.ExecuteScalar();
             conn.Close();
             if(result == 1)
             {
@@ -167,7 +167,7 @@
          sql=@"select * from müşteriler";
          cmd= new NpsqlCommand(sql, conn);
          cmd.Parameters.AddwithValue("_id", int.Parse(dgvData.Rows[rowIndex].Cells["id"].Value.ToString));
-         if((int)cmd.ExecuteScaler() == 1)
+         if((int)cmd.ExecuteScalar() == 1)
          {
             MessageBox.Show("Silme işlemi başarılı");
             rowIndex=-1;
