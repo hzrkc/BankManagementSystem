@@ -32,7 +32,6 @@
             this.btn_MinWindow = new System.Windows.Forms.Button();
             this.btn_WindowClose = new System.Windows.Forms.Button();
             this.pnl_anaPanel = new System.Windows.Forms.Panel();
-            this.pnl_childFrom = new System.Windows.Forms.Panel();
             this.pnl_Menu = new System.Windows.Forms.Panel();
             this.btn_MüşteriTemsilcisi = new System.Windows.Forms.Button();
             this.btn_BankaMüdürü = new System.Windows.Forms.Button();
@@ -45,9 +44,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pnl_childFrom = new System.Windows.Forms.Panel();
             this.pnl_top.SuspendLayout();
             this.pnl_anaPanel.SuspendLayout();
-            this.pnl_childFrom.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
             this.pnl_picIconBank.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_CloseChildForm)).BeginInit();
@@ -56,6 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pnl_childFrom.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_top
@@ -119,15 +119,6 @@
             this.pnl_anaPanel.Name = "pnl_anaPanel";
             this.pnl_anaPanel.Size = new System.Drawing.Size(639, 423);
             this.pnl_anaPanel.TabIndex = 2;
-            // 
-            // pnl_childFrom
-            // 
-            this.pnl_childFrom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
-            this.pnl_childFrom.Controls.Add(this.pnl_Karsılama);
-            this.pnl_childFrom.Location = new System.Drawing.Point(198, 42);
-            this.pnl_childFrom.Name = "pnl_childFrom";
-            this.pnl_childFrom.Size = new System.Drawing.Size(416, 369);
-            this.pnl_childFrom.TabIndex = 11;
             // 
             // pnl_Menu
             // 
@@ -221,7 +212,6 @@
             this.picBox_CloseChildForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBox_CloseChildForm.TabIndex = 0;
             this.picBox_CloseChildForm.TabStop = false;
-            this.picBox_CloseChildForm.Click += new System.EventHandler(this.picBox_CloseChildForm_Click);
             // 
             // pnl_Karsılama
             // 
@@ -293,6 +283,15 @@
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
             // 
+            // pnl_childFrom
+            // 
+            this.pnl_childFrom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.pnl_childFrom.Controls.Add(this.pnl_Karsılama);
+            this.pnl_childFrom.Location = new System.Drawing.Point(198, 42);
+            this.pnl_childFrom.Name = "pnl_childFrom";
+            this.pnl_childFrom.Size = new System.Drawing.Size(416, 369);
+            this.pnl_childFrom.TabIndex = 11;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -304,7 +303,6 @@
             this.Text = "Login";
             this.pnl_top.ResumeLayout(false);
             this.pnl_anaPanel.ResumeLayout(false);
-            this.pnl_childFrom.ResumeLayout(false);
             this.pnl_Menu.ResumeLayout(false);
             this.pnl_picIconBank.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBox_CloseChildForm)).EndInit();
@@ -313,6 +311,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.pnl_childFrom.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

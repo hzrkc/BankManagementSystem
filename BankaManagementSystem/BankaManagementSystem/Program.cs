@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace BankaManagementSystem
 {
     internal static class Program
-    {
+    {   
         /// <summary>
         /// Uygulamanın ana girdi noktası.
         /// </summary>
@@ -18,5 +18,6 @@ namespace BankaManagementSystem
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
         }
+
     }
 }

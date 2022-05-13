@@ -30,7 +30,8 @@
   # PosgreSql fonksiyonlar oluşturma
    __PostgreSql de oluşturulan fonksiyonlar nerede kaydoluyor?__
 
-   XXXXXXXXX
+   <p align="left"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/notlar/PostgreSql_Fonksiyonlar.png" width="300"></p>
+
 
    __*NOT:*__ Kullanılan fonksiyonlara, fonksiyonların parametre değişken tiplerine göre değer yollanmalıdır. C# form uygulamasında textbox'dan alınan bilgi string türünde olduğundan eğer fonksiyon integer gibi farklı değer tipi istiyorsa o değer tipine değiştirilmelidir.
 
@@ -63,7 +64,18 @@
    ```
    2 - Calısanlar için
    ```sql
-
+      Create function Login_BankaCalışanları(_tc integer, _sifre character varying, _kullanıcıKodu integer)
+      returns int as
+      $$
+      begin
+      if(select count(*) from calisanlar where tc=_tc and sifre=_sifre and kullanıcı_kodu=_kullanıcıKodu) > 0 then 
+        return 1; -- sistemde var oldupunu gösterir
+      else 
+        return 0;
+      end if;
+      end
+      $$
+     language plpgsql
    ```
 
 
