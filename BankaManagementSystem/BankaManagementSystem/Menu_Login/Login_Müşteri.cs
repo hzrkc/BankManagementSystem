@@ -38,17 +38,18 @@ namespace BankaManagementSystem.Menu_Login
                 cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
                 cmd.Parameters.AddWithValue("_sifre", TxtBox_sifre.Text);
                 int result = (int)cmd.ExecuteScalar();
-
+                conn.Close();
                 if (result==1)
                 {
+                    
                     Hesap_MüşteriHesabı hesap_Müşteri = new Hesap_MüşteriHesabı();
                     hesap_Müşteri.tc = int.Parse(MskdTxBox_Tc.Text);
-                    hesap_Müşteri.Show();
                     this.Hide();
+                    hesap_Müşteri.Show();
 
                 }
                 else
-                {
+                { 
                     MessageBox.Show("Giriş başarısız.");
                     return;
                 }
@@ -56,7 +57,6 @@ namespace BankaManagementSystem.Menu_Login
             catch (Exception ex)
             {
                 MessageBox.Show("ERROR: "+ ex.Message);
-                conn.Close();
             }
             
         }

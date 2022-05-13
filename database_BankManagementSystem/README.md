@@ -28,7 +28,9 @@
    Örnek (PostgreSQL 10 için) C:\Program Files\PostgreSQL\10\bin seçilir.
 
   # PosgreSql fonksiyonlar oluşturma
-   *(Kullanılmak zorunda değil.)*
+   __PostgreSql de oluşturulan fonksiyonlar nerede kaydoluyor?__
+
+   XXXXXXXXX
 
    __*NOT:*__ Kullanılan fonksiyonlara, fonksiyonların parametre değişken tiplerine göre değer yollanmalıdır. C# form uygulamasında textbox'dan alınan bilgi string türünde olduğundan eğer fonksiyon integer gibi farklı değer tipi istiyorsa o değer tipine değiştirilmelidir.
 
@@ -59,7 +61,18 @@
       $$
       language plpgsql
    ```
+   2 - Calısanlar için
+   ```sql
 
+   ```
+
+
+
+   ## Insert fonksiyonu
+   1 - Musteriler tablosu için   
+   ```sql
+
+   ```
    ## Select fonksiyonları
    1 - Musteriler tablosu için
    ```sql
