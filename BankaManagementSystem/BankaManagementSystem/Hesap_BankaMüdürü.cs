@@ -95,22 +95,30 @@ namespace BankaManagementSystem
 
         private void btn_SistemGüncelleme_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Menu_BankaMüdürü.SistemGüncelleme(), sender);
+            Menu_BankaMüdürü.SistemGüncelleme sistemGüncelleme = new Menu_BankaMüdürü.SistemGüncelleme();
+            sistemGüncelleme.tc = tc;
+            OpenChildForm(sistemGüncelleme, sender);
         }
 
         private void btn_MüsteriKayıt_Click(object sender, EventArgs e)
         {
-
+            Menu_BankaMüdürü.MüşteriKayıt müşteriKayıt = new Menu_BankaMüdürü.MüşteriKayıt();
+            müşteriKayıt.tc = tc;
+            OpenChildForm(müşteriKayıt, sender);
         }
 
         private void btn_KrediIslemleri_Click(object sender, EventArgs e)
         {
-
+            Menu_BankaMüdürü.BM_Krediİşlemleri krediİşlemleri = new Menu_BankaMüdürü.BM_Krediİşlemleri();
+            krediİşlemleri.tc = tc;
+            OpenChildForm(krediİşlemleri, sender);
         }
 
         private void btn_YatırımFonuDüzenleme_Click(object sender, EventArgs e)
         {
-
+            Menu_BankaMüdürü.YatırımFonuDüzenleme yatırımFonuDüzenleme = new Menu_BankaMüdürü.YatırımFonuDüzenleme();
+            yatırımFonuDüzenleme.tc = tc;
+            OpenChildForm(yatırımFonuDüzenleme, sender);
         }
 
         private void btn_CloseChildForm_Click(object sender, EventArgs e)

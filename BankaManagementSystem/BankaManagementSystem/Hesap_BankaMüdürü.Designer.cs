@@ -44,6 +44,7 @@
             this.pnl_label = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_top = new System.Windows.Forms.Panel();
+            this.lbl_Tc = new System.Windows.Forms.Label();
             this.lbl_GirişBankaMüdürü = new System.Windows.Forms.Label();
             this.btn_MinWindow = new System.Windows.Forms.Button();
             this.btn_WindowClose = new System.Windows.Forms.Button();
@@ -54,7 +55,6 @@
             this.btn_SistemGüncelleme = new System.Windows.Forms.Button();
             this.pnl_picIconBank = new System.Windows.Forms.Panel();
             this.picBox_iconBank = new System.Windows.Forms.PictureBox();
-            this.lbl_Tc = new System.Windows.Forms.Label();
             this.pnl_anaPanel.SuspendLayout();
             this.pnl_Back.SuspendLayout();
             this.pnl_childFrom.SuspendLayout();
@@ -291,6 +291,19 @@
             this.pnl_top.Size = new System.Drawing.Size(900, 35);
             this.pnl_top.TabIndex = 10;
             // 
+            // lbl_Tc
+            // 
+            this.lbl_Tc.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Tc.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbl_Tc.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.lbl_Tc.Location = new System.Drawing.Point(139, 0);
+            this.lbl_Tc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Tc.Name = "lbl_Tc";
+            this.lbl_Tc.Size = new System.Drawing.Size(134, 35);
+            this.lbl_Tc.TabIndex = 23;
+            this.lbl_Tc.Text = "Null ";
+            // 
             // lbl_GirişBankaMüdürü
             // 
             this.lbl_GirişBankaMüdürü.BackColor = System.Drawing.Color.Transparent;
@@ -453,19 +466,6 @@
             this.picBox_iconBank.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBox_iconBank.TabIndex = 0;
             this.picBox_iconBank.TabStop = false;
-            // 
-            // lbl_Tc
-            // 
-            this.lbl_Tc.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Tc.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbl_Tc.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.lbl_Tc.Location = new System.Drawing.Point(139, 0);
-            this.lbl_Tc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_Tc.Name = "lbl_Tc";
-            this.lbl_Tc.Size = new System.Drawing.Size(134, 35);
-            this.lbl_Tc.TabIndex = 23;
-            this.lbl_Tc.Text = "Null ";
             // 
             // Hesap_BankaMüdürü
             // 

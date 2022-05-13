@@ -12,6 +12,7 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
 {
     public partial class MüşteriKayıt : Form
     {
+        public int tc;
         public MüşteriKayıt()
         {
             InitializeComponent();

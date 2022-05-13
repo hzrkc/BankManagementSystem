@@ -12,6 +12,7 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
 {
     public partial class SistemGüncelleme : Form
     {
+        public int tc;
         public SistemGüncelleme()
         {
             InitializeComponent();

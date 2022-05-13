@@ -12,6 +12,7 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
 {
     public partial class YatırımFonuDüzenleme : Form
     {
+        public int tc;
         public YatırımFonuDüzenleme()
         {
             InitializeComponent();
