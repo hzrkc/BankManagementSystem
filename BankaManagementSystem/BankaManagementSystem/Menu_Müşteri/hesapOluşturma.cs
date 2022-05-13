@@ -10,17 +10,12 @@ using System.Windows.Forms;
 
 namespace BankaManagementSystem.Menu_Müşteri
 {
-    public partial class Mus_Krediİşlemleri : Form
+    public partial class hesapOluşturma : Form
     {
         public int tc;
-        public Mus_Krediİşlemleri()
+        public hesapOluşturma()
         {
             InitializeComponent();
-        }
-
-        private void Mus_Krediİşlemleri_Load(object sender, EventArgs e)
-        {
-            lbl_Tc.Text = Convert.ToString(tc);
         }
 
         private void btn_WindowClose_Click(object sender, EventArgs e)
@@ -36,11 +31,17 @@ namespace BankaManagementSystem.Menu_Müşteri
             if (WindowState == FormWindowState.Maximized)
                 this.WindowState = FormWindowState.Normal;
             this.WindowState |= FormWindowState.Minimized;
+
         }
 
-        private void btn_Talep_Click(object sender, EventArgs e)
+        private void btn_TalepOluştur_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void hesapOluşturma_Load(object sender, EventArgs e)
+        {
+            lbl_Tc.Text =Convert.ToString(tc);
         }
     }
 }

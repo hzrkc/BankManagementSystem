@@ -16,7 +16,6 @@ namespace BankaManagementSystem
         public int tc;//kullanıcı bilgilerini formlar arası aktarmak için
         private Button currentButton;//aktif butonu tutmak için
         private Form activeForm;//form içerisine çağırılan formu tutmak için
-        private int sonIslemSayisi = 0;
 
         //----PostgreSql ile ilgili kısımlar
 

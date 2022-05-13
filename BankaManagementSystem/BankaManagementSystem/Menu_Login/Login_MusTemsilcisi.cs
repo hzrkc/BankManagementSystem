@@ -65,7 +65,7 @@ namespace BankaManagementSystem.Menu_Login
                 {
                     conn.Close();
                     Hesap_MüşteriTemsilcisi hesap_MüşteriTemsilcisi = new Hesap_MüşteriTemsilcisi();
-                    hesap_MüşteriTemsilcisi.tc = int.Parse(MskdTxBox_Tc.Text);
+                    hesap_MüşteriTemsilcisi.MusTemsilcisi_tc = int.Parse(MskdTxBox_Tc.Text);
                     hesap_MüşteriTemsilcisi.Show();
                     this.Hide();
 

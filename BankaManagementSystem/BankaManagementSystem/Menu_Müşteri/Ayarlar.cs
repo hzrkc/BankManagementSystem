@@ -12,6 +12,7 @@ namespace BankaManagementSystem.Menu_Müşteri
 {
     public partial class Ayarlar : Form
     {
+        public int tc;
         public Ayarlar()
         {
             InitializeComponent();

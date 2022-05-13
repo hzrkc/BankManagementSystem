@@ -99,12 +99,17 @@ namespace BankaManagementSystem
 
         private void btn_TransferVeÖdeme_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Menu_Müşteri.TransferVeÖdemeler(), sender);
+            Menu_Müşteri.TransferVeÖdemeler transfer=new Menu_Müşteri.TransferVeÖdemeler();
+            transfer.tc = tc;
+            OpenChildForm(transfer, sender);
+
         }
 
         private void btn_Ayarlar_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Menu_Müşteri.Ayarlar(), sender);
+            Menu_Müşteri.Ayarlar ayarlar = new Menu_Müşteri.Ayarlar();
+            ayarlar.tc = tc;
+            OpenChildForm(ayarlar, sender);
         }
         
 
@@ -112,7 +117,11 @@ namespace BankaManagementSystem
         
         private void btn_YeniHesap_Click(object sender, EventArgs e)
         {
-
+            
+            Menu_Müşteri.hesapOluşturma hesapOluşturma = new Menu_Müşteri.hesapOluşturma();
+            hesapOluşturma.tc = tc;
+            this.Hide();
+            hesapOluşturma.Show();
         }
 
         private void btn_HesapSil_Click(object sender, EventArgs e)
@@ -122,7 +131,10 @@ namespace BankaManagementSystem
 
         private void btn_Krediİşlemleri_Click(object sender, EventArgs e)
         {
-
+            Menu_Müşteri.Mus_Krediİşlemleri kredi = new Menu_Müşteri.Mus_Krediİşlemleri();
+            kredi.tc = tc;
+            kredi.Show();
+            this.Hide();
         }
         private void btn_CloseChildForm_Click(object sender, EventArgs e)
         {

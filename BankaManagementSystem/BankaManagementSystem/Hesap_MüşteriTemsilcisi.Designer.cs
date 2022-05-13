@@ -71,10 +71,10 @@
             this.pnl_label = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_Top = new System.Windows.Forms.Panel();
+            this.lbl_Tc = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_MinWindow = new System.Windows.Forms.Button();
             this.btn_WindowClose = new System.Windows.Forms.Button();
-            this.lbl_Tc = new System.Windows.Forms.Label();
             this.pnl_anaPanel.SuspendLayout();
             this.pnl_İşlemler.SuspendLayout();
             this.pnl_Back2.SuspendLayout();
@@ -315,7 +315,6 @@
             this.btn_Guncelle.TabIndex = 7;
             this.btn_Guncelle.Text = "GUNCELLE";
             this.btn_Guncelle.UseVisualStyleBackColor = true;
-            this.btn_Guncelle.Click += new System.EventHandler(this.btn_YeniHesap_Click);
             // 
             // txtBox_Sifre
             // 
@@ -668,6 +667,19 @@
             this.pnl_Top.Size = new System.Drawing.Size(885, 33);
             this.pnl_Top.TabIndex = 2;
             // 
+            // lbl_Tc
+            // 
+            this.lbl_Tc.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Tc.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbl_Tc.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.lbl_Tc.Location = new System.Drawing.Point(151, 0);
+            this.lbl_Tc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Tc.Name = "lbl_Tc";
+            this.lbl_Tc.Size = new System.Drawing.Size(151, 33);
+            this.lbl_Tc.TabIndex = 23;
+            this.lbl_Tc.Text = "Null";
+            // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
@@ -718,19 +730,6 @@
             this.btn_WindowClose.Text = "O";
             this.btn_WindowClose.UseVisualStyleBackColor = false;
             this.btn_WindowClose.Click += new System.EventHandler(this.btn_WindowClose_Click);
-            // 
-            // lbl_Tc
-            // 
-            this.lbl_Tc.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Tc.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbl_Tc.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.lbl_Tc.Location = new System.Drawing.Point(151, 0);
-            this.lbl_Tc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_Tc.Name = "lbl_Tc";
-            this.lbl_Tc.Size = new System.Drawing.Size(151, 33);
-            this.lbl_Tc.TabIndex = 23;
-            this.lbl_Tc.Text = "Null";
             // 
             // Hesap_MüşteriTemsilcisi
             // 

@@ -13,7 +13,8 @@ namespace BankaManagementSystem
 {
     public partial class Hesap_MüşteriTemsilcisi : Form
     {
-        public int tc;//kullanıcı bilgilerini formlar arası aktarmak için
+        public int MusTemsilcisi_tc;//kullanıcı bilgilerini formlar arası aktarmak için
+        public int Mus_tc;
         private Button currentButton;//aktif butonu tutmak için
         private Form activeForm;//form içerisine çağırılan formu tutmak için
 
@@ -124,12 +125,18 @@ namespace BankaManagementSystem
         }
         private void btn_Hesapİslemleri_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Menu_Müşteri_Temsilcisi.HesapOluşturma(), sender);
+            Menu_Müşteri_Temsilcisi.HesapOluşturma hesapOluşturma = new Menu_Müşteri_Temsilcisi.HesapOluşturma();
+            hesapOluşturma.MusTemsilcisi_tc = MusTemsilcisi_tc;
+            hesapOluşturma.Mus_Tc = Mus_tc;
+            OpenChildForm(hesapOluşturma, sender);
         }
 
         private void btn_Krediİslemleri_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Menu_Müşteri_Temsilcisi.MT_Krediİşlemleri(), sender);
+            Menu_Müşteri_Temsilcisi.MT_Krediİşlemleri krediİşlemleri = new Menu_Müşteri_Temsilcisi.MT_Krediİşlemleri();
+            krediİşlemleri.MusTemsilcisi_tc = MusTemsilcisi_tc;
+            krediİşlemleri.Mus_Tc = Mus_tc;
+            OpenChildForm(krediİşlemleri, sender);
         }
 
         private void btn_MinWindow_Click(object sender, EventArgs e)
@@ -147,7 +154,7 @@ namespace BankaManagementSystem
         private void Hesap_MüşteriTemsilcisi_Load(object sender, EventArgs e)
         {
             conn = new NpgsqlConnection(connstring);
-            lbl_Tc.Text = Convert.ToString(tc);
+            lbl_Tc.Text = Convert.ToString(MusTemsilcisi_tc);
         }
 
         private void btn_Sorgula_Click(object sender, EventArgs e)

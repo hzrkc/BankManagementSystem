@@ -12,6 +12,8 @@ namespace BankaManagementSystem.Menu_Müşteri_Temsilcisi
 {
     public partial class MT_Krediİşlemleri : Form
     {
+        public int MusTemsilcisi_tc;
+        public int Mus_Tc;
         public MT_Krediİşlemleri()
         {
             InitializeComponent();

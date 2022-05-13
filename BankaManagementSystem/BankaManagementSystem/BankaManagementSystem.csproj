@@ -181,6 +181,12 @@
     <Compile Include="Menu_Müşteri\Ayarlar.Designer.cs">
       <DependentUpon>Ayarlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu_Müşteri\hesapOluşturma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Müşteri\hesapOluşturma.Designer.cs">
+      <DependentUpon>hesapOluşturma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu_Müşteri\Mus_Krediİşlemleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,12 +204,6 @@
     </Compile>
     <Compile Include="Hesap_MüşteriHesabı.Designer.cs">
       <DependentUpon>Hesap_MüşteriHesabı.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Menu_Müşteri\Hesap Oluşturma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Menu_Müşteri\Hesap Oluşturma.Designer.cs">
-      <DependentUpon>Hesap Oluşturma.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -246,6 +246,9 @@
     <EmbeddedResource Include="Menu_Müşteri\Ayarlar.resx">
       <DependentUpon>Ayarlar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Müşteri\hesapOluşturma.resx">
+      <DependentUpon>hesapOluşturma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu_Müşteri\Mus_Krediİşlemleri.resx">
       <DependentUpon>Mus_Krediİşlemleri.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,9 +257,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Hesap_MüşteriHesabı.resx">
       <DependentUpon>Hesap_MüşteriHesabı.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menu_Müşteri\Hesap Oluşturma.resx">
-      <DependentUpon>Hesap Oluşturma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
