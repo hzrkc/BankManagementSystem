@@ -40,6 +40,24 @@
 
   Kullanılmak zorunda değil.
 
+  ## Login fonksiyonları
+
+  1 - Musteriler için
+  ```sql
+   Create function Login_Müşteri(_tc integer, _sifre character varying)
+   returns int as
+   $$
+   begin
+    if(select count(*) from musteriler where tc=_tc and sifre=_sifre) > 0 then 
+      return 1; -- sistemde var oldupunu gösterir
+    else 
+      return 0;
+    end if;
+   end
+   $$
+   language plpgsql
+  ```
+
   ## Select fonksiyonları
 
   1 - Musteriler tablosu için

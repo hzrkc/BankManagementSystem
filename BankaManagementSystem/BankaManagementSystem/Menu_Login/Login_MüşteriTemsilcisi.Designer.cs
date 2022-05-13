@@ -33,8 +33,8 @@
             this.btn_Login = new System.Windows.Forms.Button();
             this.TxtBox_sifre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.TxtBox_Tc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.MskdTxBox_Tc = new System.Windows.Forms.MaskedTextBox();
             this.GrpBox_LoginForm.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,10 +51,10 @@
             // GrpBox_LoginForm
             // 
             this.GrpBox_LoginForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.GrpBox_LoginForm.Controls.Add(this.MskdTxBox_Tc);
             this.GrpBox_LoginForm.Controls.Add(this.btn_Login);
             this.GrpBox_LoginForm.Controls.Add(this.TxtBox_sifre);
             this.GrpBox_LoginForm.Controls.Add(this.label2);
-            this.GrpBox_LoginForm.Controls.Add(this.TxtBox_Tc);
             this.GrpBox_LoginForm.Controls.Add(this.label1);
             this.GrpBox_LoginForm.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GrpBox_LoginForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
@@ -105,16 +105,6 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Sifre :";
             // 
-            // TxtBox_Tc
-            // 
-            this.TxtBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.TxtBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_Tc.Location = new System.Drawing.Point(104, 80);
-            this.TxtBox_Tc.Name = "TxtBox_Tc";
-            this.TxtBox_Tc.Size = new System.Drawing.Size(215, 27);
-            this.TxtBox_Tc.TabIndex = 7;
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,6 +115,19 @@
             this.label1.Size = new System.Drawing.Size(46, 31);
             this.label1.TabIndex = 6;
             this.label1.Text = "Tc :";
+            // 
+            // MskdTxBox_Tc
+            // 
+            this.MskdTxBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.MskdTxBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MskdTxBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MskdTxBox_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.MskdTxBox_Tc.Location = new System.Drawing.Point(104, 85);
+            this.MskdTxBox_Tc.Mask = "00000000000";
+            this.MskdTxBox_Tc.Name = "MskdTxBox_Tc";
+            this.MskdTxBox_Tc.Size = new System.Drawing.Size(215, 27);
+            this.MskdTxBox_Tc.TabIndex = 13;
+            this.MskdTxBox_Tc.ValidatingType = typeof(int);
             // 
             // Login_MüşteriTemsilcisi
             // 
@@ -150,7 +153,7 @@
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.TextBox TxtBox_sifre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TxtBox_Tc;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox MskdTxBox_Tc;
     }
 }

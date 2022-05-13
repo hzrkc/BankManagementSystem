@@ -56,7 +56,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.GrpBox_LoginForm = new System.Windows.Forms.GroupBox();
             this.btn_Sorgula = new System.Windows.Forms.Button();
-            this.TxtBox_Tc = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pnl_Back = new System.Windows.Forms.Panel();
             this.pnl_ChildForm = new System.Windows.Forms.Panel();
@@ -74,6 +73,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btn_MinWindow = new System.Windows.Forms.Button();
             this.btn_WindowClose = new System.Windows.Forms.Button();
+            this.MskdTxBox_Tc = new System.Windows.Forms.MaskedTextBox();
             this.pnl_anaPanel.SuspendLayout();
             this.pnl_İşlemler.SuspendLayout();
             this.pnl_Back2.SuspendLayout();
@@ -445,8 +445,8 @@
             // GrpBox_LoginForm
             // 
             this.GrpBox_LoginForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.GrpBox_LoginForm.Controls.Add(this.MskdTxBox_Tc);
             this.GrpBox_LoginForm.Controls.Add(this.btn_Sorgula);
-            this.GrpBox_LoginForm.Controls.Add(this.TxtBox_Tc);
             this.GrpBox_LoginForm.Controls.Add(this.label6);
             this.GrpBox_LoginForm.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GrpBox_LoginForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
@@ -475,16 +475,6 @@
             this.btn_Sorgula.Text = "SORGULA";
             this.btn_Sorgula.UseVisualStyleBackColor = false;
             this.btn_Sorgula.Click += new System.EventHandler(this.btn_Sorgula_Click);
-            // 
-            // TxtBox_Tc
-            // 
-            this.TxtBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.TxtBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_Tc.Location = new System.Drawing.Point(95, 43);
-            this.TxtBox_Tc.Name = "TxtBox_Tc";
-            this.TxtBox_Tc.Size = new System.Drawing.Size(215, 27);
-            this.TxtBox_Tc.TabIndex = 7;
             // 
             // label6
             // 
@@ -714,6 +704,19 @@
             this.btn_WindowClose.UseVisualStyleBackColor = false;
             this.btn_WindowClose.Click += new System.EventHandler(this.btn_WindowClose_Click);
             // 
+            // MskdTxBox_Tc
+            // 
+            this.MskdTxBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.MskdTxBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MskdTxBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MskdTxBox_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.MskdTxBox_Tc.Location = new System.Drawing.Point(95, 44);
+            this.MskdTxBox_Tc.Mask = "00000000000";
+            this.MskdTxBox_Tc.Name = "MskdTxBox_Tc";
+            this.MskdTxBox_Tc.Size = new System.Drawing.Size(215, 27);
+            this.MskdTxBox_Tc.TabIndex = 13;
+            this.MskdTxBox_Tc.ValidatingType = typeof(int);
+            // 
             // Hesap_MüşteriTemsilcisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -765,7 +768,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtBox_Ad;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox TxtBox_Tc;
         private System.Windows.Forms.TextBox txtBox_Sifre;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtBox_Telefon;
@@ -796,5 +798,6 @@
         private System.Windows.Forms.DataGridView Dgv_İlgilenilenMüşteriListesi;
         private System.Windows.Forms.Panel pnl_label;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox MskdTxBox_Tc;
     }
 }

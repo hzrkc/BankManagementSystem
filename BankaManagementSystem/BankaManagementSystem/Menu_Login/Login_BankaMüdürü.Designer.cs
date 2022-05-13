@@ -33,8 +33,8 @@
             this.btn_Login = new System.Windows.Forms.Button();
             this.TxtBox_sifre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.TxtBox_Tc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.TxtBox_Tc = new System.Windows.Forms.TextBox();
             this.pnl_anaPanel.SuspendLayout();
             this.GrpBox_LoginForm.SuspendLayout();
             this.SuspendLayout();
@@ -53,10 +53,10 @@
             // GrpBox_LoginForm
             // 
             this.GrpBox_LoginForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.GrpBox_LoginForm.Controls.Add(this.TxtBox_Tc);
             this.GrpBox_LoginForm.Controls.Add(this.btn_Login);
             this.GrpBox_LoginForm.Controls.Add(this.TxtBox_sifre);
             this.GrpBox_LoginForm.Controls.Add(this.label2);
-            this.GrpBox_LoginForm.Controls.Add(this.TxtBox_Tc);
             this.GrpBox_LoginForm.Controls.Add(this.label1);
             this.GrpBox_LoginForm.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GrpBox_LoginForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
@@ -91,6 +91,7 @@
             this.TxtBox_sifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.TxtBox_sifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtBox_sifre.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBox_sifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
             this.TxtBox_sifre.Location = new System.Drawing.Point(104, 135);
             this.TxtBox_sifre.Name = "TxtBox_sifre";
             this.TxtBox_sifre.Size = new System.Drawing.Size(215, 27);
@@ -108,17 +109,6 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Sifre :";
             // 
-            // TxtBox_Tc
-            // 
-            this.TxtBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.TxtBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_Tc.Location = new System.Drawing.Point(104, 80);
-            this.TxtBox_Tc.Name = "TxtBox_Tc";
-            this.TxtBox_Tc.Size = new System.Drawing.Size(215, 27);
-            this.TxtBox_Tc.TabIndex = 7;
-            this.TxtBox_Tc.Tag = "";
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,6 +120,18 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Tc :";
             // 
+            // TxtBox_Tc
+            // 
+            this.TxtBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.TxtBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBox_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.TxtBox_Tc.Location = new System.Drawing.Point(104, 80);
+            this.TxtBox_Tc.Name = "TxtBox_Tc";
+            this.TxtBox_Tc.Size = new System.Drawing.Size(215, 27);
+            this.TxtBox_Tc.TabIndex = 12;
+            this.TxtBox_Tc.Tag = "";
+            // 
             // Login_BankaMüdürü
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -140,6 +142,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login_BankaMüdürü";
             this.Text = "Login_BankaMüdürü";
+            this.Load += new System.EventHandler(this.Login_BankaMüdürü_Load);
             this.pnl_anaPanel.ResumeLayout(false);
             this.GrpBox_LoginForm.ResumeLayout(false);
             this.GrpBox_LoginForm.PerformLayout();
@@ -153,8 +156,8 @@
         private System.Windows.Forms.GroupBox GrpBox_LoginForm;
         private System.Windows.Forms.TextBox TxtBox_sifre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TxtBox_Tc;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Login;
+        private System.Windows.Forms.TextBox TxtBox_Tc;
     }
 }

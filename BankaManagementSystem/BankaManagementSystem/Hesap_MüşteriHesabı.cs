@@ -17,6 +17,7 @@ namespace BankaManagementSystem
         private Button currentButton;//aktif butonu tutmak için
         private Form activeForm;//form içerisine çağırılan formu tutmak için
 
+
         //----PostgreSql ile ilgili kısımlar
 
         // PostgreSql veritabanına bağlantı oluşturmak için değişkenler
