@@ -173,9 +173,9 @@
    ```
 
    # Buton Fonksiyonları 
-      ## Butona basılında görüntü değiştime, buton aktif değilken normale döndürme
-      ```C#
-         private Button currentButton;
+   ## Butona basılında görüntü değiştime, buton aktif değilken normale döndürme
+   ```C#
+     private Button currentButton;
          private void ActivateButton(object btnSender)
             {
                   if (btnSender != null)
@@ -205,17 +205,14 @@
                      }
                   }
             }
-      ```
-      ## Minimize etme
-      ```C#
-         if (WindowState == FormWindowState.Maximized)   
-            this.WindowState = FormWindowState.Normal;
-         this.WindowState |= FormWindowState.Minimized;
-      ```
-      ## Window kapama
-      ```C#
-         Application.Exit();
-      ```
+  ```
+   ## Minimize etme
+   ```C#
+    if (WindowState == FormWindowState.Maximized)   
+      this.WindowState = FormWindowState.Normal;
+     this.WindowState |= FormWindowState.Minimized;
+   ```
+      
       
 
    # Form fonksiyonları
