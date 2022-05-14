@@ -50,34 +50,3 @@ Geliştirenler
 
 Zeynep Asli Erhan, Hazar Koç(https://github.com/hzrkc)
 
-# SQL Komutları
-
- - İslem tablosundaki son 5 işlemi getirme:
- ```sql
-  SELECT * FROM islem 
-    WHERE islem_no > (SELECT MAX(islem_no) - 5 FROM islem)
-
-     (Buradaki 5 yerine kullanıcıdan alınan x bir değer yazılarak istenilen sayıda işlem gelmesi sağlanabilir.)
-```
-
-- İlgilenilen Müşteri Listesi
-```sql
-  DROP TABLE geciciMusteriler;
-  CREATE TEMPORARY TABLE geciciMusteriler AS SELECT * FROM musteriler;
-  ALTER TABLE geciciMusteriler DROP COLUMN sifre;
-
-  SELECT geciciMusteriler
-  FROM geciciMusteriler
-  JOIN calisanlar
-  ON calisanlar.id = 1 AND geciciMusteriler.temsilci_id = calisanlar.id
-  ```
-
-  - Musteri Hesap Bilgileri
-  ```sql
-    SELECT hesaplar.id, hesaplar.hesap_isim,hesaplar.bakiye,hesaplar.hesap_tur_id,hesaplar.hesap_tur_isim,hesaplar.yatirim_fon_id
-    FROM hesaplar
-    JOIN musteriler
-    ON musteriler.id = 17 AND musteriler.id = hesaplar.uye_id
-
-    (17 nolu müşterinin hesap bilgilerini getirir. Yerine kullanıcı girişi alarak 'x' nolu kullanıcının hesap bilgileri getirilebilir.)
-  ```
