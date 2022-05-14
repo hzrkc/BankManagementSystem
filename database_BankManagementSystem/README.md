@@ -194,6 +194,30 @@
     language plpgsql;
 
    ```
+   ## Delete 
+   1 - Musteriler tablosundan silmek için
+   ```sql
+   CREATE OR REPLACE FUNCTION public.delete_musteriler(_tc integer)
+    RETURNS integer
+    LANGUAGE 'plpgsql'
+
+    COST 100
+    VOLATILE 
+   AS 
+   $BODY$
+     begin
+	 delete from musteriler
+	 where tc = _tc;
+	 if found then --deleted successfully
+	  return 1;
+	 else
+	  return 0;
+	 end if;
+	end
+    $BODY$;
+   ```
+   
+   
    ## Müşteri kaydı sorgulamak için
    ```sql
    Create function Sorgula_Müşteri(_tc integer)
