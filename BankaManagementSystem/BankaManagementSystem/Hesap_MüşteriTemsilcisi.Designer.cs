@@ -612,9 +612,6 @@
             // 
             // Dgv_İlgilenilenMüşteriListesi
             // 
-            this.Dgv_İlgilenilenMüşteriListesi.AllowUserToAddRows = false;
-            this.Dgv_İlgilenilenMüşteriListesi.AllowUserToDeleteRows = false;
-            this.Dgv_İlgilenilenMüşteriListesi.AllowUserToOrderColumns = true;
             this.Dgv_İlgilenilenMüşteriListesi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Dgv_İlgilenilenMüşteriListesi.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
             this.Dgv_İlgilenilenMüşteriListesi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -626,12 +623,10 @@
             this.Dgv_İlgilenilenMüşteriListesi.Margin = new System.Windows.Forms.Padding(4);
             this.Dgv_İlgilenilenMüşteriListesi.MultiSelect = false;
             this.Dgv_İlgilenilenMüşteriListesi.Name = "Dgv_İlgilenilenMüşteriListesi";
-            this.Dgv_İlgilenilenMüşteriListesi.ReadOnly = true;
             this.Dgv_İlgilenilenMüşteriListesi.RowHeadersWidth = 51;
             this.Dgv_İlgilenilenMüşteriListesi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgv_İlgilenilenMüşteriListesi.Size = new System.Drawing.Size(411, 177);
             this.Dgv_İlgilenilenMüşteriListesi.TabIndex = 24;
-            this.Dgv_İlgilenilenMüşteriListesi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_İlgilenilenMüşteriListesi_CellClick);
             // 
             // pnl_label
             // 

@@ -107,21 +107,22 @@ namespace BankaManagementSystem
             try
             {
                 conn.Open();
-                sql = @"selecet * from insert_musteriler(:_isim,:_soyisim ,:_adres,:_email,:_telefon ,:_tc ,:_temsilci_id,:_sifre )";
+                sql = @"SELECT * from insert_musteriler(:_isim,:_soyisim ,:_adres,:_email,:_telefon ,:_tc ,:_temsilci_id,:_sifre )";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_isim", txtBox_Ad.Text);
                 cmd.Parameters.AddWithValue("_soyisim", txtBox_Soyad.Text);
                 cmd.Parameters.AddWithValue("_adres", txtBox_Adres.Text);
                 cmd.Parameters.AddWithValue("_email", txtBox_Email.Text);
                 cmd.Parameters.AddWithValue("_telefon", int.Parse(txtBox_Telefon.Text));
-                cmd.Parameters.AddWithValue("_sifre", int.Parse(txtBox_Sifre.Text));
-                cmd.Parameters.AddWithValue("_temsilci_id", MusTemsilcisi_tc);
                 cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
+                cmd.Parameters.AddWithValue("_temsilci_id", MusTemsilcisi_tc);
+                cmd.Parameters.AddWithValue("_sifre", txtBox_Sifre.Text);
                 int result = (int)cmd.ExecuteScalar();
                 conn.Close();
                 if (result == 1)
-                {
+                {   
                     MessageBox.Show("Kayıt başarılı.");
+                    İlgiliMüşteriler_Select();
                 }
                 else
                 {
@@ -144,19 +145,24 @@ namespace BankaManagementSystem
 
         private void btn_HesapSil_Click(object sender, EventArgs e)
         {
-            if (rowIndex < 0)
-            {
-                MessageBox.Show("Silme işlemi yapılacak müşteriyi seçiniz");
-                return;
-            }
             try
             {
                 conn.Open();
-                sql = @"DELETE From musteriler M
-                        WHERE M.tc=" + Mus_tc;
+                sql = @"Select * from delete_musteriler(:_tc)";
                 cmd = new NpgsqlCommand(sql, conn);
-                conn.Close();
-                MessageBox.Show("Silme başarılı");
+                cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
+                
+                if((int)cmd.ExecuteScalar() == 1)
+                {
+                    MessageBox.Show("Silme başarılı");
+                    conn.Close();
+                    İlgiliMüşteriler_Select();
+                }
+                else
+                {   conn.Close();   
+                    MessageBox.Show("Silme başarısız");
+                }
+                
             }
             catch (Exception ex)
             {
@@ -214,6 +220,7 @@ namespace BankaManagementSystem
 
         private void btn_Sorgula_Click(object sender, EventArgs e)
         {
+            Mus_tc = int.Parse(MskdTxBox_Tc.Text);
             try
             {
                 conn.Open();
@@ -276,8 +283,8 @@ namespace BankaManagementSystem
             try
             {
                 conn.Open();
-                sql = @"SELECT M.id,M.isim, M.soyisim, M.email,M.adres,M.telefon,M.sifre FROM musteriler M
-                        JOIN calisanlar C on C.id=M.temsilci_id
+                sql = @"SELECT M.tc,M.isim, M.soyisim, M.email,M.adres,M.telefon FROM musteriler M
+                        JOIN calisanlar C on C.tc=M.temsilci_id
                         WHERE C.tc=" + MusTemsilcisi_tc ;
                         
                 cmd = new NpgsqlCommand(sql, conn);
@@ -296,21 +303,6 @@ namespace BankaManagementSystem
             
 
         }
-
-        private void Dgv_İlgilenilenMüşteriListesi_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-
-            if (e.RowIndex >= 0)
-            {
-                rowIndex = e.RowIndex;
-                txtBox_Ad.Text = Dgv_İlgilenilenMüşteriListesi.Rows[e.RowIndex].Cells["isim"].Value.ToString();
-                txtBox_Soyad.Text = Dgv_İlgilenilenMüşteriListesi.Rows[e.RowIndex].Cells["soyisim"].Value.ToString();
-                txtBox_Adres.Text = Dgv_İlgilenilenMüşteriListesi.Rows[e.RowIndex].Cells["adres"].Value.ToString();
-                txtBox_Email.Text = Dgv_İlgilenilenMüşteriListesi.Rows[e.RowIndex].Cells["email"].Value.ToString();
-                txtBox_Telefon.Text = Dgv_İlgilenilenMüşteriListesi.Rows[e.RowIndex].Cells["telefon"].Value.ToString();
-                txtBox_Sifre.Text = Dgv_İlgilenilenMüşteriListesi.Rows[e.RowIndex].Cells["sifre"].Value.ToString();
-            }
-        }
+      
     }
 }
