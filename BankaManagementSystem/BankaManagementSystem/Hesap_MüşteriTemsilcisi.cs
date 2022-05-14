@@ -152,15 +152,11 @@ namespace BankaManagementSystem
             try
             {
                 conn.Open();
-                sql = @"select * from müşteriler";
-                cmd = new NpsqlCommand(sql, conn);
-                cmd.Parameters.AddwithValue("_id", int.Parse(dgvData.Rows[rowIndex].Cells["id"].Value.ToString));
-                if ((int)cmd.ExecuteScalar() == 1)
-                {
-                    MessageBox.Show("Silme işlemi başarılı");
-                    rowIndex = -1;
-                }
+                sql = @"DELETE From musteriler M
+                        WHERE M.tc=" + Mus_tc;
+                cmd = new NpgsqlCommand(sql, conn);
                 conn.Close();
+                MessageBox.Show("Silme başarılı");
             }
             catch (Exception ex)
             {
