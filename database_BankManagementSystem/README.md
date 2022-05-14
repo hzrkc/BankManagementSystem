@@ -39,7 +39,6 @@
     (17 nolu müşterinin hesap bilgilerini getirir. Yerine kullanıcı girişi alarak 'x' nolu kullanıcının hesap bilgileri getirilebilir.)
   ```
 
-
  # BACKUP oluşturma
 
   ## Export yapmak için:
@@ -195,7 +194,21 @@
     language plpgsql;
 
    ```
-   ## Müşteri sorgulamak için
+   ## Müşteri kaydı sorgulamak için
+   ```sql
+   Create function Sorgula_Müşteri(_tc integer)
+   returns int as
+   $$
+   begin
+    if(select count(*) from musteriler where tc=_tc) > 0 then 
+      return 1; -- sistemde var oldupunu gösterir
+    else 
+      return 0;
+    end if;
+   end
+   $$
+   language plpgsql
+   ```
 
 
 
