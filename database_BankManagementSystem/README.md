@@ -115,7 +115,7 @@
    1 - Musteriler tablosu için   
    ```sql
 
-   create or replace function insert_musteriler(_isim character varying, _soyisim character varying, _adres character varying, _email character varying, _telefon integer, _tc integer, _temsilci_id integer, _sifre character varying)
+   create or replace function insert_musteriler(_isim character varying, _soyisim character varying, _adres character varying, _email character varying, _telefon bigint, _tc bigint, _temsilci_id bigint, _sifre character varying)
 
    returns int as
  
@@ -137,7 +137,7 @@
    2 - Calisanlar tablosu için
    ```sql
 
-    create or replace function insert_calisanlar(_kullanıcı_kodu integer, _isim character varying, _soyisim character varying, _adres character varying, _email character varying, _telefon integer, _tc integer, _sifre character varying )
+    create or replace function insert_calisanlar(_kullanıcı_kodu integer, _isim character varying, _soyisim character varying, _adres character varying, _email character varying, _telefon bigint, _tc bigint, _sifre character varying )
     returns int as
     $$
     begin
