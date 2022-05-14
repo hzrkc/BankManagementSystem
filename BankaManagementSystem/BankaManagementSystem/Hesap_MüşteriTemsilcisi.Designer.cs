@@ -631,6 +631,7 @@
             this.Dgv_İlgilenilenMüşteriListesi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgv_İlgilenilenMüşteriListesi.Size = new System.Drawing.Size(411, 177);
             this.Dgv_İlgilenilenMüşteriListesi.TabIndex = 24;
+            this.Dgv_İlgilenilenMüşteriListesi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_İlgilenilenMüşteriListesi_CellClick);
             // 
             // pnl_label
             // 
