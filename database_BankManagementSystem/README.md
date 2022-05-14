@@ -21,6 +21,13 @@
   JOIN calisanlar
   ON calisanlar.id = 1 AND geciciMusteriler.temsilci_id = calisanlar.id
   ```
+  veya 
+  
+  ```sql
+    SELECT * FROM musteriler M
+    JOIN calisanlar C on C.id=M.temsilci_id
+    WHERE C.tc= XXXXX
+  ```
 
   - Musteri Hesap Bilgileri
   ```sql
