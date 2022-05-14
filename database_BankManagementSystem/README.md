@@ -216,7 +216,41 @@
 	end
     $BODY$;
    ```
-   
+
+      2 - Calisanlar tablosundan silmek için
+   ```sql
+    CREATE OR REPLACE FUNCTION delete_calisanlar(_tc bigint)
+    returns int as
+    $$
+    begin
+      delete from calisanlar
+      where tc = _tc;
+      if found then -- deleted successfully
+        return 1;
+      else
+        return 0;
+      end if;
+    end
+    $$
+    language plpgsql
+   ```
+      3 - Hesaplar tablosundan silmek için
+   ```sql
+    CREATE OR REPLACE FUNCTION delete_hesaplar(_id int)
+    returns int as
+    $$
+    begin
+      delete from hesaplar
+      where id = _id;
+      if found then -- deleted successfully
+        return 1;
+      else
+        return 0;
+      end if;
+    end
+    $$
+    language plpgsql
+   ```
    
    ## Müşteri kaydı sorgulamak için
    ```sql
