@@ -170,7 +170,7 @@ namespace BankaManagementSystem
                 int result = (int)cmd.ExecuteScalar();
                 conn.Close();
 
-                if (result == 1)
+                if (result == 1)//Müşteri Kayıtlı ise
                 {
                     try
                     {   
@@ -180,7 +180,7 @@ namespace BankaManagementSystem
                         cmd = new NpgsqlCommand(sql, conn);
                         NpgsqlDataReader npgsqlData = cmd.ExecuteReader();
 
-                        if(npgsqlData.Read() != null)
+                        if(npgsqlData.Read() != null) //İlgili müşteri temsilcisi doğru ise
                         {
                             btn_MüşteriSil.Enabled = true;
                             btn_Guncelle.Enabled = true;
@@ -191,7 +191,7 @@ namespace BankaManagementSystem
                             txtBox_Sifre.Enabled = true;
                             txtBox_Telefon.Enabled = true;
                         }
-                        else
+                        else //başka müşteri temsilcisi ilgileniyorsa
                         {
                             MessageBox.Show("müşterinin ilgili müşteri temsilcisi farklı");
                         }
@@ -205,10 +205,10 @@ namespace BankaManagementSystem
                     }
                         
                 }
-                else
+                else //Müşteri Kayıtlı Değil ise
                 {   
                     MessageBox.Show("Müşteri Kayıtlı Değil.");
-                    //Müşteri Kayıtlı Değil ise
+                    
                     txtBox_Ad.Enabled = true;
                     txtBox_Soyad.Enabled = true;
                     txtBox_Adres.Enabled = true;
@@ -232,7 +232,7 @@ namespace BankaManagementSystem
             try
             {
                 conn.Open();
-                sql = @"SELECT * FROM musteriler M
+                sql = @"SELECT M.id,M.isim, M.soyisim, M.email,M.adres,M.telefon FROM musteriler M
                         JOIN calisanlar C on C.id=M.temsilci_id
                         WHERE C.tc=" + MusTemsilcisi_tc ;
                         
