@@ -98,7 +98,7 @@ namespace BankaManagementSystem
 
         private void btn_MüşteriKayıt_Click(object sender, EventArgs e)
         {
-
+            İlgiliMüşteriler_Select();
         }
 
         private void btn_YeniHesap_Click(object sender, EventArgs e)
@@ -155,22 +155,102 @@ namespace BankaManagementSystem
         {
             conn = new NpgsqlConnection(connstring);
             lbl_Tc.Text = Convert.ToString(MusTemsilcisi_tc);
+            İlgiliMüşteriler_Select();
         }
 
         private void btn_Sorgula_Click(object sender, EventArgs e)
-        {   
-            //Müşteri Kayıtlıysa
-            btn_MüşteriSil.Enabled = true;
-            btn_Guncelle.Enabled = true;
+        {
+            try
+            {
+                conn.Open();
+                sql = @"SELECT * From Sorgula_Müşteri(:_tc)";
+                cmd = new NpgsqlCommand(sql, conn);
+                Mus_tc = int.Parse(MskdTxBox_Tc.Text);
+                cmd.Parameters.AddWithValue("_tc", Mus_tc);
+                int result = (int)cmd.ExecuteScalar();
+                conn.Close();
 
-            //Müşteri Kayıtlı Değil ise
-            txtBox_Ad.Enabled = true;
-            txtBox_Soyad.Enabled = true;
-            txtBox_Adres.Enabled = true;
-            txtBox_Email.Enabled = true;
-            txtBox_Sifre.Enabled = true;
-            txtBox_Telefon.Enabled = true;
-            btn_MüşteriKayıt.Enabled = true;
+                if (result == 1)
+                {
+                    try
+                    {   
+                        conn.Open();
+                        sql = @"SELECT * From musteriler M
+                                WHERE M.tc=" + Mus_tc + " and M.temsilci_id =" + MusTemsilcisi_tc;
+                        cmd = new NpgsqlCommand(sql, conn);
+                        NpgsqlDataReader npgsqlData = cmd.ExecuteReader();
+
+                        if(npgsqlData.Read() != null)
+                        {
+                            btn_MüşteriSil.Enabled = true;
+                            btn_Guncelle.Enabled = true;
+                            txtBox_Ad.Enabled = true;
+                            txtBox_Soyad.Enabled = true;
+                            txtBox_Adres.Enabled = true;
+                            txtBox_Email.Enabled = true;
+                            txtBox_Sifre.Enabled = true;
+                            txtBox_Telefon.Enabled = true;
+                        }
+                        else
+                        {
+                            MessageBox.Show("müşterinin ilgili müşteri temsilcisi farklı");
+                        }
+                        conn.Close();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("ERROR: " + ex.Message);
+                        conn.Close();
+                    }
+                        
+                }
+                else
+                {   
+                    MessageBox.Show("Müşteri Kayıtlı Değil.");
+                    //Müşteri Kayıtlı Değil ise
+                    txtBox_Ad.Enabled = true;
+                    txtBox_Soyad.Enabled = true;
+                    txtBox_Adres.Enabled = true;
+                    txtBox_Email.Enabled = true;
+                    txtBox_Sifre.Enabled = true;
+                    txtBox_Telefon.Enabled = true;
+                    btn_MüşteriKayıt.Enabled = true;
+                    return;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR: " + ex.Message);
+                conn.Close();
+            }
+        }
+
+        private void İlgiliMüşteriler_Select() 
+        {
+            try
+            {
+                conn.Open();
+                sql = @"SELECT * FROM musteriler M
+                        JOIN calisanlar C on C.id=M.temsilci_id
+                        WHERE C.tc=" + MusTemsilcisi_tc ;
+                        
+                cmd = new NpgsqlCommand(sql, conn);
+                dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+                conn.Close();
+                Dgv_İlgilenilenMüşteriListesi.DataSource = null;//reset
+                Dgv_İlgilenilenMüşteriListesi.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {   
+                conn.Close();   
+                MessageBox.Show("ERROR : "+ex.Message);    
+            }
+            
+
         }
     }
 }

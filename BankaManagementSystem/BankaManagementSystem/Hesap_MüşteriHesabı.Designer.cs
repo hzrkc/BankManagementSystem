@@ -48,10 +48,10 @@
             this.pnl_label = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_top = new System.Windows.Forms.Panel();
+            this.lbl_Tc = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_MinWindow = new System.Windows.Forms.Button();
             this.btn_WindowClose = new System.Windows.Forms.Button();
-            this.lbl_Tc = new System.Windows.Forms.Label();
             this.pnl_anaPanel.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
             this.pnl_Back.SuspendLayout();
@@ -257,6 +257,9 @@
             // 
             // Dgv_HesapBilgileri
             // 
+            this.Dgv_HesapBilgileri.AllowUserToAddRows = false;
+            this.Dgv_HesapBilgileri.AllowUserToDeleteRows = false;
+            this.Dgv_HesapBilgileri.AllowUserToOrderColumns = true;
             this.Dgv_HesapBilgileri.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Dgv_HesapBilgileri.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
             this.Dgv_HesapBilgileri.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -268,6 +271,7 @@
             this.Dgv_HesapBilgileri.Margin = new System.Windows.Forms.Padding(4);
             this.Dgv_HesapBilgileri.MultiSelect = false;
             this.Dgv_HesapBilgileri.Name = "Dgv_HesapBilgileri";
+            this.Dgv_HesapBilgileri.ReadOnly = true;
             this.Dgv_HesapBilgileri.RowHeadersWidth = 51;
             this.Dgv_HesapBilgileri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgv_HesapBilgileri.Size = new System.Drawing.Size(594, 158);
@@ -297,9 +301,6 @@
             // 
             // Dgv_AylikOzet
             // 
-            this.Dgv_AylikOzet.AllowUserToAddRows = false;
-            this.Dgv_AylikOzet.AllowUserToDeleteRows = false;
-            this.Dgv_AylikOzet.AllowUserToOrderColumns = true;
             this.Dgv_AylikOzet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Dgv_AylikOzet.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
             this.Dgv_AylikOzet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -311,7 +312,6 @@
             this.Dgv_AylikOzet.Margin = new System.Windows.Forms.Padding(4);
             this.Dgv_AylikOzet.MultiSelect = false;
             this.Dgv_AylikOzet.Name = "Dgv_AylikOzet";
-            this.Dgv_AylikOzet.ReadOnly = true;
             this.Dgv_AylikOzet.RowHeadersWidth = 51;
             this.Dgv_AylikOzet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgv_AylikOzet.Size = new System.Drawing.Size(594, 158);
@@ -351,6 +351,19 @@
             this.pnl_top.Name = "pnl_top";
             this.pnl_top.Size = new System.Drawing.Size(600, 33);
             this.pnl_top.TabIndex = 0;
+            // 
+            // lbl_Tc
+            // 
+            this.lbl_Tc.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Tc.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbl_Tc.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.lbl_Tc.Location = new System.Drawing.Point(95, 0);
+            this.lbl_Tc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Tc.Name = "lbl_Tc";
+            this.lbl_Tc.Size = new System.Drawing.Size(117, 33);
+            this.lbl_Tc.TabIndex = 24;
+            this.lbl_Tc.Text = "Null";
             // 
             // label2
             // 
@@ -402,19 +415,6 @@
             this.btn_WindowClose.Text = "O";
             this.btn_WindowClose.UseVisualStyleBackColor = false;
             this.btn_WindowClose.Click += new System.EventHandler(this.btn_WindowClose_Click);
-            // 
-            // lbl_Tc
-            // 
-            this.lbl_Tc.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Tc.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbl_Tc.Font = new System.Drawing.Font("Microsoft JhengHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.lbl_Tc.Location = new System.Drawing.Point(95, 0);
-            this.lbl_Tc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_Tc.Name = "lbl_Tc";
-            this.lbl_Tc.Size = new System.Drawing.Size(117, 33);
-            this.lbl_Tc.TabIndex = 24;
-            this.lbl_Tc.Text = "Null";
             // 
             // Hesap_MüşteriHesabı
             // 

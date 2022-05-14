@@ -48,6 +48,9 @@
    ### Not! 
    
    1- form load kısmına ekle. Boş tablo açılmasın.
+   
+   
+
 
 
    ## DataGridView Veri Aktarımı
@@ -84,6 +87,38 @@
    
    1 - dgvData_CellClick fonksiyonu içerisinde 
 
+   ## Select() fonksiyonu
+
+   1 - İlgilenilen Müşteriler tablosu
+
+   ```C#
+   private void İlgiliMüşteriler_Select() 
+        {
+            try
+            {
+                conn.Open();
+                sql = @"SELECT * FROM musteriler M
+                        JOIN calisanlar C on C.id=M.temsilci_id
+                        WHERE C.tc=" + MusTemsilcisi_tc ;
+                        
+                cmd = new NpgsqlCommand(sql, conn);
+                dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+                conn.Close();
+                Dgv_İlgilenilenMüşteriListesi.DataSource = null;//reset
+                Dgv_İlgilenilenMüşteriListesi.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {   
+                conn.Close();   
+                MessageBox.Show("ERROR : "+ex.Message);    
+            }
+            
+
+        }
+   ```
+   
    ## Insert and Update Fonksiyonu
    
    ```C#
@@ -168,6 +203,41 @@
          conn.Close();
          MessageBox.Show("Silme başarısız. ERROR: "+ ex.Message);
       }
+   ```
+   ## Login fonksiyonu kullanımı
+   ```C#
+   try
+   {
+      conn.Open();
+      sql = @"SELECT * From Login_BankaCalışanları(:_tc,:_sifre,:_kullanıcıKodu)";
+      cmd = new NpgsqlCommand(sql, conn);
+      cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
+      cmd.Parameters.AddWithValue("_sifre", TxtBox_sifre.Text);
+      cmd.Parameters.AddWithValue("_kullanıcıKodu", 2);
+      int result = (int)cmd.ExecuteScalar();
+      conn.Close();
+
+      if (result == 1)
+      {
+         
+         Hesap_BankaMüdürü hesap_BankaMüdürü = new Hesap_BankaMüdürü();
+         hesap_BankaMüdürü.tc = int.Parse(MskdTxBox_Tc.Text);
+         hesap_BankaMüdürü.Show();
+         this.Hide();
+
+      }
+      else
+      {
+         MessageBox.Show("Giriş başarısız.");
+         return;
+      }
+      
+   }
+   catch (Exception ex)
+   {
+      MessageBox.Show("ERROR: " + ex.Message);
+      conn.Close();
+   }
    ```
 
    # Buton Fonksiyonları 

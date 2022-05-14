@@ -143,6 +143,7 @@
 
    ```
 
+
    4 - Yatirim_Fonu tablosu için
    ```sql
 
@@ -162,6 +163,9 @@
     language plpgsql;
 
    ```
+   ## Müşteri sorgulamak için
+
+
 
    ## Select fonksiyonları
    1 - Musteriler tablosu için
