@@ -32,6 +32,7 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
 
         private void MüşteriKayıt_Load(object sender, EventArgs e)
         {
+            conn= new NpgsqlConnection(connstring); 
             try
             {
                 conn.Open();

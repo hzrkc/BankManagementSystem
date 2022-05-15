@@ -17,5 +17,10 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
         {
             InitializeComponent();
         }
+
+        private void SistemGüncelleme_Load(object sender, EventArgs e)
+        {
+            conn = new NpgsqlConnection(connstring);
+        }
     }
 }

@@ -30,6 +30,10 @@
         {
             this.pnl_anaPanel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtBox_ID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Kayıt = new System.Windows.Forms.Button();
             this.btn_Guncelle = new System.Windows.Forms.Button();
@@ -39,10 +43,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Dgv_YatırımFonu = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtBox_ID = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.pnl_anaPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -82,6 +82,49 @@
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Para Birimi";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label4.Location = new System.Drawing.Point(327, 18);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 31);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "KAYIT";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label3.Location = new System.Drawing.Point(49, 21);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 31);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "GÜNCELLE";
+            // 
+            // txtBox_ID
+            // 
+            this.txtBox_ID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.txtBox_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBox_ID.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_ID.Location = new System.Drawing.Point(3, 83);
+            this.txtBox_ID.Name = "txtBox_ID";
+            this.txtBox_ID.Size = new System.Drawing.Size(216, 27);
+            this.txtBox_ID.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label2.Location = new System.Drawing.Point(-2, 49);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 31);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "ID :";
             // 
             // panel1
             // 
@@ -208,49 +251,6 @@
             this.label1.Text = "Para Birimi ve Kurları";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // txtBox_ID
-            // 
-            this.txtBox_ID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.txtBox_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBox_ID.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_ID.Location = new System.Drawing.Point(3, 83);
-            this.txtBox_ID.Name = "txtBox_ID";
-            this.txtBox_ID.Size = new System.Drawing.Size(216, 27);
-            this.txtBox_ID.TabIndex = 26;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.label2.Location = new System.Drawing.Point(-2, 49);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 31);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "ID :";
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.label3.Location = new System.Drawing.Point(49, 21);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 31);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "GÜNCELLE";
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.label4.Location = new System.Drawing.Point(327, 18);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 31);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "KAYIT";
-            // 
             // YatırımFonuDüzenleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -261,6 +261,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "YatırımFonuDüzenleme";
             this.Text = "YatırımFonuDüzenleme";
+            this.Load += new System.EventHandler(this.YatırımFonuDüzenleme_Load);
             this.pnl_anaPanel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

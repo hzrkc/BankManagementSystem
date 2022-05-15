@@ -66,7 +66,7 @@ namespace BankaManagementSystem.Menu_Müşteri
             try
             {
                 conn.Open();
-                sql = @"SELECT * from insert_krediTalepinsert_kredi_talep(:_tc,:_talep_miktar,:_kredi_tur_id,:_onay)"; //Düzenle
+                sql = @"SELECT * from insert_kredi_talep(:_tc,:_talep_miktar,:_kredi_tur_id,:_onay)"; 
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_kredi_tur_id", CmBox_KrediTür.ValueMember);
                 cmd.Parameters.AddWithValue("_talep_miktar", int.Parse(txtBox_Miktar.Text));
