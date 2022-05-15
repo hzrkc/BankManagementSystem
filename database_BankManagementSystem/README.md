@@ -3,12 +3,19 @@
 # SQL Komutları
 
  - İslem tablosundaki son 5 işlemi getirme:
- ```sql
+```sql
   SELECT * FROM islem 
     WHERE islem_no > (SELECT MAX(islem_no) - 5 FROM islem)
 
      (Buradaki 5 yerine kullanıcıdan alınan x bir değer yazılarak istenilen sayıda işlem gelmesi sağlanabilir.)
 ```
+veya
+```sql
+SELECT * FROM islem
+Order by islem_no desc
+LIMIT 10 //son işlem sayısı ne verilmişse
+```
+
 - Geçiçi Tablo oluşturma
 ```sql
   DROP TABLE geciciMusteriler;
