@@ -135,29 +135,53 @@ namespace BankaManagementSystem
 
         private void btn_HesapSil_Click(object sender, EventArgs e)
         {
+
             try
             {
                 conn.Open();
-                sql = @"Select * from delete_musteriler(:_tc)";
+                sql = @"Select * from delete_tumhesaplar(:_uye_id)";
                 cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
-                
-                if((int)cmd.ExecuteScalar() == 1)
+                cmd.Parameters.AddWithValue("_uye_id", int.Parse(MskdTxBox_Tc.Text));
+
+                if ((int)cmd.ExecuteScalar() == 1)
                 {
-                    MessageBox.Show("Silme başarılı");
-                    conn.Close();
-                    İlgiliMüşteriler_Select();
+                    try
+                    {
+                        conn.Open();
+                        sql = @"Select * from delete_musteriler(:_tc)";
+                        cmd = new NpgsqlCommand(sql, conn);
+                        cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
+
+                        if ((int)cmd.ExecuteScalar() == 1)
+                        {
+                            MessageBox.Show("Silme başarılı");
+                            conn.Close();
+                            İlgiliMüşteriler_Select();
+                        }
+                        else
+                        {
+                            conn.Close();
+                            MessageBox.Show("Müşteri Silme başarısız");
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        MessageBox.Show("Müşteri silme başarısız. ERROR: " + ex.Message);
+                    }
                 }
                 else
-                {   conn.Close();   
-                    MessageBox.Show("Silme başarısız");
+                {
+                    conn.Close();
+                    MessageBox.Show("silinecek müşterinin hesapları silinemiyor.");
                 }
-                
+
             }
             catch (Exception ex)
             {
                 conn.Close();
-                MessageBox.Show("Silme başarısız. ERROR: " + ex.Message);
+                MessageBox.Show("silinecek müşterinin hesapları silinemiyor. ERROR: " + ex.Message);
             }
         }
 
@@ -240,6 +264,7 @@ namespace BankaManagementSystem
                         }
                         else //başka müşteri temsilcisi ilgileniyorsa
                         {
+
                             MessageBox.Show("müşterinin ilgili müşteri temsilcisi farklı");
                         }
                         conn.Close();
@@ -254,7 +279,7 @@ namespace BankaManagementSystem
                 }
                 else //Müşteri Kayıtlı Değil ise
                 {   
-                    MessageBox.Show("Müşteri Kayıtlı Değil.");
+                    MessageBox.Show("Müşteri Kayıtlı Değil, Kaydedebilirsiniz.");
                     
                     
                     btn_MüşteriKayıt.Enabled = true;
@@ -351,9 +376,6 @@ namespace BankaManagementSystem
             }
         }
 
-        private void MüşteriHesapları_Sil()
-        {
-
-        }
+        
     }
 }

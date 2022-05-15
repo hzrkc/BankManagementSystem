@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.pnl_childFrom = new System.Windows.Forms.Panel();
+            this.Dgv_HesapBilgileri = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TxtBox_Hesapİsmi = new System.Windows.Forms.TextBox();
+            this.TxtBox_HesapId = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_TalepOluştur = new System.Windows.Forms.Button();
             this.pnl_top = new System.Windows.Forms.Panel();
@@ -38,11 +39,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_MinWindow = new System.Windows.Forms.Button();
             this.btn_WindowClose = new System.Windows.Forms.Button();
-            this.Dgv_HesapBilgileri = new System.Windows.Forms.DataGridView();
             this.pnl_childFrom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_HesapBilgileri)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pnl_top.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_HesapBilgileri)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_childFrom
@@ -57,10 +57,32 @@
             this.pnl_childFrom.Size = new System.Drawing.Size(800, 450);
             this.pnl_childFrom.TabIndex = 8;
             // 
+            // Dgv_HesapBilgileri
+            // 
+            this.Dgv_HesapBilgileri.AllowUserToAddRows = false;
+            this.Dgv_HesapBilgileri.AllowUserToDeleteRows = false;
+            this.Dgv_HesapBilgileri.AllowUserToOrderColumns = true;
+            this.Dgv_HesapBilgileri.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv_HesapBilgileri.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.Dgv_HesapBilgileri.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Dgv_HesapBilgileri.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
+            this.Dgv_HesapBilgileri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_HesapBilgileri.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Dgv_HesapBilgileri.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Dgv_HesapBilgileri.Location = new System.Drawing.Point(0, 33);
+            this.Dgv_HesapBilgileri.Margin = new System.Windows.Forms.Padding(4);
+            this.Dgv_HesapBilgileri.MultiSelect = false;
+            this.Dgv_HesapBilgileri.Name = "Dgv_HesapBilgileri";
+            this.Dgv_HesapBilgileri.ReadOnly = true;
+            this.Dgv_HesapBilgileri.RowHeadersWidth = 51;
+            this.Dgv_HesapBilgileri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Dgv_HesapBilgileri.Size = new System.Drawing.Size(800, 216);
+            this.Dgv_HesapBilgileri.TabIndex = 18;
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
-            this.groupBox1.Controls.Add(this.TxtBox_Hesapİsmi);
+            this.groupBox1.Controls.Add(this.TxtBox_HesapId);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btn_TalepOluştur);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -72,15 +94,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Silme Talebi Oluşturma";
             // 
-            // TxtBox_Hesapİsmi
+            // TxtBox_HesapId
             // 
-            this.TxtBox_Hesapİsmi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.TxtBox_Hesapİsmi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtBox_Hesapİsmi.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_Hesapİsmi.Location = new System.Drawing.Point(141, 54);
-            this.TxtBox_Hesapİsmi.Name = "TxtBox_Hesapİsmi";
-            this.TxtBox_Hesapİsmi.Size = new System.Drawing.Size(206, 27);
-            this.TxtBox_Hesapİsmi.TabIndex = 23;
+            this.TxtBox_HesapId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.TxtBox_HesapId.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtBox_HesapId.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBox_HesapId.Location = new System.Drawing.Point(141, 54);
+            this.TxtBox_HesapId.Name = "TxtBox_HesapId";
+            this.TxtBox_HesapId.Size = new System.Drawing.Size(206, 27);
+            this.TxtBox_HesapId.TabIndex = 23;
             // 
             // label3
             // 
@@ -189,28 +211,6 @@
             this.btn_WindowClose.UseVisualStyleBackColor = false;
             this.btn_WindowClose.Click += new System.EventHandler(this.btn_WindowClose_Click);
             // 
-            // Dgv_HesapBilgileri
-            // 
-            this.Dgv_HesapBilgileri.AllowUserToAddRows = false;
-            this.Dgv_HesapBilgileri.AllowUserToDeleteRows = false;
-            this.Dgv_HesapBilgileri.AllowUserToOrderColumns = true;
-            this.Dgv_HesapBilgileri.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Dgv_HesapBilgileri.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
-            this.Dgv_HesapBilgileri.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Dgv_HesapBilgileri.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            this.Dgv_HesapBilgileri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_HesapBilgileri.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Dgv_HesapBilgileri.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.Dgv_HesapBilgileri.Location = new System.Drawing.Point(0, 33);
-            this.Dgv_HesapBilgileri.Margin = new System.Windows.Forms.Padding(4);
-            this.Dgv_HesapBilgileri.MultiSelect = false;
-            this.Dgv_HesapBilgileri.Name = "Dgv_HesapBilgileri";
-            this.Dgv_HesapBilgileri.ReadOnly = true;
-            this.Dgv_HesapBilgileri.RowHeadersWidth = 51;
-            this.Dgv_HesapBilgileri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv_HesapBilgileri.Size = new System.Drawing.Size(800, 216);
-            this.Dgv_HesapBilgileri.TabIndex = 18;
-            // 
             // HesapSil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -222,10 +222,10 @@
             this.Text = "HesapSil";
             this.Load += new System.EventHandler(this.HesapSil_Load);
             this.pnl_childFrom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_HesapBilgileri)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.pnl_top.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_HesapBilgileri)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -234,7 +234,7 @@
 
         private System.Windows.Forms.Panel pnl_childFrom;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox TxtBox_Hesapİsmi;
+        private System.Windows.Forms.TextBox TxtBox_HesapId;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_TalepOluştur;
         private System.Windows.Forms.Panel pnl_top;

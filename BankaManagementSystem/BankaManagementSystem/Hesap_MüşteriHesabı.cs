@@ -151,6 +151,7 @@ namespace BankaManagementSystem
             conn= new NpgsqlConnection(connstring);
             lbl_Tc.Text = Convert.ToString(tc);
             HesapBilgileri_Select();
+            AylıkHesap_Select();
         }
 
         private void HesapBilgileri_Select()
@@ -174,6 +175,30 @@ namespace BankaManagementSystem
             {
                 conn.Close();
                 MessageBox.Show("Error: "+ex.Message);
+
+            }
+        }
+
+        private void AylıkHesap_Select()
+        {
+            try
+            {
+                conn.Open();
+                sql = @"SELECT * From islem" +
+                      "WHERE kaynak_tc.tc=" + tc +
+                      "or hedef_tc=" + tc;
+                cmd = new NpgsqlCommand(sql, conn);
+                dt = new DataTable(); ;
+                dt.Load(cmd.ExecuteReader());
+                conn.Close();
+                Dgv_AylikOzet.DataSource = null; //reset datagrid view
+                Dgv_AylikOzet.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                MessageBox.Show("Error: " + ex.Message);
 
             }
         }

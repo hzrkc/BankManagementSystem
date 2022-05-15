@@ -52,10 +52,11 @@ namespace BankaManagementSystem.Menu_Müşteri
             try
             {
                 conn.Open();
-                sql = @"Select * from update_krediTalep(:_id,:_tc,:_durum)";
+                sql = @"Select * from update_durumhesap(:_id,:_tc,:_durum)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_durum", 0);
                 cmd.Parameters.AddWithValue("_tc", tc);
+                cmd.Parameters.AddWithValue("_id", int.Parse(TxtBox_HesapId.Text));
 
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
