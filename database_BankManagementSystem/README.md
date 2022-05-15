@@ -301,30 +301,39 @@
    ## Update Fonksiyonları
    1 - Musteriler tablosu için
    ```sql
+	CREATE OR REPLACE FUNCTION public.update_musteriler(
+		_isim character varying,
+		_soyisim character varying,
+		_adres character varying,
+		_email character varying,
+		_telefon bigint,
+		_tc bigint,
+		_temsilci_id bigint,
+		_sifre character varying)
+	    RETURNS integer
+	    LANGUAGE 'plpgsql'
+	    COST 100
+	    VOLATILE PARALLEL UNSAFE
+	AS $BODY$
 
-    create or replace function update_musteriler(_id int, _isim character varying, _soyisim character varying, _adres character varying, _email character varying, _telefon integer, _tc integer, _temsilci_id integer, _sifre character varying)
-    returns int as
-    $$
-    begin
-      update musteriler
-      set
-        isim = _isim,
-        soyisim = _soyisim,
-        adres = _adres,
-        email = _email,
-        telefon = _telefon,
-        tc = _tc,
-        temsilci_id = _temsilci_id,
-        sifre = _sifre
-      where id = _id;
-      if found then --updated successfully
-        return 1;
-      else -- update failed
-        return 0;
-      end if;
-    end
-    $$
-    language plpgsql;
+	 begin
+	  update Students
+	 set 
+	  isim = _isim,
+	  soyisim = _soyisim,
+	  adres = _adres,
+	  email = _email,
+	  telefon = _telefon,
+	  sifre = _sifre
+	 where tc = _tc;
+	 if found then --updated successfully
+	  return 1;
+	 else --updated fail
+	  return 0;
+	 end if;
+	 end
+
+	$BODY$;
 
    ```
 
