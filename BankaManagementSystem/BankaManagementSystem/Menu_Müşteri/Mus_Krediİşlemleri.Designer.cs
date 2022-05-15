@@ -36,8 +36,10 @@
             this.btn_WindowClose = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Talep = new System.Windows.Forms.Button();
-            this.txtBox_Sifre = new System.Windows.Forms.TextBox();
+            this.txtBox_Miktar = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CmBox_KrediTür = new System.Windows.Forms.ComboBox();
             this.pnl_childFrom.SuspendLayout();
             this.pnl_top.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -51,7 +53,7 @@
             this.pnl_childFrom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_childFrom.Location = new System.Drawing.Point(0, 0);
             this.pnl_childFrom.Name = "pnl_childFrom";
-            this.pnl_childFrom.Size = new System.Drawing.Size(628, 548);
+            this.pnl_childFrom.Size = new System.Drawing.Size(628, 366);
             this.pnl_childFrom.TabIndex = 6;
             // 
             // pnl_top
@@ -134,12 +136,14 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.groupBox1.Controls.Add(this.CmBox_KrediTür);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btn_Talep);
-            this.groupBox1.Controls.Add(this.txtBox_Sifre);
+            this.groupBox1.Controls.Add(this.txtBox_Miktar);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.groupBox1.Location = new System.Drawing.Point(24, 310);
+            this.groupBox1.Location = new System.Drawing.Point(86, 121);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(426, 169);
             this.groupBox1.TabIndex = 15;
@@ -165,32 +169,55 @@
             this.btn_Talep.UseVisualStyleBackColor = false;
             this.btn_Talep.Click += new System.EventHandler(this.btn_Talep_Click);
             // 
-            // txtBox_Sifre
+            // txtBox_Miktar
             // 
-            this.txtBox_Sifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.txtBox_Sifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBox_Sifre.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_Sifre.Location = new System.Drawing.Point(130, 60);
-            this.txtBox_Sifre.Name = "txtBox_Sifre";
-            this.txtBox_Sifre.Size = new System.Drawing.Size(210, 27);
-            this.txtBox_Sifre.TabIndex = 17;
+            this.txtBox_Miktar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.txtBox_Miktar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBox_Miktar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_Miktar.Location = new System.Drawing.Point(170, 65);
+            this.txtBox_Miktar.Name = "txtBox_Miktar";
+            this.txtBox_Miktar.Size = new System.Drawing.Size(210, 27);
+            this.txtBox_Miktar.TabIndex = 17;
             // 
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.label9.Location = new System.Drawing.Point(29, 61);
+            this.label9.Location = new System.Drawing.Point(69, 63);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(94, 31);
             this.label9.TabIndex = 16;
             this.label9.Text = "Miktar  :";
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label1.Location = new System.Drawing.Point(29, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 31);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Kredi Türü  :";
+            // 
+            // CmBox_KrediTür
+            // 
+            this.CmBox_KrediTür.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.CmBox_KrediTür.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CmBox_KrediTür.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.CmBox_KrediTür.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.CmBox_KrediTür.FormattingEnabled = true;
+            this.CmBox_KrediTür.Location = new System.Drawing.Point(170, 24);
+            this.CmBox_KrediTür.Name = "CmBox_KrediTür";
+            this.CmBox_KrediTür.Size = new System.Drawing.Size(210, 35);
+            this.CmBox_KrediTür.TabIndex = 27;
+            // 
             // Mus_Krediİşlemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 548);
+            this.ClientSize = new System.Drawing.Size(628, 366);
             this.Controls.Add(this.pnl_childFrom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Mus_Krediİşlemleri";
@@ -209,12 +236,14 @@
         private System.Windows.Forms.Panel pnl_childFrom;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_Talep;
-        private System.Windows.Forms.TextBox txtBox_Sifre;
+        private System.Windows.Forms.TextBox txtBox_Miktar;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel pnl_top;
         private System.Windows.Forms.Label lbl_Tc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_MinWindow;
         private System.Windows.Forms.Button btn_WindowClose;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox CmBox_KrediTür;
     }
 }

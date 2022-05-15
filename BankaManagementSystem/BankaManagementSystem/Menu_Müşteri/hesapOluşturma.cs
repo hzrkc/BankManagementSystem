@@ -50,6 +50,24 @@ namespace BankaManagementSystem.Menu_Müşteri
         private void hesapOluşturma_Load(object sender, EventArgs e)
         {
             lbl_Tc.Text =Convert.ToString(tc);
+            
+            conn.Open();
+            sql = @"select * from yatirim_fonu";
+            NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(sql, conn);
+            dt = new DataTable();
+            adapter.Fill(dt);
+            CmBox_YatırımFonuTürü.DisplayMember = "para_turu";
+            CmBox_YatırımFonuTürü.ValueMember = "id";
+            CmBox_YatırımFonuTürü.DataSource = dt;
+
+            sql = @"select * from hesap_tur";
+            adapter = new NpgsqlDataAdapter(sql, conn);
+            dt = new DataTable();
+            adapter.Fill(dt);
+            CmBox_HesapTür.DisplayMember = "tur";
+            CmBox_HesapTür.ValueMember = "id";
+            CmBox_HesapTür.DataSource = dt;
+            conn.Close();
         }
 
         private void btn_TalepOluştur_Click(object sender, EventArgs e)
@@ -70,17 +88,17 @@ namespace BankaManagementSystem.Menu_Müşteri
                 conn.Close();
                 if (result == 1)
                 {
-                    MessageBox.Show("Hesap Oluşturuldu.");
+                    MessageBox.Show("Hesap Talebi  Oluşturuldu.");
                 }
                 else
                 {
-                    MessageBox.Show("Hesap Oluşturulamadı.");
+                    MessageBox.Show("Hesap Talebi Oluşturulamadı.");
                 }
             }
             catch (Exception ex)
             {
                 conn.Close();
-                MessageBox.Show("Hesap Oluşturma Başarısız. Error: " + ex.Message);
+                MessageBox.Show("Hesap Talebi Başarısız. Error: " + ex.Message);
             }
         }
     }

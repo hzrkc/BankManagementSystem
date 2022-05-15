@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.pnl_AnaPanel = new System.Windows.Forms.Panel();
+            this.btn_SilmeOnay = new System.Windows.Forms.Button();
+            this.txt_hesapId = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btn_Onay = new System.Windows.Forms.Button();
             this.txtBox_id = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_HesapSilmeTalebi = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Dgv_HesapTalep = new System.Windows.Forms.DataGridView();
             this.pnl_label = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.pnl_AnaPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_HesapSilmeTalebi)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_HesapTalep)).BeginInit();
             this.pnl_label.SuspendLayout();
@@ -51,13 +51,13 @@
             // pnl_AnaPanel
             // 
             this.pnl_AnaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.pnl_AnaPanel.Controls.Add(this.button1);
-            this.pnl_AnaPanel.Controls.Add(this.textBox1);
+            this.pnl_AnaPanel.Controls.Add(this.btn_SilmeOnay);
+            this.pnl_AnaPanel.Controls.Add(this.txt_hesapId);
             this.pnl_AnaPanel.Controls.Add(this.label2);
             this.pnl_AnaPanel.Controls.Add(this.btn_Onay);
             this.pnl_AnaPanel.Controls.Add(this.txtBox_id);
             this.pnl_AnaPanel.Controls.Add(this.label4);
-            this.pnl_AnaPanel.Controls.Add(this.dataGridView1);
+            this.pnl_AnaPanel.Controls.Add(this.dgv_HesapSilmeTalebi);
             this.pnl_AnaPanel.Controls.Add(this.panel1);
             this.pnl_AnaPanel.Controls.Add(this.Dgv_HesapTalep);
             this.pnl_AnaPanel.Controls.Add(this.pnl_label);
@@ -66,6 +66,45 @@
             this.pnl_AnaPanel.Name = "pnl_AnaPanel";
             this.pnl_AnaPanel.Size = new System.Drawing.Size(417, 724);
             this.pnl_AnaPanel.TabIndex = 1;
+            // 
+            // btn_SilmeOnay
+            // 
+            this.btn_SilmeOnay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.btn_SilmeOnay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_SilmeOnay.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
+            this.btn_SilmeOnay.FlatAppearance.BorderSize = 2;
+            this.btn_SilmeOnay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_SilmeOnay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SilmeOnay.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SilmeOnay.Location = new System.Drawing.Point(0, 648);
+            this.btn_SilmeOnay.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_SilmeOnay.Name = "btn_SilmeOnay";
+            this.btn_SilmeOnay.Size = new System.Drawing.Size(417, 41);
+            this.btn_SilmeOnay.TabIndex = 37;
+            this.btn_SilmeOnay.Text = "Talep Onayla";
+            this.btn_SilmeOnay.UseVisualStyleBackColor = false;
+            this.btn_SilmeOnay.Click += new System.EventHandler(this.btn_SilmeOnay_Click);
+            // 
+            // txt_hesapId
+            // 
+            this.txt_hesapId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.txt_hesapId.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_hesapId.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_hesapId.Location = new System.Drawing.Point(143, 613);
+            this.txt_hesapId.Name = "txt_hesapId";
+            this.txt_hesapId.Size = new System.Drawing.Size(194, 27);
+            this.txt_hesapId.TabIndex = 36;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label2.Location = new System.Drawing.Point(50, 617);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 31);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Hesap Id  :";
             // 
             // btn_Onay
             // 
@@ -106,22 +145,22 @@
             this.label4.TabIndex = 32;
             this.label4.Text = "Hesap Id  :";
             // 
-            // dataGridView1
+            // dgv_HesapSilmeTalebi
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.dataGridView1.Location = new System.Drawing.Point(0, 413);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(417, 193);
-            this.dataGridView1.TabIndex = 31;
+            this.dgv_HesapSilmeTalebi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_HesapSilmeTalebi.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.dgv_HesapSilmeTalebi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgv_HesapSilmeTalebi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
+            this.dgv_HesapSilmeTalebi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_HesapSilmeTalebi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.dgv_HesapSilmeTalebi.Location = new System.Drawing.Point(0, 413);
+            this.dgv_HesapSilmeTalebi.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv_HesapSilmeTalebi.MultiSelect = false;
+            this.dgv_HesapSilmeTalebi.Name = "dgv_HesapSilmeTalebi";
+            this.dgv_HesapSilmeTalebi.RowHeadersWidth = 51;
+            this.dgv_HesapSilmeTalebi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_HesapSilmeTalebi.Size = new System.Drawing.Size(417, 193);
+            this.dgv_HesapSilmeTalebi.TabIndex = 31;
             // 
             // panel1
             // 
@@ -186,44 +225,6 @@
             this.label3.Text = "İlgili Müşterinin Hesap Talepleri";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 648);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(417, 41);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "Talep Onayla";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(143, 613);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 27);
-            this.textBox1.TabIndex = 36;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.label2.Location = new System.Drawing.Point(50, 617);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 31);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "Hesap Id  :";
-            // 
             // HesapOluşturma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -236,7 +237,7 @@
             this.Load += new System.EventHandler(this.HesapOluşturma_Load);
             this.pnl_AnaPanel.ResumeLayout(false);
             this.pnl_AnaPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_HesapSilmeTalebi)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_HesapTalep)).EndInit();
             this.pnl_label.ResumeLayout(false);
@@ -252,12 +253,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_HesapSilmeTalebi;
         private System.Windows.Forms.Button btn_Onay;
         private System.Windows.Forms.TextBox txtBox_id;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn_SilmeOnay;
+        private System.Windows.Forms.TextBox txt_hesapId;
         private System.Windows.Forms.Label label2;
     }
 }

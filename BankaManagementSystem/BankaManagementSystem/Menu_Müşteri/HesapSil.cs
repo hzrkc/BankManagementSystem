@@ -49,12 +49,63 @@ namespace BankaManagementSystem.Menu_Müşteri
 
         private void btn_TalepOluştur_Click(object sender, EventArgs e)
         {
-            lbl_Tc.Text = Convert.ToString(tc);
+            try
+            {
+                conn.Open();
+                sql = @"Select * from update_krediTalep(:_id,:_tc,:_durum)";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_durum", 0);
+                cmd.Parameters.AddWithValue("_tc", tc);
+
+                if ((int)cmd.ExecuteScalar() == 1)
+                {
+                    MessageBox.Show("Talep Onayı başarılı");
+                    conn.Close();
+                }
+                else
+                {
+                    conn.Close();
+                    MessageBox.Show("Talep Onayı başarısız");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                MessageBox.Show("ERROR : " + ex.Message);
+            }
         }
 
         private void HesapSil_Load(object sender, EventArgs e)
         {
+            lbl_Tc.Text = Convert.ToString(tc);
+            HesapBilgileri_Select();
 
+        }
+        private void HesapBilgileri_Select()
+        {
+            try
+            {
+                conn.Open();
+                sql = @"SELECT T.tur, H.bakiye From hesaplar H 
+                      JOIN musteriler M ON H.uye_id = M.tc" +
+                      "JOIN hesap_tur T ON H.hesap_tur_id=T.id " +
+                      "WHERE H.onay=1 and M.tc=" + tc;
+                cmd = new NpgsqlCommand(sql, conn);
+                dt = new DataTable(); ;
+                dt.Load(cmd.ExecuteReader());
+                conn.Close();
+                Dgv_HesapBilgileri.DataSource = null; //reset datagrid view
+                Dgv_HesapBilgileri.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                MessageBox.Show("Error: " + ex.Message);
+
+            }
         }
     }
 }
