@@ -81,7 +81,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
             this.groupBox1.Location = new System.Drawing.Point(96, 110);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(392, 362);
+            this.groupBox1.Size = new System.Drawing.Size(392, 326);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Detayı veya Kaydı";
@@ -96,13 +96,14 @@
             this.btn_Güncelle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btn_Güncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Güncelle.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Güncelle.Location = new System.Drawing.Point(3, 305);
+            this.btn_Güncelle.Location = new System.Drawing.Point(3, 269);
             this.btn_Güncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Güncelle.Name = "btn_Güncelle";
             this.btn_Güncelle.Size = new System.Drawing.Size(386, 54);
             this.btn_Güncelle.TabIndex = 21;
             this.btn_Güncelle.Text = "GUNCELLE";
             this.btn_Güncelle.UseVisualStyleBackColor = false;
+            this.btn_Güncelle.Click += new System.EventHandler(this.btn_Güncelle_Click);
             // 
             // txtBox_Sifre
             // 
