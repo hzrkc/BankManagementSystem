@@ -177,29 +177,32 @@
 
    ## Delete
    ```C#
-      if(rowIndex < 0)
-      {
-         MessageBox.Show("Silme işlemi yapılacak müşteriyi seçiniz");
-         return;
-      }
-      try
-      {
-         conn.Open();
-         sql=@"select * from müşteriler";
-         cmd= new NpsqlCommand(sql, conn);
-         cmd.Parameters.AddwithValue("_id", int.Parse(dgvData.Rows[rowIndex].Cells["id"].Value.ToString));
-         if((int)cmd.ExecuteScalar() == 1)
-         {
-            MessageBox.Show("Silme işlemi başarılı");
-            rowIndex=-1;
-         }
-         conn.Close();
-      }
-      catch(Exception ex)
-      {
-         conn.Close();
-         MessageBox.Show("Silme başarısız. ERROR: "+ ex.Message);
-      }
+   try
+   {
+     conn.Open();
+     sql = @"Select * from delete_hesaplar(:_id)";
+     cmd = new NpgsqlCommand(sql, conn);
+     cmd.Parameters.AddWithValue("_id",int.Parse(txt_hesapId.Text));
+
+     if ((int)cmd.ExecuteScalar() == 1)
+     {
+       Select_HesapSil();
+       MessageBox.Show("Talep Onayı başarılı");
+       conn.Close();
+     }
+     else
+     {
+       conn.Close();
+       MessageBox.Show("Talep Onayı başarısız");
+     }
+
+
+    }
+    catch (Exception ex)
+    {
+     conn.Close();
+      MessageBox.Show("ERROR : " + ex.Message);
+    }
    ```
    ## Login fonksiyonu kullanımı
    ```C#
