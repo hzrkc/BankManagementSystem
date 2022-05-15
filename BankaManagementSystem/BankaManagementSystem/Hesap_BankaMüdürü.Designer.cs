@@ -34,6 +34,15 @@
             this.btn_CloseChildForm = new DevExpress.XtraEditors.SimpleButton();
             this.pnl_childFrom = new System.Windows.Forms.Panel();
             this.pnl_AnaMenu = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lbl_Kar = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_Bakiye = new System.Windows.Forms.Label();
+            this.lbl_gelir = new System.Windows.Forms.Label();
+            this.llbl_Gelir = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.Dgv_BankaIslemleri = new System.Windows.Forms.DataGridView();
             this.pnl_İşlemTablosu = new System.Windows.Forms.Panel();
             this.btn_İşlemleriGöster = new System.Windows.Forms.Button();
@@ -59,6 +68,7 @@
             this.pnl_Back.SuspendLayout();
             this.pnl_childFrom.SuspendLayout();
             this.pnl_AnaMenu.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_BankaIslemleri)).BeginInit();
             this.pnl_İşlemTablosu.SuspendLayout();
             this.pnl_Label2.SuspendLayout();
@@ -135,6 +145,7 @@
             // pnl_AnaMenu
             // 
             this.pnl_AnaMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.pnl_AnaMenu.Controls.Add(this.panel3);
             this.pnl_AnaMenu.Controls.Add(this.Dgv_BankaIslemleri);
             this.pnl_AnaMenu.Controls.Add(this.pnl_İşlemTablosu);
             this.pnl_AnaMenu.Controls.Add(this.pnl_Label2);
@@ -144,6 +155,114 @@
             this.pnl_AnaMenu.Name = "pnl_AnaMenu";
             this.pnl_AnaMenu.Size = new System.Drawing.Size(877, 554);
             this.pnl_AnaMenu.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.panel3.Controls.Add(this.lbl_Kar);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.lbl_Bakiye);
+            this.panel3.Controls.Add(this.lbl_gelir);
+            this.panel3.Controls.Add(this.llbl_Gelir);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Location = new System.Drawing.Point(0, 55);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(877, 173);
+            this.panel3.TabIndex = 31;
+            // 
+            // lbl_Kar
+            // 
+            this.lbl_Kar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.lbl_Kar.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Kar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.lbl_Kar.Location = new System.Drawing.Point(422, 67);
+            this.lbl_Kar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Kar.Name = "lbl_Kar";
+            this.lbl_Kar.Size = new System.Drawing.Size(178, 31);
+            this.lbl_Kar.TabIndex = 18;
+            this.lbl_Kar.Text = "NULL";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label4.Location = new System.Drawing.Point(360, 68);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 31);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Kar :";
+            // 
+            // lbl_Bakiye
+            // 
+            this.lbl_Bakiye.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.lbl_Bakiye.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Bakiye.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.lbl_Bakiye.Location = new System.Drawing.Point(164, 101);
+            this.lbl_Bakiye.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Bakiye.Name = "lbl_Bakiye";
+            this.lbl_Bakiye.Size = new System.Drawing.Size(178, 31);
+            this.lbl_Bakiye.TabIndex = 16;
+            this.lbl_Bakiye.Text = "NULL";
+            // 
+            // lbl_gelir
+            // 
+            this.lbl_gelir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.lbl_gelir.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_gelir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.lbl_gelir.Location = new System.Drawing.Point(164, 67);
+            this.lbl_gelir.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_gelir.Name = "lbl_gelir";
+            this.lbl_gelir.Size = new System.Drawing.Size(178, 31);
+            this.lbl_gelir.TabIndex = 15;
+            this.lbl_gelir.Text = "NULL";
+            // 
+            // llbl_Gelir
+            // 
+            this.llbl_Gelir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.llbl_Gelir.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llbl_Gelir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.llbl_Gelir.Location = new System.Drawing.Point(164, 35);
+            this.llbl_Gelir.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.llbl_Gelir.Name = "llbl_Gelir";
+            this.llbl_Gelir.Size = new System.Drawing.Size(178, 31);
+            this.llbl_Gelir.TabIndex = 14;
+            this.llbl_Gelir.Text = "NULL";
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label12.Location = new System.Drawing.Point(74, 101);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(91, 31);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Bakiye :";
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label13.Location = new System.Drawing.Point(84, 67);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(81, 31);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "Gider :";
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label14.Location = new System.Drawing.Point(93, 36);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(72, 31);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "Gelir :";
             // 
             // Dgv_BankaIslemleri
             // 
@@ -482,6 +601,7 @@
             this.pnl_Back.ResumeLayout(false);
             this.pnl_childFrom.ResumeLayout(false);
             this.pnl_AnaMenu.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_BankaIslemleri)).EndInit();
             this.pnl_İşlemTablosu.ResumeLayout(false);
             this.pnl_İşlemTablosu.PerformLayout();
@@ -524,5 +644,14 @@
         private DevExpress.XtraEditors.SimpleButton btn_CloseChildForm;
         private System.Windows.Forms.Panel pnl_Back;
         private System.Windows.Forms.Label lbl_Tc;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lbl_Bakiye;
+        private System.Windows.Forms.Label lbl_gelir;
+        private System.Windows.Forms.Label llbl_Gelir;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lbl_Kar;
+        private System.Windows.Forms.Label label4;
     }
 }

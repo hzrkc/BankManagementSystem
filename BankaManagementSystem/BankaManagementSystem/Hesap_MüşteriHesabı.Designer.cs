@@ -44,7 +44,6 @@
             this.Dgv_HesapBilgileri = new System.Windows.Forms.DataGridView();
             this.pnl_Label2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.Dgv_AylikOzet = new System.Windows.Forms.DataGridView();
             this.pnl_label = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_top = new System.Windows.Forms.Panel();
@@ -52,6 +51,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_MinWindow = new System.Windows.Forms.Button();
             this.btn_WindowClose = new System.Windows.Forms.Button();
+            this.Dgv_AylikOzet = new System.Windows.Forms.DataGridView();
             this.pnl_anaPanel.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
             this.pnl_Back.SuspendLayout();
@@ -60,9 +60,9 @@
             this.pnl_Button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_HesapBilgileri)).BeginInit();
             this.pnl_Label2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_AylikOzet)).BeginInit();
             this.pnl_label.SuspendLayout();
             this.pnl_top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_AylikOzet)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_anaPanel
@@ -299,24 +299,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Hesap Bilgileri";
             // 
-            // Dgv_AylikOzet
-            // 
-            this.Dgv_AylikOzet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Dgv_AylikOzet.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
-            this.Dgv_AylikOzet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Dgv_AylikOzet.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            this.Dgv_AylikOzet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_AylikOzet.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Dgv_AylikOzet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.Dgv_AylikOzet.Location = new System.Drawing.Point(0, 52);
-            this.Dgv_AylikOzet.Margin = new System.Windows.Forms.Padding(4);
-            this.Dgv_AylikOzet.MultiSelect = false;
-            this.Dgv_AylikOzet.Name = "Dgv_AylikOzet";
-            this.Dgv_AylikOzet.RowHeadersWidth = 51;
-            this.Dgv_AylikOzet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv_AylikOzet.Size = new System.Drawing.Size(594, 158);
-            this.Dgv_AylikOzet.TabIndex = 14;
-            // 
             // pnl_label
             // 
             this.pnl_label.BackColor = System.Drawing.Color.Transparent;
@@ -416,6 +398,24 @@
             this.btn_WindowClose.UseVisualStyleBackColor = false;
             this.btn_WindowClose.Click += new System.EventHandler(this.btn_WindowClose_Click);
             // 
+            // Dgv_AylikOzet
+            // 
+            this.Dgv_AylikOzet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv_AylikOzet.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.Dgv_AylikOzet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Dgv_AylikOzet.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
+            this.Dgv_AylikOzet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_AylikOzet.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Dgv_AylikOzet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Dgv_AylikOzet.Location = new System.Drawing.Point(0, 52);
+            this.Dgv_AylikOzet.Margin = new System.Windows.Forms.Padding(4);
+            this.Dgv_AylikOzet.MultiSelect = false;
+            this.Dgv_AylikOzet.Name = "Dgv_AylikOzet";
+            this.Dgv_AylikOzet.RowHeadersWidth = 51;
+            this.Dgv_AylikOzet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Dgv_AylikOzet.Size = new System.Drawing.Size(594, 158);
+            this.Dgv_AylikOzet.TabIndex = 14;
+            // 
             // Hesap_MüşteriHesabı
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -435,9 +435,9 @@
             this.pnl_Button.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_HesapBilgileri)).EndInit();
             this.pnl_Label2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_AylikOzet)).EndInit();
             this.pnl_label.ResumeLayout(false);
             this.pnl_top.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_AylikOzet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -462,11 +462,11 @@
         private System.Windows.Forms.DataGridView Dgv_HesapBilgileri;
         private System.Windows.Forms.Panel pnl_Label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView Dgv_AylikOzet;
         private System.Windows.Forms.Panel pnl_label;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.SimpleButton btn_CloseChildForm;
         private System.Windows.Forms.Label lbl_Tc;
+        private System.Windows.Forms.DataGridView Dgv_AylikOzet;
     }
 }
 

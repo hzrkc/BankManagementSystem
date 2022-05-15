@@ -7,6 +7,30 @@ saklanmalıdır. Bir müşterinin birden fazla hesabı bulunabilir. Hesaplar sis
 herhangi bir para birimi cinsinden açılabilir (TL varsayılan olarak gelmelidir). Hesaplar arası para
 transferinde gerekli durumlarda kur dönüşümü otomatik olarak yapılmaktadir.Tüm bu eylemlerin tasarlanan bir arayüz üzerinden görsel bir şekilde
 gösterilmiştir.
+
+Müşteri Temsilcisi
+* TC sorguluyor
+* Kayıt, Güncelleme, Silme yapıyor
+* İlgilendiği Müşterileri görüyor
+* Hesap talebini onaylıyor.
+* İlgilendiği Müşterinin için Hesap oluşturma talebini onaylıyor.
+* İlgilendiği Müşterinin için Hesap silme talebini onaylıyor.
+* İlgilendiği müşterinin kredi talebini onaylıyor.
+
+Müşteri 
+* Hesap bilgilerini görüntüleyebiliyor.
+* Hesap oluşturma talebi oluşturabiliyor.
+* Kredi talep oluşturma yapabiliyor.
+* Kişisel bilgilerini güncelleyebiliyor.
+* Hesap silme talebi oluşturabiliyor.
+* Aylık özet görebiliyor.
+
+Banka Müdürü
+* Müşteri Kaydı yapıyor.
+* Yatırım Fonu düzenleyip Ekleyebiliyor
+* Son işlem tablosunu görebiliyor
+* Kredi vade / faiz ayarlıyabiliyor // fonksiyon eklenecek
+
  
  *(Proje içerisindeki bazı hataların çözümleri ve kodların açıklamaları ilgili klasörün içerisindeki README.md'ye eklenmiştir.)*
 

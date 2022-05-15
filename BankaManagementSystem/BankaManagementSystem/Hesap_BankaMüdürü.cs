@@ -171,7 +171,33 @@ namespace BankaManagementSystem
 
         private void btn_İşlemleriGöster_Click(object sender, EventArgs e)
         {
-            //sonIslemSayisi = TxtBox_SonİşlemSayisi;
+            int son_işlemSayisi = int.Parse(TxtBox_SonİşlemSayisi.Text);
+            try
+            {
+                conn.Open();
+                sql = @"SELECT * FROM islem
+                        Order by islem_no desc
+                        LIMIT" + son_işlemSayisi;
+                cmd = new NpgsqlCommand(sql, conn);
+                dt = new DataTable(); ;
+                dt.Load(cmd.ExecuteReader());
+                Dgv_BankaIslemleri.DataSource = null; //reset datagrid view
+                Dgv_BankaIslemleri.DataSource = dt;
+
+                sql = @"SELECT * FROM banka_uyeleri";
+                cmd = new NpgsqlCommand(sql, conn);
+                dt.Load(cmd.ExecuteReader());
+                conn.Close();
+                Dgv_BankaGenelDurum.DataSource = null; //reset datagrid view
+                Dgv_BankaGenelDurum.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                MessageBox.Show("Error: " + ex.Message);
+
+            }
         }
     }
 }

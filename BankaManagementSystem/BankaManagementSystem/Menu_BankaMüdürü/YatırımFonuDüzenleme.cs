@@ -85,5 +85,10 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
             }
 
         }
+
+        private void YatırımFonuDüzenleme_Load(object sender, EventArgs e)
+        {
+            conn = new NpgsqlConnection(connstring);
+        }
     }
 }
