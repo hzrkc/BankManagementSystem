@@ -69,23 +69,7 @@
    ### Not!
    
    1- bu fonksiyonları try catch e adapte et
-
-   ## DataGrivView den veri seçme 
-   
-   ```C#
-      private int rowIndex =-1; 
-      //örnek textbox ismi txtFirstname
-      if(e.RowIndex>=0)
-      {
-         row=e.RowIndex;
-         txtFirstname.Text = dgvData.Rows[e.RowIndex].Cells["firstname"].Value.toString();
-         txtSurname.Text=dgvData.Rows[e.RowIndex].Cells["surname"].Value.ToString();
-      }
-      
-   ```
-   ### Not
-   
-   1 - dgvData_CellClick fonksiyonu içerisinde 
+ 
 
    ## Select() fonksiyonu
 
@@ -119,63 +103,68 @@
         }
    ```
    
-   ## Insert and Update Fonksiyonu
+   ## Insert
    
    ```C#
-      int result=0;
-      if(rowIndex<0) //insert
-      {
-         try
-         {
-            conn.Open();
-            sql = @"selecet * from st_insert(: _firstname, :_surname)";
-            cmd= new NpsqlCommand(sql,conn);
-            cmd.Parameters.AddWithValue("_firstname",txtFirstname.Text);
-            cmd.Parameters.AddWithValue("_surname",txtFirstname.Text);
-            result = (int)cmd.ExecuteScalar();
-            conn.Close();
-            if(result == 1)
+      try
             {
-               MessageBox.Show("Kayıt başarılı.");
+                conn.Open();
+                sql = @"SELECT * from insert_musteriler(:_uye_id,:_hesap_tur_id,:_yatirim_fon_id,:_bakiye,:_hesap_isim)";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_yatirim_fon_id", CmBox_YatırımFonuTürü.ValueMember);
+                cmd.Parameters.AddWithValue("_yatirim_fon_id", CmBox_HesapTür.ValueMember);
+                cmd.Parameters.AddWithValue("_hesap_isim", TxtBox_Hesapİsmi.Text);
+                cmd.Parameters.AddWithValue("_uye_id", Mus_Tc);
+                cmd.Parameters.AddWithValue("_bakiye",0);
+                int result = (int)cmd.ExecuteScalar();
+                conn.Close();
+                if (result == 1)
+                {
+                    MessageBox.Show("Hesap Oluşturuldu.");
+                }
+                else
+                {
+                    MessageBox.Show("Hesap Oluşturulamadı.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-               MessageBox.Show("Kayıt başarısız.");
+                conn.Close();
+                MessageBox.Show("Hesap Oluşturma Başarısız. Error: " + ex.Message);
             }
-         }
-         catch(Exception ex)
-         {
-            conn.Close();
-            MessageBox.Show("Kayıt Başarısız. Error: "+ ex.Message);
-         }
-      }
-      else //update
-      {
-         try
-         {
-            conn.Open();
-            sql = @"select * from st_update(:_id, :_firstname)";
-            cmd= new NpsqlCommand(sql, conn);
-            cmd.Parameters.AddwithValue("_id", int.Parse(dgvData.Rows[rowIndex].Cells["id"].Value.ToString));
-            cmd.Parameters.AddWithValue("_firstname",txtFirstname.Text);
-            result = (int)cmd.ExecuteScalar();
-            conn.Close();
-            if(result == 1)
+   ```
+   
+   ## Update
+   
+   ```C#
+   try
             {
-               MessageBox.Show("Güncelleme başarılı.");
+                conn.Open();
+                sql = @"SELECT * from update_musteriler(:_isim,:_soyisim ,:_adres,:_email,:_telefon ,:_tc ,:_sifre )";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_isim", txtBox_Ad.Text);
+                cmd.Parameters.AddWithValue("_soyisim", txtBox_Soyad.Text);
+                cmd.Parameters.AddWithValue("_adres", txtBox_Adres.Text);
+                cmd.Parameters.AddWithValue("_email", txtBox_Email.Text);
+                cmd.Parameters.AddWithValue("_telefon", int.Parse(txtBox_Telefon.Text));
+                cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
+                cmd.Parameters.AddWithValue("_sifre", txtBox_Sifre.Text);
+                int result = (int)cmd.ExecuteScalar();
+                conn.Close();
+                if (result == 1)
+                {
+                    MessageBox.Show("Güncelleme başarılı.");
+                }
+                else
+                {
+                    MessageBox.Show("Güncelleme başarısız.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-               MessageBox.Show("Güncelleme başarısız.");
+                conn.Close();
+                MessageBox.Show("Güncelleme Başarısız. Error: " + ex.Message);
             }
-         }
-         catch(Exception ex)
-         {
-            conn.Close();
-            MessageBox.Show("Güncelleme Başarısız. Error: "+ ex.Message);
-         }
-      }
-      result =0;
    ```
 
    ## Delete
