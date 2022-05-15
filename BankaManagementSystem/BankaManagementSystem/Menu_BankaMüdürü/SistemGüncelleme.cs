@@ -97,7 +97,6 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
                 if (result == 1)
                 {
                     MessageBox.Show("Güncelleme başarılı.");
-                    Select_KrediTur();
 
                 }
                 else
