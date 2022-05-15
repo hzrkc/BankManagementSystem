@@ -83,8 +83,6 @@ namespace BankaManagementSystem
 
         }
 
-
-
         private void btn_WindowClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -111,10 +109,7 @@ namespace BankaManagementSystem
             ayarlar.tc = tc;
             OpenChildForm(ayarlar, sender);
         }
-        
-
-        
-        
+         
         private void btn_YeniHesap_Click(object sender, EventArgs e)
         {
             
@@ -153,10 +148,10 @@ namespace BankaManagementSystem
         {
             conn= new NpgsqlConnection(connstring);
             lbl_Tc.Text = Convert.ToString(tc);
-            Select();
+            HesapBilgileri_Select();
         }
 
-        private void Select()
+        private void HesapBilgileri_Select()
         {
             try
             {

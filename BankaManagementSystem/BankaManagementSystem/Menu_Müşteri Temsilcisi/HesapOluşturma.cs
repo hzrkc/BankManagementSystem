@@ -52,7 +52,6 @@ namespace BankaManagementSystem.Menu_Müşteri_Temsilcisi
             CmBox_HesapTür.DisplayMember = "tur";
             CmBox_HesapTür.ValueMember = "id";
             CmBox_HesapTür.DataSource = dt;
-
             conn.Close();
 
         }
@@ -65,7 +64,7 @@ namespace BankaManagementSystem.Menu_Müşteri_Temsilcisi
                 sql = @"SELECT * from insert_musteriler(:_uye_id,:_hesap_tur_id,:_yatirim_fon_id,:_bakiye,:_hesap_isim)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_yatirim_fon_id", CmBox_YatırımFonuTürü.ValueMember);
-                cmd.Parameters.AddWithValue("_yatirim_fon_id", CmBox_HesapTür.ValueMember);
+                cmd.Parameters.AddWithValue("_hesap_tur_id", CmBox_HesapTür.ValueMember);
                 cmd.Parameters.AddWithValue("_hesap_isim", TxtBox_Hesapİsmi.Text);
                 cmd.Parameters.AddWithValue("_uye_id", Mus_Tc);
                 cmd.Parameters.AddWithValue("_bakiye",0);

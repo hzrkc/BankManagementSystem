@@ -236,7 +236,8 @@ namespace BankaManagementSystem
                         {
                             btn_MüşteriSil.Enabled = true;
                             btn_Guncelle.Enabled = true;
-                            
+                            Müşterininİşlemleri_Select();
+
                         }
                         else //başka müşteri temsilcisi ilgileniyorsa
                         {
@@ -295,6 +296,29 @@ namespace BankaManagementSystem
 
         }
 
+        private void Müşterininİşlemleri_Select()
+        {
+            try
+            {
+                conn.Open();
+                sql = @"SELECT * FROM islem
+                        WHERE islem.kaynak_hesap_id=" + Mus_tc +
+                        "OR islem.hedef_hesap_id=" + Mus_tc;
+
+                cmd = new NpgsqlCommand(sql, conn);
+                dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+                conn.Close();
+                Dgv_Müşterininİşlemleri.DataSource = null;//reset
+                Dgv_Müşterininİşlemleri.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                MessageBox.Show("ERROR : " + ex.Message);
+            }
+        }
         private void btn_Guncelle_Click(object sender, EventArgs e)
         {
             try
@@ -325,6 +349,11 @@ namespace BankaManagementSystem
                 conn.Close();
                 MessageBox.Show("Güncelleme Başarısız. Error: " + ex.Message);
             }
+        }
+
+        private void MüşteriHesapları_Sil()
+        {
+
         }
     }
 }
