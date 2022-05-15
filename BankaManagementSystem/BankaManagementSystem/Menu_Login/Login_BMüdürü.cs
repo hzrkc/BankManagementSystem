@@ -18,7 +18,6 @@ namespace BankaManagementSystem.Menu_Login
                                                   "User Id={2};Password={3};Database={4};",
                                                   "localhost", 5432, "postgres", "7163", "bankManagement");
         private NpgsqlConnection conn;
-        int result = 0; //giriş için kontrol
 
         // sql sorguları ve komutları oluşturmak için değişkenler
         private string sql;

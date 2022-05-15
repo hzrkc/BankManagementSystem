@@ -80,6 +80,7 @@ namespace BankaManagementSystem.Menu_Müşteri
 
         private void HesapSil_Load(object sender, EventArgs e)
         {
+            conn = new NpgsqlConnection(connstring);
             lbl_Tc.Text = Convert.ToString(tc);
             HesapBilgileri_Select();
 

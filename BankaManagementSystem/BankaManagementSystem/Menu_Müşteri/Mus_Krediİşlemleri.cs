@@ -33,6 +33,7 @@ namespace BankaManagementSystem.Menu_Müşteri
 
         private void Mus_Krediİşlemleri_Load(object sender, EventArgs e)
         {
+            conn = new NpgsqlConnection(connstring);
             lbl_Tc.Text = Convert.ToString(tc);
             conn.Open();
             sql = @"select * from yatirim_fonu";

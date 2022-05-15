@@ -49,6 +49,7 @@ namespace BankaManagementSystem.Menu_Müşteri
 
         private void hesapOluşturma_Load(object sender, EventArgs e)
         {
+            conn = new NpgsqlConnection(connstring);
             lbl_Tc.Text =Convert.ToString(tc);
             
             conn.Open();
