@@ -32,7 +32,15 @@
    ### Not!
 
    1-form load fonksiyonu açıldığında bağlantı kur.
-
+  
+   ## Sql komutunun verdiği bilgiyi C# formda kullanma
+   ```sql
+   conn.Open();
+   cmd = new NpgsqlCommand("SELECT temsilci_id FROM musteriler GROUP BY temsilci_id ORDER BY count(temsilci_id) ASC LIMIT 1;");
+   int temsilci_id = (int)cmd.ExecuteScalar();
+   conn= new NpgsqlConnection(connstring);
+   conn.Close();
+   ```
 
    ## Komut oluşturma
 
