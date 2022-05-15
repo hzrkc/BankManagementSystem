@@ -315,6 +315,7 @@
             this.btn_Guncelle.TabIndex = 7;
             this.btn_Guncelle.Text = "GUNCELLE";
             this.btn_Guncelle.UseVisualStyleBackColor = true;
+            this.btn_Guncelle.Click += new System.EventHandler(this.btn_Guncelle_Click);
             // 
             // txtBox_Sifre
             // 

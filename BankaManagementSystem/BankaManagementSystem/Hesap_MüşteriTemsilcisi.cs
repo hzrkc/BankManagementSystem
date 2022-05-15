@@ -31,9 +31,6 @@ namespace BankaManagementSystem
         private string sql;
         private NpgsqlCommand cmd;
         private DataTable dt;
-
-
-        private int rowIndex = -1; //DataGridView kontrolleri için
         public Hesap_MüşteriTemsilcisi()
         {
             InitializeComponent();
@@ -96,7 +93,6 @@ namespace BankaManagementSystem
 
         private void btn_MüşteriKayıt_Click(object sender, EventArgs e)
         {
-            rowIndex = -1;
             txtBox_Ad.Text = null;
             txtBox_Soyad.Text = null;
             txtBox_Adres.Text = null;
@@ -135,13 +131,8 @@ namespace BankaManagementSystem
                 MessageBox.Show("Kayıt Başarısız. Error: " + ex.Message);
             }
 
-
         }
 
-        private void btn_YeniHesap_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_HesapSil_Click(object sender, EventArgs e)
         {
@@ -303,6 +294,37 @@ namespace BankaManagementSystem
             
 
         }
-      
+
+        private void btn_Guncelle_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                sql = @"SELECT * from update_musteriler(:_isim,:_soyisim ,:_adres,:_email,:_telefon ,:_tc ,:_sifre )";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_isim", txtBox_Ad.Text);
+                cmd.Parameters.AddWithValue("_soyisim", txtBox_Soyad.Text);
+                cmd.Parameters.AddWithValue("_adres", txtBox_Adres.Text);
+                cmd.Parameters.AddWithValue("_email", txtBox_Email.Text);
+                cmd.Parameters.AddWithValue("_telefon", int.Parse(txtBox_Telefon.Text));
+                cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
+                cmd.Parameters.AddWithValue("_sifre", txtBox_Sifre.Text);
+                int result = (int)cmd.ExecuteScalar();
+                conn.Close();
+                if (result == 1)
+                {
+                    MessageBox.Show("Güncelleme başarılı.");
+                }
+                else
+                {
+                    MessageBox.Show("Güncelleme başarısız.");
+                }
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                MessageBox.Show("Güncelleme Başarısız. Error: " + ex.Message);
+            }
+        }
     }
 }
