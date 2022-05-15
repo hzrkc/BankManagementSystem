@@ -25,7 +25,6 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
         // sql sorguları ve komutları oluşturmak için değişkenler
         private string sql;
         private NpgsqlCommand cmd;
-        private DataTable dt;
         public YatırımFonuDüzenleme()
         {
             InitializeComponent();

@@ -262,6 +262,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ayarlar";
             this.Text = "Ayarlar";
+            this.Load += new System.EventHandler(this.Ayarlar_Load);
             this.pnl_childFrom.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

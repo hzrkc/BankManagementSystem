@@ -86,6 +86,7 @@ C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagemen
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri_Temsilcisi.MT_Krediİşlemleri.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri.Ayarlar.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri.hesapOluşturma.resources
+C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri.HesapSil.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri.Mus_Krediİşlemleri.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Menu_Müşteri.TransferVeÖdemeler.resources
 C:\Users\zerha\Desktop\BankManagementSystem\BankaManagementSystem\BankaManagementSystem\obj\Debug\BankaManagementSystem.Hesap_MüşteriHesabı.resources

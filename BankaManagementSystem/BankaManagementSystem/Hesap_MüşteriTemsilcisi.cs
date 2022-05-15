@@ -254,8 +254,7 @@ namespace BankaManagementSystem
                                 WHERE M.tc=" + Mus_tc + " and M.temsilci_id =" + MusTemsilcisi_tc;
                         cmd = new NpgsqlCommand(sql, conn);
                         NpgsqlDataReader npgsqlData = cmd.ExecuteReader();
-
-                        if(npgsqlData.Read() != null) //İlgili müşteri temsilcisi doğru ise
+                        if (npgsqlData.Read() != null) //İlgili müşteri temsilcisi doğru ise
                         {
                             btn_MüşteriSil.Enabled = true;
                             btn_Guncelle.Enabled = true;

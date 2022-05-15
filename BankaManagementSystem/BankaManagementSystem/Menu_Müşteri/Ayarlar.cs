@@ -61,5 +61,10 @@ namespace BankaManagementSystem.Menu_Müşteri
                 MessageBox.Show("Güncelleme Başarısız. Error: " + ex.Message);
             }
         }
+
+        private void Ayarlar_Load(object sender, EventArgs e)
+        {
+            conn = new NpgsqlConnection(connstring);
+        }
     }
 }
