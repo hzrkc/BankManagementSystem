@@ -3,13 +3,7 @@
 # SQL Komutları
 
  - İslem tablosundaki son 5 işlemi getirme:
-```sql
-  SELECT * FROM islem 
-    WHERE islem_no > (SELECT MAX(islem_no) - 5 FROM islem)
 
-     (Buradaki 5 yerine kullanıcıdan alınan x bir değer yazılarak istenilen sayıda işlem gelmesi sağlanabilir.)
-```
-veya
 ```sql
 SELECT * FROM islem
 Order by islem_no desc
@@ -18,50 +12,49 @@ LIMIT 10 //son işlem sayısı ne verilmişse
 
 - Geçiçi Tablo oluşturma
 ```sql
-  DROP TABLE geciciMusteriler;
-  CREATE TEMPORARY TABLE geciciMusteriler AS SELECT * FROM musteriler;
-  ALTER TABLE geciciMusteriler DROP COLUMN sifre;
+DROP TABLE geciciMusteriler;
+CREATE TEMPORARY TABLE geciciMusteriler AS SELECT * FROM musteriler;
+ALTER TABLE geciciMusteriler DROP COLUMN sifre;
  ```
 
 - İlgilenilen Müşteri Listesi
-  ```sql
-    SELECT * FROM musteriler M
-    JOIN calisanlar C on C.id=M.temsilci_id
-    WHERE C.tc= XXXXX
-  ```
+```sql
+SELECT * FROM musteriler M
+JOIN calisanlar C on C.id=M.temsilci_id
+WHERE C.tc= XXXXX
+```
 
-  - Musteri Hesap Bilgileri
-  ```sql
-    SELECT hesaplar.id, hesaplar.hesap_isim,hesaplar.bakiye,hesaplar.hesap_tur_id,hesaplar.hesap_tur_isim,hesaplar.yatirim_fon_id
-    FROM hesaplar
-    JOIN musteriler
-    ON musteriler.id = 17 AND musteriler.id = hesaplar.uye_id
+- Musteri Hesap Bilgileri
+```sql
+SELECT hesaplar.id, hesaplar.hesap_isim,hesaplar.bakiye,hesaplar.hesap_tur_id,hesaplar.hesap_tur_isim,hesaplar.yatirim_fon_id
+FROM hesaplar
+JOIN musteriler
+ON musteriler.id = 17 AND musteriler.id = hesaplar.uye_id
 
-    (17 nolu müşterinin hesap bilgilerini getirir. Yerine kullanıcı girişi alarak 'x' nolu kullanıcının hesap bilgileri getirilebilir.)
-  ```
+(17 nolu müşterinin hesap bilgilerini getirir. Yerine kullanıcı girişi alarak 'x' nolu kullanıcının hesap bilgileri getirilebilir.)
+```
 
-  - En az Müşterisi olan Temsilci
-    ```sql
-    SELECT temsilci_id
-    FROM musteriler 
-    GROUP BY temsilci_id
-    ORDER BY count(temsilci_id) ASC
-    LIMIT 1;
-    ```
+- En az Müşterisi olan Temsilci
+```sql
+SELECT temsilci_id
+FROM musteriler 
+GROUP BY temsilci_id
+ORDER BY count(temsilci_id) ASC
+LIMIT 1;
+```
+- Gider Hesaplama
+```sql
+SELECT Sum(tutar) AS Gider
+FROM islem
+WHERE kaynak_tc = 24779888987 /* musteri tc */
+```
 
-  - Gider Hesaplama
-  ```sql
-  SELECT Sum(tutar) AS Gider
-  FROM islem
-  WHERE kaynak_tc = 24779888987 /* musteri tc */
-  ```
-
-  - Gelir Hesaplama
-  ```sql
-  SELECT Sum(tutar) AS Gelir
-  FROM islem
-  WHERE hedef_tc = 24779888987 /* musteri tc */
-  ```
+- Gelir Hesaplama
+```sql
+SELECT Sum(tutar) AS Gelir
+FROM islem
+WHERE hedef_tc = 24779888987 /* musteri tc */
+```
 
 
  # BACKUP oluşturma
