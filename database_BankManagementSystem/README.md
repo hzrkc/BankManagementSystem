@@ -41,10 +41,10 @@
 
   - En az Müşterisi olan Temsilci
     ```sql
-    SELECT temsilci_id, count(temsilci_id) as Müşteri_Sayısı
+    SELECT temsilci_id
     FROM musteriler 
     GROUP BY temsilci_id
-    ORDER BY Müşteri_Sayısı ASC
+    ORDER BY count(temsilci_id) ASC
     LIMIT 1;
     ```
 
