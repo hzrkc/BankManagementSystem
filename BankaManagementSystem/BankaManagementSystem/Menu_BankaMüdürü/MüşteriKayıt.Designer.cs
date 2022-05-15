@@ -30,6 +30,8 @@
         {
             this.pnl_anaPanel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.MskdTxBox_Tc = new System.Windows.Forms.MaskedTextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btn_MüşteriKayıt = new System.Windows.Forms.Button();
             this.txtBox_Sifre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -43,8 +45,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtBox_Ad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.MskdTxBox_Tc = new System.Windows.Forms.MaskedTextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.pnl_anaPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +86,30 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Kaydı";
+            // 
+            // MskdTxBox_Tc
+            // 
+            this.MskdTxBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.MskdTxBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MskdTxBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MskdTxBox_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.MskdTxBox_Tc.Location = new System.Drawing.Point(120, 49);
+            this.MskdTxBox_Tc.Mask = "00000000000";
+            this.MskdTxBox_Tc.Name = "MskdTxBox_Tc";
+            this.MskdTxBox_Tc.Size = new System.Drawing.Size(210, 27);
+            this.MskdTxBox_Tc.TabIndex = 23;
+            this.MskdTxBox_Tc.ValidatingType = typeof(int);
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label6.Location = new System.Drawing.Point(72, 50);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 31);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Tc :";
             // 
             // btn_MüşteriKayıt
             // 
@@ -231,30 +255,6 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Ad :";
             // 
-            // MskdTxBox_Tc
-            // 
-            this.MskdTxBox_Tc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.MskdTxBox_Tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MskdTxBox_Tc.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MskdTxBox_Tc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.MskdTxBox_Tc.Location = new System.Drawing.Point(120, 49);
-            this.MskdTxBox_Tc.Mask = "00000000000";
-            this.MskdTxBox_Tc.Name = "MskdTxBox_Tc";
-            this.MskdTxBox_Tc.Size = new System.Drawing.Size(210, 27);
-            this.MskdTxBox_Tc.TabIndex = 23;
-            this.MskdTxBox_Tc.ValidatingType = typeof(int);
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.label6.Location = new System.Drawing.Point(72, 50);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 31);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Tc :";
-            // 
             // MüşteriKayıt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -265,6 +265,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MüşteriKayıt";
             this.Text = "MüşteriKayıt";
+            this.Load += new System.EventHandler(this.MüşteriKayıt_Load);
             this.pnl_anaPanel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

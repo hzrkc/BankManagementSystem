@@ -234,7 +234,7 @@
             this.btn_HesapSil.Name = "btn_HesapSil";
             this.btn_HesapSil.Size = new System.Drawing.Size(294, 50);
             this.btn_HesapSil.TabIndex = 8;
-            this.btn_HesapSil.Text = "Hesap Sil\r\n(Seçili hesabı silme talebi oluşturur)";
+            this.btn_HesapSil.Text = "Hesap Sil\r\n";
             this.btn_HesapSil.UseVisualStyleBackColor = true;
             this.btn_HesapSil.Click += new System.EventHandler(this.btn_HesapSil_Click);
             // 

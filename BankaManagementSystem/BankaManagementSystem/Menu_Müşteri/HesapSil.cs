@@ -11,7 +11,7 @@ using Npgsql;
 
 namespace BankaManagementSystem.Menu_Müşteri
 {
-    public partial class hesapOluşturma : Form
+    public partial class HesapSil : Form
     {
         public long tc;
         //----PostgreSql ile ilgili kısımlar
@@ -26,7 +26,7 @@ namespace BankaManagementSystem.Menu_Müşteri
         private string sql;
         private NpgsqlCommand cmd;
         DataTable dt;
-        public hesapOluşturma()
+        public HesapSil()
         {
             InitializeComponent();
         }
@@ -47,41 +47,14 @@ namespace BankaManagementSystem.Menu_Müşteri
 
         }
 
-        private void hesapOluşturma_Load(object sender, EventArgs e)
-        {
-            lbl_Tc.Text =Convert.ToString(tc);
-        }
-
         private void btn_TalepOluştur_Click(object sender, EventArgs e)
         {
-            try
-            {
-                conn.Open();
-                sql = @"SELECT * from insert_hesaplar(:_uye_id,:_hesap_tur_id,:_yatirim_fon_id,:_bakiye,:_hesap_isim)";
-                cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_yatirim_fon_id", CmBox_YatırımFonuTürü.ValueMember);
-                cmd.Parameters.AddWithValue("_hesap_tur_id", CmBox_HesapTür.ValueMember);
-                cmd.Parameters.AddWithValue("_hesap_isim", TxtBox_Hesapİsmi.Text);
-                cmd.Parameters.AddWithValue("_uye_id", tc);
-                cmd.Parameters.AddWithValue("_bakiye", 0);
-                cmd.Parameters.AddWithValue("_onay", 0);
-                int result = (int)cmd.ExecuteScalar();
+            lbl_Tc.Text = Convert.ToString(tc);
+        }
 
-                conn.Close();
-                if (result == 1)
-                {
-                    MessageBox.Show("Hesap Oluşturuldu.");
-                }
-                else
-                {
-                    MessageBox.Show("Hesap Oluşturulamadı.");
-                }
-            }
-            catch (Exception ex)
-            {
-                conn.Close();
-                MessageBox.Show("Hesap Oluşturma Başarısız. Error: " + ex.Message);
-            }
+        private void HesapSil_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

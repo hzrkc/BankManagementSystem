@@ -70,7 +70,7 @@ namespace BankaManagementSystem.Menu_Müşteri_Temsilcisi
                 cmd.Parameters.AddWithValue("_hesap_isim", TxtBox_Hesapİsmi.Text);
                 cmd.Parameters.AddWithValue("_uye_id", Mus_Tc);
                 cmd.Parameters.AddWithValue("_bakiye", 0);
-                cmd.Parameters.AddWithValue("_onay", 0);
+                cmd.Parameters.AddWithValue("_onay", 1);
                 int result = (int)cmd.ExecuteScalar();
                 
                 conn.Close();
@@ -115,7 +115,8 @@ namespace BankaManagementSystem.Menu_Müşteri_Temsilcisi
 
         }
 
-        private void btn_Onay_Click(object sender, EventArgs e)
+
+        private void btn_Onay_Click_1(object sender, EventArgs e)
         {
             try
             {
