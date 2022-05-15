@@ -81,6 +81,7 @@ namespace BankaManagementSystem.Menu_Müşteri_Temsilcisi
                 {
                     Select_HesapTalep();
                     MessageBox.Show("Talep Onayı başarılı");
+                    krediHesabıOluştur();
                     conn.Close();
                 }
                 else
@@ -125,6 +126,37 @@ namespace BankaManagementSystem.Menu_Müşteri_Temsilcisi
             {
                 conn.Close();
                 MessageBox.Show("ERROR : " + ex.Message);
+            }
+        }
+        private void krediHesabıOluştur()
+        {
+            try
+            {
+                conn.Open();
+                sql = @"SELECT * from insert_hesaplar(:_uye_id,:_hesap_tur_id,:_yatirim_fon_id,:_bakiye,:_hesap_isim)";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_uye_id", Mus_Tc);
+                cmd.Parameters.AddWithValue("_hesap_tur_id", 1 );
+                cmd.Parameters.AddWithValue("_hesap_isim", "kredi hesabı");
+                cmd.Parameters.AddWithValue("_uye_id", Mus_Tc);
+                cmd.Parameters.AddWithValue("_bakiye", 0);
+                cmd.Parameters.AddWithValue("_onay", 1);
+                int result = (int)cmd.ExecuteScalar();
+
+                conn.Close();
+                if (result == 1)
+                {
+                    MessageBox.Show("Kredi Hesabı Oluşturuldu.");
+                }
+                else
+                {
+                    MessageBox.Show("Kredi Hesabı Oluşturulamadı.");
+                }
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                MessageBox.Show("Kredi Hesabı Oluşturma Başarısız. Error: " + ex.Message);
             }
         }
 

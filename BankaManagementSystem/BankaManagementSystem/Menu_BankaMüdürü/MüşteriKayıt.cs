@@ -32,7 +32,12 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
 
         private void MüşteriKayıt_Load(object sender, EventArgs e)
         {
-            conn= new NpgsqlConnection(connstring); 
+            conn.Open();
+            cmd = new NpgsqlCommand("SELECT temsilci_id FROM musteriler GROUP BY temsilci_id ORDER BY count(temsilci_id) ASC LIMIT 1; ");
+            int temsilci_id = (int)cmd.ExecuteScalar();
+            conn= new NpgsqlConnection(connstring);
+            conn.Close();
+
             try
             {
                 conn.Open();
@@ -45,6 +50,7 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
                 cmd.Parameters.AddWithValue("_telefon", int.Parse(txtBox_Telefon.Text));
                 cmd.Parameters.AddWithValue("_tc", long.Parse(MskdTxBox_Tc.Text));
                 cmd.Parameters.AddWithValue("_sifre", txtBox_Sifre.Text);
+                cmd.Parameters.AddWithValue("_temsilci_id", temsilci_id);
                 int result = (int)cmd.ExecuteScalar();
                 conn.Close();
                 if (result == 1)
