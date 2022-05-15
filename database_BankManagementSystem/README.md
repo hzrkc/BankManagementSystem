@@ -48,6 +48,20 @@
     LIMIT 1;
     ```
 
+  - Gider Hesaplama
+  ```sql
+  SELECT Sum(tutar) AS Gider
+  FROM islem
+  WHERE kaynak_tc = 24779888987 /* musteri tc */
+  ```
+
+  - Gider Hesaplama
+  ```sql
+  SELECT Sum(tutar) AS Gelir
+  FROM islem
+  WHERE hedef_tc = 24779888987 /* musteri tc */
+  ```
+
 
  # BACKUP oluşturma
 
