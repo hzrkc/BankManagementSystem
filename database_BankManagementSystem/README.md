@@ -49,7 +49,7 @@
   WHERE kaynak_tc = 24779888987 /* musteri tc */
   ```
 
-  - Gider Hesaplama
+  - Gelir Hesaplama
   ```sql
   SELECT Sum(tutar) AS Gelir
   FROM islem
