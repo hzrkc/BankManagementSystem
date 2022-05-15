@@ -37,7 +37,8 @@ Banka Müdürü
 
 ## Normalizasyon
 Tablolarımızı normalizasyon formlarına göre hazırlayarak verilerin karşılaşabileceği anomalileri engelledik. Normalizasyon formlarına detaylıca değinmeden önce başlıca dikkate aldığımız anomalilerden bahsedelim:
-	Insertion Anomaly : Her müşterinin sahip olabileceği bir tane müşteri temsilcisi vardır. Bu bilginin saklanması için “cus_list” tablosunda ilgili müşteri temsilcisinin bilgisi tutulmalıdır. Eğer ilgili müşteri temsilcisinin sadece bu tabloda detaylı bilgilerini tutarsak problem yaratır mı? İlk akla gelen sorun bankamıza yeni bir müşteri temsilcisi geldiği zaman hiç müşterisi olmayabilir ve tablodaki veriler “null” atanamıyorsa insertion anomaly’siyle karşılaşabileceğimiz oldu.  Bu anomaliden korunmak için müşteri .....
+
+* Insertion Anomaly : Her müşterinin sahip olabileceği bir tane müşteri temsilcisi vardır. Bu bilginin saklanması için “cus_list” tablosunda ilgili müşteri temsilcisinin bilgisi tutulmalıdır. Eğer ilgili müşteri temsilcisinin sadece bu tabloda detaylı bilgilerini tutarsak problem yaratır mı? İlk akla gelen sorun bankamıza yeni bir müşteri temsilcisi geldiği zaman hiç müşterisi olmayabilir ve tablodaki veriler “null” atanamıyorsa insertion anomaly’siyle karşılaşabileceğimiz oldu.  Bu anomaliden korunmak için müşteri .....
  
 __*Detaylı bilgi https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/database_BankManagementSystem/Normalizasyon.docx*__
 
