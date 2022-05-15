@@ -13,7 +13,7 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
 {
     public partial class BM_Krediİşlemleri : Form
     {
-        public long tc;
+        public int tc;
         //----PostgreSql ile ilgili kısımlar
 
         // PostgreSql veritabanına bağlantı oluşturmak için değişkenler

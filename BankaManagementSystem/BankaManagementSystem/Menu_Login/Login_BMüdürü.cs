@@ -32,7 +32,7 @@ namespace BankaManagementSystem.Menu_Login
             try
             {
                 conn.Open();
-                sql = @"SELECT * From Login_BankaCalışanları(:_tc,:_sifre,:_kullanıcıKodu)";
+                sql = @"SELECT * From Login_BankaCalışanları(:_tc,:_sifre,:_kullanıcıkodu)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
                 cmd.Parameters.AddWithValue("_sifre", TxtBox_sifre.Text);

@@ -14,7 +14,7 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
 {
     public partial class SistemGüncelleme : Form
     {
-        public long tc;
+        public int tc;
         //----PostgreSql ile ilgili kısımlar
 
         // PostgreSql veritabanına bağlantı oluşturmak için değişkenler
@@ -90,13 +90,14 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
                 conn.Open();
                 sql = @"SELECT * from update_banka_uyeleri(:_id,:_maas)";
                 cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_id", txtBox_ID.Text);
+                cmd.Parameters.AddWithValue("_id", Convert.ToDateTime(txtBox_ID.Text));
                 cmd.Parameters.AddWithValue("_maas", TxtBox_Maas.Text);
                 int result = (int)cmd.ExecuteScalar();
                 conn.Close();
                 if (result == 1)
                 {
                     MessageBox.Show("Güncelleme başarılı.");
+                    insert_sis();
 
                 }
                 else
@@ -112,7 +113,37 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
         }
         private void insert_sis()
         {
+            try
+            {
+                conn.Open();
+                sql = @"SELECT * from insert_sistem(:_tarih,:_tc)";
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_tarih", Convert.ToDateTime(lbl_tarih.Text));
+                cmd.Parameters.AddWithValue("_tc", tc);
+                int result = (int)cmd.ExecuteScalar();
+                conn.Close();
+                if (result == 1)
+                {
+                    MessageBox.Show("Sistem Kayıt başarılı.");
+                }
+                else
+                {
+                    MessageBox.Show("Sistem Kayıt başarısız.");
+                }
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                MessageBox.Show("Sistem Kayıt Başarısız. Error: " + ex.Message);
+            }
+        }
 
+        private void btn_ilerlet_Click(object sender, EventArgs e)
+        {
+            DateTime  d1 = new DateTime(2022, 5, 16);
+            d1.AddMonths(1).ToString("d");
+            lbl_tarih.Text = d1.ToString();
+            insert_sis();
         }
     }
 }

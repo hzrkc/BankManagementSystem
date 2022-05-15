@@ -40,6 +40,8 @@
             this.Dgv_Sistem = new System.Windows.Forms.DataGridView();
             this.pnl_label = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbl_tarih = new System.Windows.Forms.Label();
+            this.btn_ilerlet = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_bankaUyeleri)).BeginInit();
             this.panel2.SuspendLayout();
@@ -50,6 +52,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.btn_ilerlet);
             this.panel1.Controls.Add(this.btn_Guncelle);
             this.panel1.Controls.Add(this.lbl_maas);
             this.panel1.Controls.Add(this.TxtBox_Maas);
@@ -75,7 +78,7 @@
             this.btn_Guncelle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btn_Guncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Guncelle.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Guncelle.Location = new System.Drawing.Point(231, 518);
+            this.btn_Guncelle.Location = new System.Drawing.Point(310, 518);
             this.btn_Guncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Guncelle.Name = "btn_Guncelle";
             this.btn_Guncelle.Size = new System.Drawing.Size(370, 34);
@@ -88,7 +91,7 @@
             // 
             this.lbl_maas.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_maas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.lbl_maas.Location = new System.Drawing.Point(483, 479);
+            this.lbl_maas.Location = new System.Drawing.Point(474, 478);
             this.lbl_maas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_maas.Name = "lbl_maas";
             this.lbl_maas.Size = new System.Drawing.Size(82, 31);
@@ -100,7 +103,7 @@
             this.TxtBox_Maas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
             this.TxtBox_Maas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtBox_Maas.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_Maas.Location = new System.Drawing.Point(562, 478);
+            this.TxtBox_Maas.Location = new System.Drawing.Point(549, 477);
             this.TxtBox_Maas.Name = "TxtBox_Maas";
             this.TxtBox_Maas.Size = new System.Drawing.Size(221, 27);
             this.TxtBox_Maas.TabIndex = 23;
@@ -110,7 +113,7 @@
             this.txtBox_ID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
             this.txtBox_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBox_ID.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_ID.Location = new System.Drawing.Point(101, 479);
+            this.txtBox_ID.Location = new System.Drawing.Point(246, 478);
             this.txtBox_ID.Name = "txtBox_ID";
             this.txtBox_ID.Size = new System.Drawing.Size(221, 27);
             this.txtBox_ID.TabIndex = 26;
@@ -119,7 +122,7 @@
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.label3.Location = new System.Drawing.Point(51, 479);
+            this.label3.Location = new System.Drawing.Point(196, 479);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 31);
@@ -195,6 +198,7 @@
             // pnl_label
             // 
             this.pnl_label.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_label.Controls.Add(this.lbl_tarih);
             this.pnl_label.Controls.Add(this.label1);
             this.pnl_label.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_label.Location = new System.Drawing.Point(0, 0);
@@ -213,6 +217,35 @@
             this.label1.Size = new System.Drawing.Size(876, 31);
             this.label1.TabIndex = 3;
             this.label1.Text = "Sistem Güncelleme ";
+            // 
+            // lbl_tarih
+            // 
+            this.lbl_tarih.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tarih.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.lbl_tarih.Location = new System.Drawing.Point(755, 9);
+            this.lbl_tarih.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_tarih.Name = "lbl_tarih";
+            this.lbl_tarih.Size = new System.Drawing.Size(108, 31);
+            this.lbl_tarih.TabIndex = 4;
+            this.lbl_tarih.Text = "2022-05-16";
+            // 
+            // btn_ilerlet
+            // 
+            this.btn_ilerlet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.btn_ilerlet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ilerlet.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(175)))), ((int)(((byte)(255)))));
+            this.btn_ilerlet.FlatAppearance.BorderSize = 2;
+            this.btn_ilerlet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btn_ilerlet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ilerlet.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ilerlet.Location = new System.Drawing.Point(43, 476);
+            this.btn_ilerlet.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ilerlet.Name = "btn_ilerlet";
+            this.btn_ilerlet.Size = new System.Drawing.Size(98, 34);
+            this.btn_ilerlet.TabIndex = 38;
+            this.btn_ilerlet.Text = ">>";
+            this.btn_ilerlet.UseVisualStyleBackColor = false;
+            this.btn_ilerlet.Click += new System.EventHandler(this.btn_ilerlet_Click);
             // 
             // SistemGüncelleme
             // 
@@ -249,5 +282,7 @@
         private System.Windows.Forms.Label lbl_maas;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_Guncelle;
+        private System.Windows.Forms.Label lbl_tarih;
+        private System.Windows.Forms.Button btn_ilerlet;
     }
 }

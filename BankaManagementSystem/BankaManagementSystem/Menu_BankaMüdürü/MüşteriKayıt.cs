@@ -13,7 +13,7 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
 {
     public partial class MüşteriKayıt : Form
     {
-        public long tc;
+        public int tc;
         //----PostgreSql ile ilgili kısımlar
 
         // PostgreSql veritabanına bağlantı oluşturmak için değişkenler
@@ -48,7 +48,7 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
                 cmd.Parameters.AddWithValue("_adres", txtBox_Adres.Text);
                 cmd.Parameters.AddWithValue("_email", txtBox_Email.Text);
                 cmd.Parameters.AddWithValue("_telefon", int.Parse(txtBox_Telefon.Text));
-                cmd.Parameters.AddWithValue("_tc", long.Parse(MskdTxBox_Tc.Text));
+                cmd.Parameters.AddWithValue("_tc", int.Parse(MskdTxBox_Tc.Text));
                 cmd.Parameters.AddWithValue("_sifre", txtBox_Sifre.Text);
                 cmd.Parameters.AddWithValue("_temsilci_id", temsilci_id);
                 int result = (int)cmd.ExecuteScalar();
