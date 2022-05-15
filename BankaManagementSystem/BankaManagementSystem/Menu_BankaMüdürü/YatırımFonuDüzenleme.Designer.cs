@@ -39,6 +39,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Dgv_YatırımFonu = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtBox_ID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.pnl_anaPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -61,6 +65,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(223)))), ((int)(((byte)(255)))));
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtBox_ID);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.TxtBox_ParaBirimi);
             this.groupBox1.Controls.Add(this.label6);
@@ -68,9 +76,9 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.groupBox1.Location = new System.Drawing.Point(215, 292);
+            this.groupBox1.Location = new System.Drawing.Point(192, 292);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(432, 191);
+            this.groupBox1.Size = new System.Drawing.Size(469, 252);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Para Birimi";
@@ -80,9 +88,9 @@
             this.panel1.Controls.Add(this.btn_Kayıt);
             this.panel1.Controls.Add(this.btn_Guncelle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(3, 129);
+            this.panel1.Location = new System.Drawing.Point(3, 190);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(426, 59);
+            this.panel1.Size = new System.Drawing.Size(463, 59);
             this.panel1.TabIndex = 24;
             // 
             // btn_Kayıt
@@ -95,10 +103,10 @@
             this.btn_Kayıt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btn_Kayıt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Kayıt.Font = new System.Drawing.Font("Microsoft JhengHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Kayıt.Location = new System.Drawing.Point(213, 0);
+            this.btn_Kayıt.Location = new System.Drawing.Point(232, 0);
             this.btn_Kayıt.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Kayıt.Name = "btn_Kayıt";
-            this.btn_Kayıt.Size = new System.Drawing.Size(213, 59);
+            this.btn_Kayıt.Size = new System.Drawing.Size(232, 59);
             this.btn_Kayıt.TabIndex = 22;
             this.btn_Kayıt.Text = "Kayıt";
             this.btn_Kayıt.UseVisualStyleBackColor = false;
@@ -117,7 +125,7 @@
             this.btn_Guncelle.Location = new System.Drawing.Point(0, 0);
             this.btn_Guncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Guncelle.Name = "btn_Guncelle";
-            this.btn_Guncelle.Size = new System.Drawing.Size(213, 59);
+            this.btn_Guncelle.Size = new System.Drawing.Size(232, 59);
             this.btn_Guncelle.TabIndex = 21;
             this.btn_Guncelle.Text = "Güncelle";
             this.btn_Guncelle.UseVisualStyleBackColor = false;
@@ -128,19 +136,19 @@
             this.TxtBox_ParaBirimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.TxtBox_ParaBirimi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtBox_ParaBirimi.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_ParaBirimi.Location = new System.Drawing.Point(156, 44);
+            this.TxtBox_ParaBirimi.Location = new System.Drawing.Point(248, 83);
             this.TxtBox_ParaBirimi.Name = "TxtBox_ParaBirimi";
-            this.TxtBox_ParaBirimi.Size = new System.Drawing.Size(210, 27);
+            this.TxtBox_ParaBirimi.Size = new System.Drawing.Size(221, 27);
             this.TxtBox_ParaBirimi.TabIndex = 23;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.label6.Location = new System.Drawing.Point(30, 45);
+            this.label6.Location = new System.Drawing.Point(243, 49);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(186, 31);
+            this.label6.Size = new System.Drawing.Size(128, 31);
             this.label6.TabIndex = 22;
             this.label6.Text = "Para Birimi :";
             // 
@@ -149,7 +157,7 @@
             this.txtBox_Kur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.txtBox_Kur.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBox_Kur.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_Kur.Location = new System.Drawing.Point(156, 80);
+            this.txtBox_Kur.Location = new System.Drawing.Point(147, 136);
             this.txtBox_Kur.Name = "txtBox_Kur";
             this.txtBox_Kur.Size = new System.Drawing.Size(210, 27);
             this.txtBox_Kur.TabIndex = 7;
@@ -158,7 +166,7 @@
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
-            this.label5.Location = new System.Drawing.Point(102, 80);
+            this.label5.Location = new System.Drawing.Point(84, 129);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 34);
@@ -200,6 +208,49 @@
             this.label1.Text = "Para Birimi ve Kurları";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
+            // txtBox_ID
+            // 
+            this.txtBox_ID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.txtBox_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBox_ID.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_ID.Location = new System.Drawing.Point(3, 83);
+            this.txtBox_ID.Name = "txtBox_ID";
+            this.txtBox_ID.Size = new System.Drawing.Size(216, 27);
+            this.txtBox_ID.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label2.Location = new System.Drawing.Point(-2, 49);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 31);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "ID :";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label3.Location = new System.Drawing.Point(49, 21);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 31);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "GÜNCELLE";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(52)))), ((int)(((byte)(76)))));
+            this.label4.Location = new System.Drawing.Point(327, 18);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 31);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "KAYIT";
+            // 
             // YatırımFonuDüzenleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -232,5 +283,9 @@
         private System.Windows.Forms.TextBox TxtBox_ParaBirimi;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Kayıt;
+        private System.Windows.Forms.TextBox txtBox_ID;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
