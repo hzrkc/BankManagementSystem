@@ -1,5 +1,6 @@
 # Bank Management System
  C# Form application with PostgreSQL
+ *(Proje içerisindeki bazı hataların çözümleri ve kodların açıklamaları ilgili klasörün içerisindeki README.md'ye eklenmiştir.)*
  
 Banka içerisinde müşteri, temsilci ve banka müdürü olmak üzere 3 adet rol bulunmaktadır. Müşteriler ve
 çalışanlar için gerekli tanımlayıcı bilgiler (Ad Soyad, Telefon, TC No, Adres, E-posta) veri tabanında
@@ -29,10 +30,17 @@ Banka Müdürü
 * Müşteri Kaydı yapıyor.
 * Yatırım Fonu düzenleyip Ekleyebiliyor
 * Son işlem tablosunu görebiliyor
-* Kredi vade / faiz ayarlıyabiliyor // fonksiyon eklenecek
+* Kredi vade / faiz ayarlıyabiliyor
 
+# ER Diyagramı
+<p align="left"><img src="https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/images/ERDiyagram.png" width="800"></p>
+
+## Normalizasyon
+Tablolarımızı normalizasyon formlarına göre hazırlayarak verilerin karşılaşabileceği anomalileri engelledik. Normalizasyon formlarına detaylıca değinmeden önce başlıca dikkate aldığımız anomalilerden bahsedelim:
+	Insertion Anomaly : Her müşterinin sahip olabileceği bir tane müşteri temsilcisi vardır. Bu bilginin saklanması için “cus_list” tablosunda ilgili müşteri temsilcisinin bilgisi tutulmalıdır. Eğer ilgili müşteri temsilcisinin sadece bu tabloda detaylı bilgilerini tutarsak problem yaratır mı? İlk akla gelen sorun bankamıza yeni bir müşteri temsilcisi geldiği zaman hiç müşterisi olmayabilir ve tablodaki veriler “null” atanamıyorsa insertion anomaly’siyle karşılaşabileceğimiz oldu.  Bu anomaliden korunmak için müşteri .....
  
- *(Proje içerisindeki bazı hataların çözümleri ve kodların açıklamaları ilgili klasörün içerisindeki README.md'ye eklenmiştir.)*
+__*Detaylı bilgi https://github.com/zeynepaslierhan/BankManagementSystem/blob/main/database_BankManagementSystem/Normalizasyon.docx*__
+
 
  ## Form Dizaynları
   1 - __Login__
