@@ -39,6 +39,16 @@
     (17 nolu müşterinin hesap bilgilerini getirir. Yerine kullanıcı girişi alarak 'x' nolu kullanıcının hesap bilgileri getirilebilir.)
   ```
 
+  - En az Müşterisi olan Temsilci
+    ```sql
+    SELECT temsilci_id, count(temsilci_id) as Müşteri_Sayısı
+    FROM musteriler 
+    GROUP BY temsilci_id
+    ORDER BY Müşteri_Sayısı ASC
+    LIMIT 1;
+    ```
+
+
  # BACKUP oluşturma
 
   ## Export yapmak için:
