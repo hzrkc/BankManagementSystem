@@ -133,7 +133,6 @@ namespace BankaManagementSystem
 
         }
 
-
         private void btn_HesapSil_Click(object sender, EventArgs e)
         {
             try
@@ -319,6 +318,7 @@ namespace BankaManagementSystem
                 MessageBox.Show("ERROR : " + ex.Message);
             }
         }
+
         private void btn_Guncelle_Click(object sender, EventArgs e)
         {
             try

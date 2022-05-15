@@ -12,7 +12,7 @@ namespace BankaManagementSystem.Menu_Müşteri
 {
     public partial class TransferVeÖdemeler : Form
     {
-        public int tc;
+        public long tc;
         public TransferVeÖdemeler()
         {
             InitializeComponent();

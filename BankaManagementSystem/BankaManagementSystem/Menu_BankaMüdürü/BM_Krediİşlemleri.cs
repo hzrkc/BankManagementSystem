@@ -12,7 +12,7 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
 {
     public partial class BM_Krediİşlemleri : Form
     {
-        public int tc;
+        public long tc;
         public BM_Krediİşlemleri()
         {
             InitializeComponent();

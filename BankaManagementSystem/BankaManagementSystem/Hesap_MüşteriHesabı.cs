@@ -13,7 +13,7 @@ namespace BankaManagementSystem
 {
     public partial class Hesap_MüşteriHesabı : Form
     {
-        public int tc;//kullanıcı bilgilerini formlar arası aktarmak için
+        public long tc;//kullanıcı bilgilerini formlar arası aktarmak için
         private Button currentButton;//aktif butonu tutmak için
         private Form activeForm;//form içerisine çağırılan formu tutmak için
 
@@ -112,7 +112,6 @@ namespace BankaManagementSystem
          
         private void btn_YeniHesap_Click(object sender, EventArgs e)
         {
-            
             Menu_Müşteri.hesapOluşturma hesapOluşturma = new Menu_Müşteri.hesapOluşturma();
             hesapOluşturma.tc = tc;
             this.Hide();
@@ -121,7 +120,10 @@ namespace BankaManagementSystem
 
         private void btn_HesapSil_Click(object sender, EventArgs e)
         {
-
+            Menu_Müşteri.HesapSil hesapsil = new Menu_Müşteri.HesapSil();
+            hesapsil.tc = tc;
+            this.Hide();
+            hesapsil.Show();
         }
 
         private void btn_Krediİşlemleri_Click(object sender, EventArgs e)
@@ -157,8 +159,9 @@ namespace BankaManagementSystem
             {
                 conn.Open();
                 sql= @"SELECT T.tur, H.bakiye From hesaplar H 
-                      JOIN musteriler M ON M.id = H.uye_id
-                      JOIN hesap_tur T ON H.hesap_tur_id=T.id";
+                      JOIN musteriler M ON H.uye_id = M.tc" +
+                      "JOIN hesap_tur T ON H.hesap_tur_id=T.id " +
+                      "WHERE H.onay=1 and M.tc=" + tc;
                 cmd= new NpgsqlCommand(sql, conn);
                 dt= new DataTable(); ;
                 dt.Load(cmd.ExecuteReader());
