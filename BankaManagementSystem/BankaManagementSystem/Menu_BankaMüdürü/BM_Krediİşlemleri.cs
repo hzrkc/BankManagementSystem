@@ -37,16 +37,18 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
             try
             {
                 conn.Open();
-                sql = @"SELECT * from update_musteriler(:_isim,:_soyisim ,:_adres,:_email,:_telefon ,:_tc ,:_sifre )";
+                sql = @"SELECT * from update_kredi_tur(:_id,:_vade,:_faiz )";
                 cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_isim", txtBox_Ad.Text);
-                cmd.Parameters.AddWithValue("_soyisim", txtBox_Soyad.Text);
-                cmd.Parameters.AddWithValue("_adres", txtBox_Adres.Text);
+                cmd.Parameters.AddWithValue("_id", txtBox_ID.Text);
+                cmd.Parameters.AddWithValue("_vade", TxtBox_Vade.Text);
+                cmd.Parameters.AddWithValue("_faiz", txtBox_Faiz.Text);
                 int result = (int)cmd.ExecuteScalar();
                 conn.Close();
                 if (result == 1)
                 {
                     MessageBox.Show("Güncelleme başarılı.");
+                    Select_KrediTur();
+
                 }
                 else
                 {
@@ -64,6 +66,29 @@ namespace BankaManagementSystem.Menu_BankaMüdürü
         private void BM_Krediİşlemleri_Load(object sender, EventArgs e)
         {
             conn = new NpgsqlConnection(connstring);
+            Select_KrediTur();
+        }
+
+        private void Select_KrediTur()
+        {
+            try
+            {
+                conn.Open();
+                sql = @"SELECT * From kredi_tur";
+                cmd = new NpgsqlCommand(sql, conn);
+                dt = new DataTable(); ;
+                dt.Load(cmd.ExecuteReader());
+                conn.Close();
+                Dgv_YatırımFonu.DataSource = null; //reset datagrid view
+                Dgv_YatırımFonu.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                MessageBox.Show("Error: " + ex.Message);
+
+            }
         }
     }
 }
