@@ -9,20 +9,14 @@
 
      (Buradaki 5 yerine kullanıcıdan alınan x bir değer yazılarak istenilen sayıda işlem gelmesi sağlanabilir.)
 ```
-
-- İlgilenilen Müşteri Listesi
+- Geçiçi Tablo oluşturma
 ```sql
   DROP TABLE geciciMusteriler;
   CREATE TEMPORARY TABLE geciciMusteriler AS SELECT * FROM musteriler;
   ALTER TABLE geciciMusteriler DROP COLUMN sifre;
+ ```
 
-  SELECT geciciMusteriler
-  FROM geciciMusteriler
-  JOIN calisanlar
-  ON calisanlar.id = 1 AND geciciMusteriler.temsilci_id = calisanlar.id
-  ```
-  veya 
-  
+- İlgilenilen Müşteri Listesi
   ```sql
     SELECT * FROM musteriler M
     JOIN calisanlar C on C.id=M.temsilci_id
